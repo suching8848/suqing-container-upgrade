@@ -1,0 +1,194 @@
+蘇清的容器升级 1.0.0 最终适配物品名单
+
+B42.21单人版。当前明确支持168个完整ID：原版84、已审计模组84。
+客户端代表项在单人档测试；168项为支持范围，不代表逐件游戏内实测。多人/联机未验证。
+下面只列支持强化的物品；187项完整分类（含仅还原1、排除18）见适配名单.csv。
+规格均为源脚本默认值，实际实例/沙盒可能不同；V不降低已有容量或减重。
+原物品尺寸、种类、2弹匣硬限制、槽位、挂点、装填规则及液体组件保持。
+液体与普通库存须在强化/还原前排空；高原生容量项只强化减重，浣熊市保留沙盒业务容量。
+
+原版（84个ID）
+子弹背带 | Base.AmmoStrap_Brown_Bullets | 源1/85% | 自重1 | V实际基础容量：49 | AcceptItemFunction.AmmoStrap_Bullets
+霰弹背带 | Base.AmmoStrap_Brown_Shells | 源1/85% | 自重1 | V实际基础容量：49 | AcceptItemFunction.AmmoStrap_Shells
+子弹背带 | Base.AmmoStrap_Bullets | 源1/85% | 自重1 | V实际基础容量：49 | AcceptItemFunction.AmmoStrap_Bullets
+子弹背带 | Base.AmmoStrap_Bullets_308 | 源1/85% | 自重1 | V实际基础容量：49 | AcceptItemFunction.AmmoStrap_Bullets
+霰弹背带 | Base.AmmoStrap_Shells | 源1/85% | 自重1 | V实际基础容量：49 | AcceptItemFunction.AmmoStrap_Shells
+爱丽丝背带 | Base.Bag_ALICE_BeltSus | 源6/80% | 自重1 | V实际基础容量：49 | 最大物品尺寸1.3
+爱丽丝背带 (迷彩) | Base.Bag_ALICE_BeltSus_Camo | 源6/80% | 自重1 | V实际基础容量：49 | 最大物品尺寸1.3
+爱丽丝背带 (绿色) | Base.Bag_ALICE_BeltSus_Green | 源6/80% | 自重1 | V实际基础容量：49 | 最大物品尺寸1.3
+大型背包 | Base.Bag_ALICEpack | 源28/85% | 自重2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+军用背包 | Base.Bag_ALICEpack_Army | 源28/85% | 自重2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+军用背包 | Base.Bag_ALICEpack_DesertCamo | 源28/85% | 自重2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_BaseballBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+大登山包 | Base.Bag_BigHikingBag | 源22/80% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+大登山包 | Base.Bag_BigHikingBag_Travel | 源22/80% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_BreakdownBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_BurglarBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+胸挂 | Base.Bag_ChestRig | 源5/85% | 自重1 | V实际基础容量：49 | 最大物品尺寸1.3
+油布胸挂 | Base.Bag_ChestRig_Tarp | 源5/85% | 自重1 | V实际基础容量：49 | 最大物品尺寸1.3
+手工粗麻布挎包 | Base.Bag_ClothSatchel_Burlap | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+手工棉布挎包 | Base.Bag_ClothSatchel_Cotton | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+手工牛仔布挎包 | Base.Bag_ClothSatchel_Denim | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+手工牛仔布挎包 | Base.Bag_ClothSatchel_DenimBlack | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+手工牛仔布挎包 | Base.Bag_ClothSatchel_DenimLight | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+自制框架背包 | Base.Bag_CraftedFramepack_Large | 源20/75% | 自重2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+标准框架背包 | Base.Bag_CraftedFramepack_Large2 | 源25/80% | 自重3 | V实际基础容量：47 | 原槽位、标签和挂点保持
+大型框架背包 | Base.Bag_CraftedFramepack_Large3 | 源35/75% | 自重4 | V实际基础容量：46 | 原槽位、标签和挂点保持
+小型自制框架背包 | Base.Bag_CraftedFramepack_Small | 源15/70% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_DuffelBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_DuffelBagTINT | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+腰包 (背面) | Base.Bag_FannyPackBack | 源1/85% | 自重0.2 | V实际基础容量：49 | 精确穿戴/换位保护
+兽皮腰包 (背面) | Base.Bag_FannyPackBack_Hide | 源1/65% | 自重0.2 | V实际基础容量：49 | 精确穿戴/换位保护
+油布腰包 (背面) | Base.Bag_FannyPackBack_Tarp | 源1/60% | 自重0.2 | V实际基础容量：49 | 精确穿戴/换位保护
+腰包 (正面) | Base.Bag_FannyPackFront | 源1/85% | 自重0.2 | V实际基础容量：49 | 精确穿戴/换位保护
+兽皮腰包 (正面) | Base.Bag_FannyPackFront_Hide | 源1/65% | 自重0.2 | V实际基础容量：49 | 精确穿戴/换位保护
+油布腰包 (正面) | Base.Bag_FannyPackFront_Tarp | 源1/60% | 自重0.2 | V实际基础容量：49 | 精确穿戴/换位保护
+渔具篮 | Base.Bag_FishingBasket | 源6/50% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_FoodCanned | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_FoodSnacks | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+高尔夫球袋 | Base.Bag_GolfBag | 源18/65% | 自重1.2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+高尔夫球袋 | Base.Bag_GolfBag_Melee | 源18/65% | 自重1.2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+兽皮挎包 | Base.Bag_HideSatchel | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+兽皮斜挎包 | Base.Bag_HideSlingBag | 源14/60% | 自重0.8 | V实际基础容量：49 | 原槽位、标签和挂点保持
+登山包 | Base.Bag_HikingBag_Travel | 源20/75% | 自重1.2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+水袋背包 | Base.Bag_HydrationBackpack | 源12/85% | 自重1 | V实际基础容量：49 | 液体2L；操作前排空；不改液体
+水袋背包 | Base.Bag_HydrationBackpack_Camo | 源12/85% | 自重1 | V实际基础容量：49 | 液体3L；操作前排空；不改液体
+行李袋 | Base.Bag_InmateEscapedBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+医疗救护包 | Base.Bag_MedicalBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+军用行李袋 | Base.Bag_Military | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_MoneyBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+登山包 | Base.Bag_NormalHikingBag | 源20/75% | 自重1.2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+警用行李袋 | Base.Bag_Police | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+布制枪箱 | Base.Bag_RifleCaseCloth | 源7/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+布制枪套 | Base.Bag_RifleCaseCloth2 | 源7/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+布制枪箱 | Base.Bag_RifleCaseClothCamo | 源7/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+特警行李袋 | Base.Bag_SWAT | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+单肩挎包 | Base.Bag_Satchel | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+单肩挎包 | Base.Bag_SatchelPhoto | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+渔具挎包 | Base.Bag_Satchel_Fishing | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+皮革挎包 | Base.Bag_Satchel_Leather | 源13/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+邮差夸包 | Base.Bag_Satchel_Mail | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+医疗挎包 | Base.Bag_Satchel_Medical | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+军用挎包 | Base.Bag_Satchel_Military | 源12/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+书包 | Base.Bag_Schoolbag | 源15/70% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+书包 | Base.Bag_Schoolbag_Kids | 源15/70% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+书包 | Base.Bag_Schoolbag_Medical | 源12/70% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+书包 | Base.Bag_Schoolbag_Patches | 源15/70% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+书包 | Base.Bag_Schoolbag_Travel | 源15/70% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+窗帘布挎包 | Base.Bag_SheetSlingBag | 源10/50% | 自重0.8 | V实际基础容量：49 | 原槽位、标签和挂点保持
+警长行李袋 | Base.Bag_Sheriff | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_ShotgunBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+布制枪套 | Base.Bag_ShotgunCaseCloth | 源7/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+布制枪套 | Base.Bag_ShotgunCaseCloth2 | 源7/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_ShotgunDblBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_ShotgunDblSawnoffBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_ShotgunSawnoffBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+大型背包 | Base.Bag_SurvivorBag | 源28/85% | 自重2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+大型油布框架背包 | Base.Bag_TarpFramepack_Large | 源20/70% | 自重2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+小型油布框架背包 | Base.Bag_TarpFramepack_Small | 源15/65% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+油布挎包 | Base.Bag_TarpSlingBag | 源12/55% | 自重0.8 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_TennisBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_ToolBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_WeaponBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+行李袋 | Base.Bag_WorkerBag | 源18/65% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+肩挂枪套 | Base.HolsterShoulder | 源1/85% | 自重0.4 | V实际基础容量：49 | AcceptItemFunction.HolsterShoulder；最多2个手枪弹匣
+
+幻想工坊（FantasyWorkshop）（32个ID）
+050通用战术胸挂 | Base.Bag_ChestRig_050 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+056突击战术背心 | Base.Bag_ChestRig_056 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+057飓风战术胸挂 | Base.Bag_ChestRig_057 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+060突击战术背心 | Base.Bag_ChestRig_060 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+061尼龙斜挎包 | Base.Bag_ChestRig_061 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+066便携式胸挂 | Base.Bag_ChestRig_066 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+068简易携行胸挂 | Base.Bag_ChestRig_068 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+069快速侦察胸挂 | Base.Bag_ChestRig_069 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+072简易挂载包 | Base.Bag_ChestRig_072 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+083黑鹰野战胸挂 | Base.Bag_ChestRig_083 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+085轻量战术胸挂 | Base.Bag_ChestRig_085 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+086便携式胸挂 | Base.Bag_ChestRig_086 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+D01轻量胸挂 | Base.Bag_ChestRig_D01 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+DAR突击胸挂 | Base.Bag_ChestRig_DAR | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+DRA先进侦察胸挂 | Base.Bag_ChestRig_DRA | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+DSA战术胸挂 | Base.Bag_ChestRig_DSA | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+G01战术胸挂 | Base.Bag_ChestRig_G01 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+GIR野战胸挂 | Base.Bag_ChestRig_GIR | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+HD3战术胸挂 | Base.Bag_ChestRig_HD3 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+HK3便携式胸挂 | Base.Bag_ChestRig_HK3 | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+天使光环 | Base.Bag_cat54 | 源30/100% | 自重0.1 | V实际基础容量：49 | 精确穿戴/换位保护
+威玛西娜腰包 | Base.Bag_cat55 | 源30/100% | 自重0.1 | V实际基础容量：49 | 精确穿戴/换位保护
+鬼方佳尾巴 | Base.Bag_cat61 | 源32/92% | 自重0.1 | V实际基础容量：49 | 精确穿戴/换位保护
+萤石尾巴 | Base.Bag_cat63 | 源32/92% | 自重0.1 | V实际基础容量：49 | 精确穿戴/换位保护
+麦鼠鼠背心 | Base.Mai_Vest_01 | 源12/90% | 自重0.2 | V实际基础容量：49 | 原槽位、标签和挂点保持
+义乳 | Base.RuBag | 源10/90% | 自重0.1 | V实际基础容量：49 | AcceptItemFunction.AmmoStrap_Shells；液体5L；操作前排空；不改液体
+义乳 | Base.RuBag1 | 源10/95% | 自重0.1 | V实际基础容量：49 | 液体5L；操作前排空；不改液体
+义乳 | Base.RuBag2 | 源10/95% | 自重0.1 | V实际基础容量：49 | 液体5L；操作前排空；不改液体
+02战术胸挂 | Base.SST02_ChestRig | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+战术腰带 | Base.SST_Belt | 源5/99% | 自重0.01 | V实际基础容量：49 | 原槽位、标签和挂点保持
+战术腰带 | Base.SST_Belt_1 | 源5/99% | 自重0.01 | V实际基础容量：49 | 原槽位、标签和挂点保持
+SQ包 | Base.bag_cat40 | 源40/95% | 自重0.1 | V实际基础容量：49 | 精确穿戴/换位保护
+
+二维衣橱（17个ID）
+近轨航行背包 | Base.2dw_astrobackpack | 源35/85% | 自重2 | V实际基础容量：48 | 液体2L；操作前排空；不改液体
+“经典”水手服双肩包(全码) | Base.2dw_classicsailorbag | 源35/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“冬香”制服挎包 | Base.2dw_huyukanobag | 源40/80% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“垂耳兔”地雷系双肩包 | Base.2dw_lopearbackpack | 源35/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“夜鹰”作战绑带(大码) | Base.2dw_nighthawkbeltl | 源10/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“夜鹰”作战绑带(中码) | Base.2dw_nighthawkbeltm | 源10/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“夜鹰”作战绑带(小码) | Base.2dw_nighthawkbelts | 源10/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“REAP”战术臂包 | Base.2dw_reapenforcearmourbow | 源10/85% | 自重0.2 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“REAP”战术胸挂袋 | Base.2dw_reapenforcebag | 源10/85% | 自重0.2 | V实际基础容量：49 | 原槽位、标签和挂点保持
+搜救者背包 | Base.2dw_searchbag | 源45/95% | 自重1.15 | V实际基础容量：48 | 原槽位、标签和挂点保持
+“海风”海滩挎包(全码) | Base.2dw_seasidebag | 源40/80% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“颅骨”街头腿包(大码) | Base.2dw_skulllegbagl | 源10/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“颅骨”街头腿包(均码) | Base.2dw_skulllegbagsm | 源10/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“女巫”拾荒背包(大码) | Base.2dw_stregabackpackl | 源45/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“女巫”拾荒背包(中码) | Base.2dw_stregabackpackm | 源45/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“女巫”拾荒背包(小码) | Base.2dw_stregabackpacks | 源45/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+“冬季”制服双肩包(全码) | Base.2dw_winterbag | 源35/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+
+背包系统（25个ID）
+MFS运动背包 | Base.BagS_cat_1 | 源25/88% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS丛林猎手背包 | Base.BagS_cat_10 | 源35/92% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS大型攀登背包 | Base.BagS_cat_11 | 源35/92% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS GA野战背包 | Base.BagS_cat_12 | 源35/92% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS DASH战术背包 | Base.BagS_cat_13 | 源35/92% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS野战背包 | Base.BagS_cat_14 | 源40/94% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS生存战术背包 | Base.BagS_cat_15 | 源40/94% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS MAP侦察背包 | Base.BagS_cat_16 | 源40/94% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS GT1户外徒步背包 | Base.BagS_cat_17 | 源40/94% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS战术背包 | Base.BagS_cat_18 | 源40/94% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS HLS2背包 | Base.BagS_cat_19 | 源45/96% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS轻型背包 | Base.BagS_cat_2 | 源25/88% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS GT5野战背包 | Base.BagS_cat_20 | 源45/96% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS战术徒步背包 | Base.BagS_cat_21 | 源45/96% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS ALS背包系统 | Base.BagS_cat_22 | 源45/96% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS重型徒步背包 | Base.BagS_cat_23 | 源50/98% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS GT0重型战术背包 | Base.BagS_cat_24 | 源50/98% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS D7战术背包 | Base.BagS_cat_25 | 源50/98% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS旅行背包 | Base.BagS_cat_3 | 源25/88% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS帆布背包 | Base.BagS_cat_4 | 源25/88% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS DG运动背包 | Base.BagS_cat_5 | 源25/88% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS战术快拆背包 | Base.BagS_cat_6 | 源30/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS突击战术背包 | Base.BagS_cat_7 | 源30/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS轻型户外背包 | Base.BagS_cat_8 | 源30/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS露营背包 | Base.BagS_cat_9 | 源30/90% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+
+苏别璃原始装备（4个ID）
+原始大框架背包 | Base.PE_CraftedFramepack_Large | 源39/95% | 自重2.8 | V实际基础容量：47 | 液体3L；操作前排空；不改液体
+原始皮腰包(后) | Base.PE_FannyPackBack | 源10/100% | 自重0.02 | V实际基础容量：49 | 精确穿戴/换位保护
+原始皮腰包(前) | Base.PE_FannyPackFront | 源10/100% | 自重0.02 | V实际基础容量：49 | 精确穿戴/换位保护
+原始皮挎包 | Base.PE_HideSatchel | 源20/95% | 自重0.2 | V实际基础容量：49 | 液体1L；操作前排空；不改液体
+
+They Knew Continued（2个ID）
+神秘背包 | TheyKnew.MysteriousBackPack | 源30/85% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+战术挎包 | TheyKnew.MysteriousSatchel | 源8/80% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+
+浣熊市（2个ID）
+生化背包 | Base.ResidentEvilBackPack | 源60/98% | 自重1 | V实际基础容量：原沙盒容量与强化下限叠加 | 液体3L；操作前排空；不改液体；原沙盒业务容量；保留原标签/挂点
+生化背带 | Base.ResidentEvilSuspenders | 源10/98% | 自重1 | V实际基础容量：原沙盒容量与强化下限叠加 | 最大物品尺寸3；原沙盒业务容量；保留原标签/挂点
+
+SafeWayHamlet（1个ID）
+CamoHydrationPackpack | Base.CamoHydrationPackpack | 源60/98% | 自重1 | V实际基础容量：49 | 液体5L；操作前排空；不改液体
+
+现代枪械系统（MFS）（1个ID）
+自动装弹机构(加速装填) | Base.cat_AutoReload | 源2/91% | 自重0.1 | V实际基础容量：49 | 原5发装填周期不变

@@ -1,0 +1,8 @@
+{
+  "SuQingUpgrade1": "SuQing Upgrade I (12 capacity / 90 percent reduction)",
+  "SuQingUpgrade2": "SuQing Upgrade II (20 capacity / 93 percent reduction)",
+  "SuQingUpgrade3": "SuQing Upgrade III (30 capacity / 95 percent reduction)",
+  "SuQingUpgrade4": "SuQing Upgrade IV (40 capacity / 97 percent reduction)",
+  "SuQingUpgrade5": "SuQing Upgrade V (up to 49 capacity / 99 percent reduction)",
+  "SuQingRestore": "SuQing: restore pre-upgrade stats"
+}

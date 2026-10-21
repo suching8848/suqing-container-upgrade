@@ -1,0 +1,11 @@
+name=蘇清的容器升级 v1.0.0 [B42.21 SP]
+namezh=蘇清的容器升级 v1.0.0 [B42.21 单人]
+id=SuQingContainerUpgrade_4221
+author=Local gameplay addition
+modversion=1.0.0
+icon=icon.png
+poster=poster.png
+versionMin=42.21
+versionMax=42.21
+loadModAfter=FantasyWorkshopVS42_4.0,4123567854998,TheyKnewContinued,BackpackSystemB42,SuPrimitiveEquipment,RaccoonCityB42,Neat_Crafting,CleanUI,Codex_InventoryTransferPerformance_4221
+description=B42.21单人容器强化，仅支持明确适配ID。原物品强化，保留自重、外观、槽位、挂点、换弹标签及收纳限制；只用原生配方，无自建菜单。水袋等储液容器强化或还原前，须清空物品并排空全部液体；储水升数不变。换位和指定尺寸转换保留强化；换位前先卸下目标槽的另一件包，占用时正常拒绝。旧档位仍可能亮，同件只允许下一档。浣熊市原有提示行显示实际可用容量，原生白字为物理参考值；原生基础容量和减重已达普通上限时无需再强化。成功还原返还自0.2.2起记录的实际支付材料50%，线按用量返；更早付款不追溯，未付费不返料。本版不含EX。客户端测试均在单人存档进行，代表项已验证，联机未验证。
