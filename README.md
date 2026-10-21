@@ -1,3 +1,7 @@
+> **本模组会极大影响游戏真实性与平衡性，请谨慎添加。适合喜欢大量收集、囤积物资的囤囤鼠玩家。**
+>
+> 容量提升和高减重会大幅削弱负重管理、搬运取舍与物资运输的压力，请按自己的玩法选择。
+
 <p align="center">
   <img src="docs/images/cover.png" alt="蘇清的容器升级封面" width="760">
 </p>
@@ -10,7 +14,7 @@
 
 用碎布条、皮革条和针线，逐步强化已有的可穿戴容器。保留原物品与原有功能，使用游戏原生制作分类和快捷制作入口。
 
-目前通过 GitHub 提供源码与可手动安装的模组文件，**尚未发布 Steam 创意工坊版本**。本版不包含 EX 档。
+已发布 [Steam 创意工坊版本](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)，GitHub 同时提供源码与可手动安装的模组文件。本版不包含 EX 档。
 
 ## 功能与适配范围
 
@@ -44,11 +48,24 @@
 
 ## 安装与使用
 
-1. 完全退出游戏，备份准备使用的存档和旧版模组。
-2. 点击仓库的 **Code → Download ZIP**，解压后将其中的 **`SuQingContainerUpgrade` 文件夹**放入 `%UserProfile%\Zomboid\mods\`。
-3. 确认目录形如 `%UserProfile%\Zomboid\mods\SuQingContainerUpgrade\42\mod.info`，并保留同级的 `common` 等目录；不要把整个仓库根目录当成模组文件夹。
-4. 在游戏模组列表及目标单人存档中启用“蘇清的容器升级”。Mod ID：**`SuQingContainerUpgrade_4221`**。使用新版时停用重复的旧版或测试版，再重启游戏。
-5. 将目标容器卸下，放入人物主物品栏并清空内部物品。准备材料，在制作菜单的“蘇清”分类中选择当前下一档。
+Steam 订阅与 Git 手动下载 **二选一**。两种来源使用同一 Mod ID：**`SuQingContainerUpgrade_4221`**，相同 ID 只保留一份安装来源；切换前完全退出游戏，备份存档与旧版文件并移开重复本地副本，停用旧测试版。
+
+### Steam 订阅（推荐）
+
+1. 打开 [蘇清的容器升级创意工坊页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)，点击 **订阅**。
+2. 等待 Steam 完成创意工坊下载，再启动 Build 42.21 游戏。
+3. 在游戏模组列表和目标单人存档的模组管理中启用“蘇清的容器升级”。
+4. 完全退出并重新启动游戏，使新版 Lua 和资源生效，再进入目标存档。
+
+### Git 手动下载
+
+1. 点击仓库的 **Code → Download ZIP**，解压后将其中的 **`SuQingContainerUpgrade` 文件夹**放入 `%UserProfile%\Zomboid\mods\`。
+2. 确认目录形如 `%UserProfile%\Zomboid\mods\SuQingContainerUpgrade\42\mod.info`，并保留同级的 `common` 等目录；不要把整个仓库根目录当成模组文件夹。
+3. 在游戏模组列表及目标单人存档中启用“蘇清的容器升级”，然后完全退出并重新启动游戏。手动安装需要自行下载后续更新。
+
+### 开始使用
+
+将目标容器卸下，放入人物主物品栏并清空内部物品。准备材料，在制作菜单的“蘇清”分类中选择当前下一档。使用原版容器无需安装适配表中的全部第三方模组。
 
 **水袋背包、水袋胸挂等储液容器，强化和还原前都必须排空全部液体。** 只移走普通物品不够，剩余少量水或其他液体也会阻止制作。只加强普通物品收纳，不增加储水升数，也不改液体组件。
 
@@ -100,4 +117,4 @@ python tools/build_compatibility.py --check
 
 更新记录见 [CHANGELOG](CHANGELOG.md)。
 
-准备上传 Steam 创意工坊时，使用 [工坊上传指南](docs/WORKSHOP.md) 和 `tools/prepare_workshop.py` 生成游戏能识别的上传目录。
+工坊发布与后续更新流程见 [工坊上传指南](docs/WORKSHOP.md)；`tools/prepare_workshop.py` 用于准备游戏能识别的上传目录。
