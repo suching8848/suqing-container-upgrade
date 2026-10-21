@@ -99,3 +99,5 @@ python tools/build_compatibility.py --check
 仓库目前未附加开源许可证。图标与封面为 AI 辅助制作，原游戏及兼容模组归各自作者。详见 [素材说明](docs/ASSETS.md)。
 
 更新记录见 [CHANGELOG](CHANGELOG.md)。
+
+准备上传 Steam 创意工坊时，使用 [工坊上传指南](docs/WORKSHOP.md) 和 `tools/prepare_workshop.py` 生成游戏能识别的上传目录。
