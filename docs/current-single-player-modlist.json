@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-01T23:20:29.102765+08:00",
+  "updated_at": "2026-11-02T01:10:45.276753+08:00",
   "game_version": "42.21.0",
   "mode": "single-player",
   "collection_id": "3823981387",
   "collection_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387",
-  "author_report": "The author reports normal play with this full configuration in their own B42.21 single-player save. It includes the Workshop items and 32 separately installed local patches.",
-  "enabled_mod_id_count": 204,
+  "author_report": "The author previously reported normal play with their full B42.21 single-player setup. This current enabled-list snapshot contains 205 Mod IDs, including 33 separately installed local mods or patches not included in Workshop collection downloads. Per-project verification status is documented separately.",
+  "enabled_mod_id_count": 205,
   "workshop_item_count": 161,
-  "local_only_mod_id_count": 32,
+  "local_only_mod_id_count": 33,
   "ordered_mod_ids": [
     "PROJECTRVInterior42",
     "ZombieBuddy",
@@ -212,7 +212,8 @@
     "vac_mod_b42_utils",
     "Karas Zone Selector API",
     "vac_batch_farming",
-    "SuQingSprinklerFertilizer"
+    "SuQingSprinklerFertilizer",
+    "SuQingBatchFarmingMenu_4221"
   ],
   "ordered_workshop_ids": [
     "3543229299",
@@ -2353,6 +2354,14 @@
       "workshop_ids": [],
       "installation_source": "local",
       "local_copy_with_public_equivalent": false
+    },
+    {
+      "mod_id": "SuQingBatchFarmingMenu_4221",
+      "name": "蘇清的批量农耕菜单筛选",
+      "workshop_ids": [],
+      "installation_source": "local",
+      "local_copy_with_public_equivalent": false,
+      "order": 205
     }
   ]
 }

@@ -1,16 +1,14 @@
 # 当前单人档模组列表 | Current Single-player Mod List
 
-中文 | English · 更新 / Updated: 2026-11-01T23:20:29.102765+08:00
+更新 / Updated: 2026-11-02T01:10:45.276753+08:00
 
-[作者当前工坊合集 / Author’s current Workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387)
+[作者工坊合集 / Author’s Workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387)
 
-当前 Build 42.21 单人配置按存档实际启用顺序导出：**204 个 Mod ID，映射至 161 个工坊项目，另有 32 个未发布本地补丁**。一个工坊项目可包含多个 Mod ID。
-作者确认这份完整配置在自己的单人档中游玩正常。合集提供公开工坊项目，本地补丁不随合集下载；单独订阅合集不能完整复现作者的配置。请仅启用表中需要的 Mod ID，合集排序不能替代游戏的实际加载顺序。
-多人和专用服务器未验证。工坊项目与本地模组可能继续更新，此表是上方时间点的启用清单，不锁定后续上游版本。
+本次按存档实际启用顺序读取：**205 个 Mod ID，161 个工坊项目，33 个不随工坊合集下载的本地模组或补丁**。这些本地项目的源码索引见 [项目与补丁仓库](project-index.md)。一个工坊项目可能包含多个 Mod ID。
+作者此前确认自己的完整 B42.21 单人配置游玩正常。此表记录启用状态，不代表每个项目或新增版本均已逐项游戏内验收；各项目验证状态以对应 README 为准。多人和专用服务器未验证。
 
-Exported in the save’s actual enabled order for Build 42.21 single-player: **204 Mod IDs, mapped to 161 Workshop items, plus 32 unpublished local patches**. One Workshop item can contain several Mod IDs.
-The author reports normal play with this full configuration in their own single-player save. The collection provides public Workshop items; local patches are not included in its downloads. Subscribing to the collection alone does not reproduce the full setup. Enable the listed Mod IDs as appropriate; collection ordering does not replace the game’s actual load order.
-Multiplayer and dedicated servers are untested. Workshop and local mods may change later; this is the enabled-list snapshot at the time above, not a lockfile for future upstream versions.
+Read from the save in its actual enabled order: **205 Mod IDs, 161 Workshop items and 33 separately installed local mods or patches not included in collection downloads**. See the [project and patch repositories](project-index.md) for source. One Workshop item may contain several Mod IDs.
+The author previously reported normal play with their full B42.21 single-player setup. This snapshot records enabled state, not individual gameplay acceptance of every item or new version; consult each project README. Multiplayer and dedicated servers are untested.
 
 [机器可读清单 / Machine-readable list](current-single-player-modlist.json)
 
@@ -110,7 +108,7 @@ Multiplayer and dedicated servers are untested. Workshop and local mods may chan
 | 92 | `Constown42` | Constown B42 | [3480990544](https://steamcommunity.com/sharedfiles/filedetails/?id=3480990544) |
 | 93 | `42Grapeseed` | Grapeseed [Redesigned for Build 42] | [2463499011](https://steamcommunity.com/sharedfiles/filedetails/?id=2463499011) |
 | 94 | `noirrsling4-42.13patch` | [B42] Noir's Rifle Slings Multiple - 42.13+ patch | [3625510824](https://steamcommunity.com/sharedfiles/filedetails/?id=3625510824) |
-| 95 | `Codex_NoirSling_SP_Compat_4221` | [B42.21 SP] Noir Sling Local Compatibility Fix | 本地补丁，未公开 / Local patch, unpublished |
+| 95 | `Codex_NoirSling_SP_Compat_4221` | [B42.21 SP] Noir Sling Local Compatibility Fix | 本地独立项目 / Local project |
 | 96 | `ProximityInventory` | Proximity Inventory B42 | [2847184718](https://steamcommunity.com/sharedfiles/filedetails/?id=2847184718) |
 | 97 | `ModernFirearmsSystem` | AAA_ModernFirearmsSystem(42.19)(SP/MP) | [3633421539](https://steamcommunity.com/sharedfiles/filedetails/?id=3633421539) |
 | 98 | `TheyKnewContinued` | They Knew [B42] Continued | [3813362974](https://steamcommunity.com/sharedfiles/filedetails/?id=3813362974) |
@@ -127,7 +125,7 @@ Multiplayer and dedicated servers are untested. Workshop and local mods may chan
 | 109 | `SuPrimitiveEquipment` | 原始装备(SuPrimitiveEquipment) | [3619229745](https://steamcommunity.com/sharedfiles/filedetails/?id=3619229745) |
 | 110 | `TradingTrailer` | Trading Trailer | [3572122233](https://steamcommunity.com/sharedfiles/filedetails/?id=3572122233) |
 | 111 | `KI5campers` | Campers! | [3670064951](https://steamcommunity.com/sharedfiles/filedetails/?id=3670064951) |
-| 112 | `Codex_Campers_Glovebox_4221` | [B42.21] Campers Glovebox Container Compatibility | 本地补丁，未公开 / Local patch, unpublished |
+| 112 | `Codex_Campers_Glovebox_4221` | [B42.21] Campers Glovebox Container Compatibility | 本地独立项目 / Local project |
 | 113 | `RVs_HeavyDuty_Trailers` | RVs, Heavy Duty & Trailers (B42.20-B42.21) | [3773998539](https://steamcommunity.com/sharedfiles/filedetails/?id=3773998539) |
 | 114 | `birdbrainsPlushModLib` | birdbrain's B42 Plush Mod Lib | [3689946923](https://steamcommunity.com/sharedfiles/filedetails/?id=3689946923) |
 | 115 | `MikuPlush` | Miku Plush | [3768357815](https://steamcommunity.com/sharedfiles/filedetails/?id=3768357815) |
@@ -138,29 +136,29 @@ Multiplayer and dedicated servers are untested. Workshop and local mods may chan
 | 120 | `B42Trans_CN` | [B42]统一中文汉化 (排序置底) | [3556544454](https://steamcommunity.com/sharedfiles/filedetails/?id=3556544454) |
 | 121 | `B42ModTrans_CN` | [B42]统一模组汉化 | [3556540080](https://steamcommunity.com/sharedfiles/filedetails/?id=3556540080) |
 | 122 | `GardeniaTranslate_CN` | 栀子的模组简体中文汉化补充_CN | [3488835702](https://steamcommunity.com/sharedfiles/filedetails/?id=3488835702) |
-| 123 | `Codex_DebugMenu_Generator_4221` | [B42.21 SP] Erika Furniture Fix + Optional DebugMenu Guard | 本地补丁，未公开 / Local patch, unpublished |
-| 124 | `Codex_AmmoBox_CN_TextFix_4221` | [B42.21 CN] Washing Soap Text Fix | 本地补丁，未公开 / Local patch, unpublished |
+| 123 | `Codex_DebugMenu_Generator_4221` | [B42.21 SP] Erika Furniture Fix + Optional DebugMenu Guard | 本地独立项目 / Local project |
+| 124 | `Codex_AmmoBox_CN_TextFix_4221` | [B42.21 CN] Washing Soap Text Fix | 本地独立项目 / Local project |
 | 125 | `yxjs_PinYinSearch` | 拼音搜索 | [3657184750](https://steamcommunity.com/sharedfiles/filedetails/?id=3657184750) |
-| 126 | `PinyinSearch_SafeSources_4221_LocalFix` | Pinyin Search Safe Sources B42.21 (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 127 | `Codex_ChineseCrop_Tooltip_4221` | Chinese Crop Season Tooltip B42.21 (Local) | 本地补丁，未公开 / Local patch, unpublished |
+| 126 | `PinyinSearch_SafeSources_4221_LocalFix` | Pinyin Search Safe Sources B42.21 (Local) | 本地独立项目 / Local project |
+| 127 | `Codex_ChineseCrop_Tooltip_4221` | Chinese Crop Season Tooltip B42.21 (Local) | 本地独立项目 / Local project |
 | 128 | `NeatUI_Equipment` | NeatUI Equipment | [3790656296](https://steamcommunity.com/sharedfiles/filedetails/?id=3790656296) |
 | 129 | `MoreAlertsB42` | More Alerts B42 | [3649265704](https://steamcommunity.com/sharedfiles/filedetails/?id=3649265704) |
-| 130 | `Codex_MFS_AttachedLight_Hotkey_4221` | [B42.21] MFS Attached Flashlight Hotkey Fix (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 131 | `Codex_MFS_AmmoVisual_Compat_4221` | [B42.21] MFS Ammo Box and Magazine Visual Compatibility (Local) | 本地补丁，未公开 / Local patch, unpublished |
+| 130 | `Codex_MFS_AttachedLight_Hotkey_4221` | [B42.21] MFS Attached Flashlight Hotkey Fix (Local) | 本地独立项目 / Local project |
+| 131 | `Codex_MFS_AmmoVisual_Compat_4221` | [B42.21] MFS Ammo Box and Magazine Visual Compatibility (Local) | 本地独立项目 / Local project |
 | 132 | `STA_BetterHutches` | StarkTruffle Additions - Better Hutches | [3721829036](https://steamcommunity.com/sharedfiles/filedetails/?id=3721829036) |
 | 133 | `ZombieDismembermentB42` | Zombie Dismemberment [B42.21] | [3811483602](https://steamcommunity.com/sharedfiles/filedetails/?id=3811483602) |
 | 134 | `ZombieVisibilityFix` | Zombie Visibility Fix | [3814073243](https://steamcommunity.com/sharedfiles/filedetails/?id=3814073243) |
 | 135 | `TrueWeight` | True Weight | [3768669395](https://steamcommunity.com/sharedfiles/filedetails/?id=3768669395) |
-| 136 | `Codex_AttachedGrouping_4221` | [B42.21] Attached Item Grouping and Wear Menu Fix (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 137 | `Codex_TrueMusic_Headphones_4221` | [B42.21 SP] True Music Headphones Compatibility (Local) | 本地补丁，未公开 / Local patch, unpublished |
+| 136 | `Codex_AttachedGrouping_4221` | [B42.21] Attached Item Grouping and Wear Menu Fix (Local) | 本地独立项目 / Local project |
+| 137 | `Codex_TrueMusic_Headphones_4221` | [B42.21 SP] True Music Headphones Compatibility (Local) | 本地独立项目 / Local project |
 | 138 | `AutomaticStoveShutoff` | Automatic Stove Shutoff | [3526968739](https://steamcommunity.com/sharedfiles/filedetails/?id=3526968739) |
-| 139 | `Codex_PrimitiveTooltip_4221` | [B42.21 SP] Primitive Equipment Fluid Tooltip Fix (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 140 | `Codex_DAMN_VanillaTires_4221` | [B42.21 SP] DAMN Vanilla Tire Repair (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 141 | `Codex_PetGunWeightKits_4221` | 蘇清的现代枪械减重挂件 | [3824003141](https://steamcommunity.com/sharedfiles/filedetails/?id=3824003141) · 本地副本 / Local copy |
-| 142 | `Codex_InventoryTransferPerformance_4221` | [B42.21] Inventory Transfer Performance (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 143 | `SuQingContainerUpgrade_4221` | 蘇清的容器升级 v1.0.0 [B42.21 SP] | [3823988025](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025) · 本地副本 / Local copy |
-| 144 | `ExSuQingBackpackSuperUpgrade_4221` | 蘇清的背包超级升级 | 本地补丁，未公开 / Local patch, unpublished |
-| 145 | `SuQingMFSFixedBuyback_4221` | 蘇清的枪械商店固定收购 | 本地补丁，未公开 / Local patch, unpublished |
+| 139 | `Codex_PrimitiveTooltip_4221` | [B42.21 SP] Primitive Equipment Fluid Tooltip Fix (Local) | 本地独立项目 / Local project |
+| 140 | `Codex_DAMN_VanillaTires_4221` | [B42.21 SP] DAMN Vanilla Tire Repair (Local) | 本地独立项目 / Local project |
+| 141 | `Codex_PetGunWeightKits_4221` | 蘇清的现代枪械减重挂件 | [3824003141](https://steamcommunity.com/sharedfiles/filedetails/?id=3824003141) |
+| 142 | `Codex_InventoryTransferPerformance_4221` | [B42.21] Inventory Transfer Performance (Local) | 本地独立项目 / Local project |
+| 143 | `SuQingContainerUpgrade_4221` | 蘇清的容器升级 v1.0.0 [B42.21 SP] | [3823988025](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025) |
+| 144 | `ExSuQingBackpackSuperUpgrade_4221` | 蘇清的背包超级升级 | 本地独立项目 / Local project |
+| 145 | `SuQingMFSFixedBuyback_4221` | 蘇清的枪械商店固定收购 | 本地独立项目 / Local project |
 | 146 | `ProjectFullHD` | True 3D Items | [3803108123](https://steamcommunity.com/sharedfiles/filedetails/?id=3803108123) |
 | 147 | `CVI` | Carry Visible Items | [3749026793](https://steamcommunity.com/sharedfiles/filedetails/?id=3749026793) |
 | 148 | `ConditionOnDash` | Condition On Dash | [3306168142](https://steamcommunity.com/sharedfiles/filedetails/?id=3306168142) |
@@ -180,50 +178,49 @@ Multiplayer and dedicated servers are untested. Workshop and local mods may chan
 | 162 | `UnofficialMappersCommunityTilePack` | CommunityTilePack | [3628736763](https://steamcommunity.com/sharedfiles/filedetails/?id=3628736763) |
 | 163 | `ThermoNewburbs` | ExtraNoise's Newburbs Tiles Official Continuation | [3520263838](https://steamcommunity.com/sharedfiles/filedetails/?id=3520263838) |
 | 164 | `Nekomata Ridge` | Nekomata Ridge | [3782173659](https://steamcommunity.com/sharedfiles/filedetails/?id=3782173659) |
-| 165 | `CodexNekomataEXCompat_4221` | 猫又岭与蘇清背包超级升级兼容 | 本地补丁，未公开 / Local patch, unpublished |
-| 166 | `CodexNekomataEXUpgrade_4221` | 猫猫背包蘇清超级升级扩展 | 本地补丁，未公开 / Local patch, unpublished |
-| 167 | `CodexCBRTIndependent_4221` | Chemical 独立兼容版 [42.21] | 本地补丁，未公开 / Local patch, unpublished |
-| 168 | `CodexXFACTION_CN_4221` | [B42.21 CN] XFACTION Dynamic Traits Chinese | 本地补丁，未公开 / Local patch, unpublished |
-| 169 | `CodexTranslatorPercentFix_4221` | True 3D Items - Tooltip Percent Fix (42.21) | 本地补丁，未公开 / Local patch, unpublished |
-| 170 | `CodexCharacterMenuTweaks_4221` | [B42.21] Character Menu Tweaks | 本地补丁，未公开 / Local patch, unpublished |
+| 165 | `CodexNekomataEXCompat_4221` | 猫又岭与蘇清背包超级升级兼容 | 本地独立项目 / Local project |
+| 166 | `CodexNekomataEXUpgrade_4221` | 猫猫背包蘇清超级升级扩展 | 本地独立项目 / Local project |
+| 167 | `CodexCBRTIndependent_4221` | Chemical 独立兼容版 [42.21] | 本地独立项目 / Local project |
+| 168 | `CodexXFACTION_CN_4221` | [B42.21 CN] XFACTION Dynamic Traits Chinese | 本地独立项目 / Local project |
+| 169 | `CodexTranslatorPercentFix_4221` | True 3D Items - Tooltip Percent Fix (42.21) | 本地独立项目 / Local project |
+| 170 | `CodexCharacterMenuTweaks_4221` | [B42.21] Character Menu Tweaks | 本地独立项目 / Local project |
 | 171 | `SurvivorBriefing` | Survivor Briefing | [3808944882](https://steamcommunity.com/sharedfiles/filedetails/?id=3808944882) |
 | 172 | `UsefulBarrelsMP` | Useful Barrels | [3436537035](https://steamcommunity.com/sharedfiles/filedetails/?id=3436537035) |
 | 173 | `LootTrackerB42` | Loot Tracker | [3823828778](https://steamcommunity.com/sharedfiles/filedetails/?id=3823828778) |
-| 174 | `CodexNarcotics_CN_4221` | N&C's Narcotics 中文补丁 [B42.21] | 本地补丁，未公开 / Local patch, unpublished |
-| 175 | `SuQingRefrigerationUpgrade_4221` | 蘇清的冷藏升级 | 本地补丁，未公开 / Local patch, unpublished |
+| 174 | `CodexNarcotics_CN_4221` | N&C's Narcotics 中文补丁 [B42.21] | 本地独立项目 / Local project |
+| 175 | `SuQingRefrigerationUpgrade_4221` | 蘇清的冷藏升级 | 本地独立项目 / Local project |
 | 176 | `ItIsOfInterestToMe` | It is of interest to me! | [3796373365](https://steamcommunity.com/sharedfiles/filedetails/?id=3796373365) |
-| 177 | `CodexPZOptimization_CN_4221` | PZ Optimization 设置汉化 [B42.21] | 本地补丁，未公开 / Local patch, unpublished |
+| 177 | `CodexPZOptimization_CN_4221` | PZ Optimization 设置汉化 [B42.21] | 本地独立项目 / Local project |
 | 178 | `ImmersiveSnowViewpoint` | Immersive Snow - Viewpoint | [3816586790](https://steamcommunity.com/sharedfiles/filedetails/?id=3816586790) |
 | 179 | `RVViewpointPatch` | RV Viewpoint Patch | [3817030886](https://steamcommunity.com/sharedfiles/filedetails/?id=3817030886) |
 | 180 | `ProjectViewpointQOL` | Project Viewpoint QOL | [3811256204](https://steamcommunity.com/sharedfiles/filedetails/?id=3811256204) |
 | 181 | `SuThrow3D` | 3D投掷物理引擎(苏别黎SuSir) | [3826757123](https://steamcommunity.com/sharedfiles/filedetails/?id=3826757123) |
 | 182 | `WallTextureFixForViewpoint` | Wall Texture Fix for Viewpoint | [3820609079](https://steamcommunity.com/sharedfiles/filedetails/?id=3820609079) |
 | 183 | `ViewpointDLSS` | Viewpoint DLSS Frame Generation | [3818838508](https://steamcommunity.com/sharedfiles/filedetails/?id=3818838508) |
-| 184 | `Codex_MFSOpticsFix_4221` | [B42.21] MFS optics tag compatibility fix (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 185 | `ViewpointTileFix` | Viewpoint Tile Fix | [3814178814](https://steamcommunity.com/sharedfiles/filedetails/?id=3814178814) · 本地副本 / Local copy |
-| 186 | `ViewpointFences3D` | Viewpoint - 3D Fences | [3814486926](https://steamcommunity.com/sharedfiles/filedetails/?id=3814486926) · 本地副本 / Local copy |
-| 187 | `ViewpointBarricade` | Viewpoint - Barricade Fix | [3815033191](https://steamcommunity.com/sharedfiles/filedetails/?id=3815033191) · 本地副本 / Local copy |
-| 188 | `ViewpointDoor` | Viewpoint - Door Fix | [3812151347](https://steamcommunity.com/sharedfiles/filedetails/?id=3812151347) · 本地副本 / Local copy |
-| 189 | `ViewpointLight` | Viewpoint - Light Fix | [3811344119](https://steamcommunity.com/sharedfiles/filedetails/?id=3811344119) · 本地副本 / Local copy |
-| 190 | `DynamicGearRattling` | Dynamic Gear Rattling | [3808152720](https://steamcommunity.com/sharedfiles/filedetails/?id=3808152720) · 本地副本 / Local copy |
-| 191 | `HavenFall` | HavenFall | [3728357493](https://steamcommunity.com/sharedfiles/filedetails/?id=3728357493) · 本地副本 / Local copy |
-| 192 | `PZVoxelStudioViewpoint` | 6277 3D models for Viewpoint [sour_kisel] | [3810302175](https://steamcommunity.com/sharedfiles/filedetails/?id=3810302175) · 本地副本 / Local copy |
-| 193 | `ViewpointVisibleLoot` | Viewpoint - Visible Loot | [3818189653](https://steamcommunity.com/sharedfiles/filedetails/?id=3818189653) · 本地副本 / Local copy |
+| 184 | `Codex_MFSOpticsFix_4221` | [B42.21] MFS optics tag compatibility fix (Local) | 本地独立项目 / Local project |
+| 185 | `ViewpointTileFix` | Viewpoint Tile Fix | [3814178814](https://steamcommunity.com/sharedfiles/filedetails/?id=3814178814) |
+| 186 | `ViewpointFences3D` | Viewpoint - 3D Fences | [3814486926](https://steamcommunity.com/sharedfiles/filedetails/?id=3814486926) |
+| 187 | `ViewpointBarricade` | Viewpoint - Barricade Fix | [3815033191](https://steamcommunity.com/sharedfiles/filedetails/?id=3815033191) |
+| 188 | `ViewpointDoor` | Viewpoint - Door Fix | [3812151347](https://steamcommunity.com/sharedfiles/filedetails/?id=3812151347) |
+| 189 | `ViewpointLight` | Viewpoint - Light Fix | [3811344119](https://steamcommunity.com/sharedfiles/filedetails/?id=3811344119) |
+| 190 | `DynamicGearRattling` | Dynamic Gear Rattling | [3808152720](https://steamcommunity.com/sharedfiles/filedetails/?id=3808152720) |
+| 191 | `HavenFall` | HavenFall | [3728357493](https://steamcommunity.com/sharedfiles/filedetails/?id=3728357493) |
+| 192 | `PZVoxelStudioViewpoint` | 6277 3D models for Viewpoint [sour_kisel] | [3810302175](https://steamcommunity.com/sharedfiles/filedetails/?id=3810302175) |
+| 193 | `ViewpointVisibleLoot` | Viewpoint - Visible Loot | [3818189653](https://steamcommunity.com/sharedfiles/filedetails/?id=3818189653) |
 | 194 | `TarkovCombatStims` | Tarkov Combat Stims | [3815980431](https://steamcommunity.com/sharedfiles/filedetails/?id=3815980431) |
-| 195 | `Codex_SuQingWearableCompat_4221` | 蘇清容器升级：针剂盒与新增衣物兼容 [B42.21] | 本地补丁，未公开 / Local patch, unpublished |
-| 196 | `Codex_StimCompatibility_4221` | 针剂轻量化与肾上腺素笔兼容 [B42.21] | 本地补丁，未公开 / Local patch, unpublished |
-| 197 | `Codex_NarcoticsStatus_4221` | N&C 药物状态面板 [B42.21] | 本地补丁，未公开 / Local patch, unpublished |
-| 198 | `Codex_FashionoidFluidTooltip_4221` | [B42.21] Fashionoid Fluid Tooltip Compatibility (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 199 | `Codex_XFDynamicRecordGuard_4221` | [B42.21 SP] XFACTION Progress Record Guard (Local) | 本地补丁，未公开 / Local patch, unpublished |
-| 200 | `Codex_MustangRecipeGuard_4221` | [B42.21 SP] Mustang Hood Recipe Compatibility (Local) | 本地补丁，未公开 / Local patch, unpublished |
+| 195 | `Codex_SuQingWearableCompat_4221` | 蘇清容器升级：针剂盒与新增衣物兼容 [B42.21] | 本地独立项目 / Local project |
+| 196 | `Codex_StimCompatibility_4221` | 针剂轻量化与肾上腺素笔兼容 [B42.21] | 本地独立项目 / Local project |
+| 197 | `Codex_NarcoticsStatus_4221` | N&C 药物状态面板 [B42.21] | 本地独立项目 / Local project |
+| 198 | `Codex_FashionoidFluidTooltip_4221` | [B42.21] Fashionoid Fluid Tooltip Compatibility (Local) | 本地独立项目 / Local project |
+| 199 | `Codex_XFDynamicRecordGuard_4221` | [B42.21 SP] XFACTION Progress Record Guard (Local) | 本地独立项目 / Local project |
+| 200 | `Codex_MustangRecipeGuard_4221` | [B42.21 SP] Mustang Hood Recipe Compatibility (Local) | 本地独立项目 / Local project |
 | 201 | `vac_mod_b42_utils` | Vac's Mod Utils | [3557515648](https://steamcommunity.com/sharedfiles/filedetails/?id=3557515648) |
 | 202 | `Karas Zone Selector API` | Karas Zone Selector API | [3653913180](https://steamcommunity.com/sharedfiles/filedetails/?id=3653913180) |
 | 203 | `vac_batch_farming` | Batch Farming | [3721577741](https://steamcommunity.com/sharedfiles/filedetails/?id=3721577741) |
-| 204 | `SuQingSprinklerFertilizer` | 蘇清的喷洒器施肥扩展 | 本地补丁，未公开 / Local patch, unpublished |
+| 204 | `SuQingSprinklerFertilizer` | 蘇清的喷洒器施肥扩展 | 本地独立项目 / Local project |
+| 205 | `SuQingBatchFarmingMenu_4221` | 蘇清的批量农耕菜单筛选 | 本地独立项目 / Local project |
 
-## 工坊项目顺序 | Workshop Item Order
-
-按每个工坊项目在上表首次出现的位置去重；共有 161 项。 / Deduplicated by each item’s first appearance above; 161 items.
+## 工坊项目 / Workshop items
 
 1. [3543229299](https://steamcommunity.com/sharedfiles/filedetails/?id=3543229299)
 2. [3619862853](https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853)

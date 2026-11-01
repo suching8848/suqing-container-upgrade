@@ -1,4 +1,4 @@
-# 蘇清的容器升级 | SuQing's Container Upgrades
+# 蘇清的容器升级模组 | SuQing's Container Upgrades Mod
 
 [简体中文](README.md) · [English](README.en.md)
 
@@ -14,13 +14,13 @@ Upgrade existing wearable containers with clean ripped sheets, leather strips an
 
 The [Steam Workshop release](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025) is available; GitHub provides the source and files for manual installation. This release does not include EX upgrades.
 
-## The author's current single-player save and collection
+## The author’s single-player setup and collection
 
-[Current Workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387) · [Complete mod list and enabled order](docs/current-single-player-modlist.md)
+[Workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387) · [Current 205-ID list and enabled order](docs/current-single-player-modlist.md) · [All mod and patch repositories](docs/project-index.md)
 
-**The author reports normal play with this current collection in their own B42.21 single-player save.** This report concerns the author's full configuration: 204 enabled Mod IDs, including 32 unpublished local patches. It is not a claim that every supported item, every mod combination or multiplayer has been tested.
+The current snapshot contains **205 Mod IDs, 161 Workshop items and 33 separately installed local mods or patches not included in collection downloads**. The author previously reported normal play with their full B42.21 single-player setup; this is not individual acceptance of every project or new version. Multiplayer and dedicated servers remain untested.
 
-The Steam collection lists publicly subscribable Workshop items. **It does not include unpublished local patches**, and it does not replace the complete enabled order. Consult the full list for local patches, source differences and the actual order. Subscribing to the collection alone does not reproduce the entire environment.
+Source repositories are now linked for the local projects. Subscribing to the Steam collection alone still does not reproduce the full setup. See [requirements and patch relationships](docs/PATCH_DEPENDENCIES.md) for mandatory dependencies and conditional integrations.
 
 ## Features and supported scope
 

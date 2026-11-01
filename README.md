@@ -6,7 +6,7 @@
   <img src="docs/images/cover.png" alt="蘇清的容器升级封面" width="760">
 </p>
 
-# 蘇清的容器升级 | SuQing's Container Upgrades
+# 蘇清的容器升级模组 | SuQing's Container Upgrades Mod
 
 [简体中文](README.md) · [English](README.en.md)
 
@@ -20,11 +20,11 @@
 
 ## 作者当前单人档与合集
 
-[作者当前单人档工坊合集](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387) · [完整模组列表与启用顺序](docs/current-single-player-modlist.md)
+[作者工坊合集](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387) · [当前205项启用列表及顺序](docs/current-single-player-modlist.md) · [全部模组与补丁仓库](docs/project-index.md)
 
-**作者确认当前合集在自己的 B42.21 单人档游玩正常。** 该反馈对应作者完整配置：204 个启用 Mod ID，其中含 32 个未公开本地补丁。它不代表每个支持项、所有模组组合或多人模式均已验证。
+当前启用快照为 **205 个 Mod ID、161 个工坊项目，以及33个不随工坊合集下载的本地模组或补丁**。作者此前确认自己的完整 B42.21 单人配置游玩正常；这不是每个项目或新增版本的逐项验收。多人和专用服务器未验证。
 
-Steam 合集列出可公开订阅的工坊项目，**不包含未公开的本地补丁**，也不能替代完整启用顺序。当前档中的本地补丁、来源差异和实际顺序请查看完整列表；只订阅合集不等于完整复现作者环境。
+本地项目现有独立 Git 源码入口；仅订阅 Steam 合集仍不能完整复现作者环境。具体所需前置、条件补丁及加载关系见 [依赖与补丁说明](docs/PATCH_DEPENDENCIES.md)。
 
 ## 功能与适配范围
 
