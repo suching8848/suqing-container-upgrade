@@ -1,5 +1,12 @@
 蘇清的容器升级 1.0.1 — Build 42.21 单人
 
+语言 / Languages: 中文在前，完整英文说明在后。Chinese first; complete English instructions follow.
+作者当前单人档合集：https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387
+作者确认当前合集在自己的B42.21单人档游玩正常；该反馈对应完整204个启用Mod ID，含32个未公开本地补丁。
+工坊合集不会下载这32个补丁，不能单独完整复现作者配置。完整列表、来源与启用顺序：
+https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/current-single-player-modlist.md
+
+
 1.0.0整理为独立发布包，核心机制沿用已测试的0.2.2，并新增专用图标与封面。
 维护者已确认v1.0.0在个人Build 42.21单人环境中使用正常。
 v1.0.0客户端验证覆盖单人代表项；本次四项新增仅离线检查，172项不代表全部逐件游戏内实测。
@@ -131,3 +138,168 @@ compatibility/registry.json 是唯一适配名单。运行Python3：
 公开源码，尚未单独指定开源许可证；兼容原模组的权利归各自作者。
 封面、头像与配方图标由AI辅助生成并依据维护者确认的角色参考制作，未统一授予MIT等素材许可。
 公开仓库中的docs/ASSETS.md说明素材与第三方权利边界。
+
+
+=== English: complete player and maintenance guide ===
+
+蘇清的容器升级 | SuQing's Container Upgrades
+
+简体中文: https://github.com/suching8848/suqing-container-upgrade/blob/main/README.md · English: https://github.com/suching8848/suqing-container-upgrade/blob/main/README.en.md
+
+> This mod greatly changes realism and balance. Add it with care. It is intended for players who enjoy collecting and stockpiling supplies.
+>
+> Larger capacities and strong weight reduction substantially ease inventory management and transport decisions. Choose it to suit your play style.
+
+
+v1.0.1 · Project Zomboid Build 42.21 · Single-player
+
+Upgrade existing wearable containers with clean ripped sheets, leather strips and thread. The original item and its functions remain in place. Recipes use the native crafting category and quick-crafting entry points.
+
+The Steam Workshop release: https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025 is available; GitHub provides the source and files for manual installation. This release does not include EX upgrades.
+
+The author's current single-player save and collection
+
+Current Workshop collection: https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387 · Complete mod list and enabled order: https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/current-single-player-modlist.md
+
+The author reports normal play with this current collection in their own B42.21 single-player save. This report concerns the author's full configuration: 204 enabled Mod IDs, including 32 unpublished local patches. It is not a claim that every supported item, every mod combination or multiplayer has been tested.
+
+The Steam collection lists publicly subscribable Workshop items. It does not include unpublished local patches, and it does not replace the complete enabled order. Consult the full list for local patches, source differences and the actual order. Subscribing to the collection alone does not reproduce the entire environment.
+
+Features and supported scope
+
+- Explicit support for 172 exact item IDs: 84 vanilla and 88 audited mod items. Facing, size and color variants count separately.
+- Five upgrade tiers, restoration to the original pre-upgrade specification, and a refund after successful restoration.
+- Supported front/back swaps, same-ID clothing replacements and 8 native size-conversion recipes preserve valid upgrade records.
+- The two Raccoon City containers retain their sandbox and character-trait calculations; their existing capacity tooltip line is corrected.
+- Dedicated portrait, upgrade/restore icons and cover. No custom context menu, extra tier tooltip area or success/failure floating text.
+
+See the 172 supported IDs: https://github.com/suching8848/suqing-container-upgrade/blob/main/SuQingContainerUpgrade/最终适配物品名单.txt and the complete classification of 191 entries and restrictions: https://github.com/suching8848/suqing-container-upgrade/blob/main/SuQingContainerUpgrade/适配名单.csv. The latter also contains 1 restore-only entry and 18 exclusions. Unknown IDs are unsupported.
+
+Specified containers from Fantasy Workshop, 2DimensionWardrobe, Backpack System, SuPrimitiveEquipment, They Knew Continued, Raccoon City, SafeWayHamlet and MFS are supported. You do not need all these mods to upgrade vanilla containers. Each source mod still supplies its own items.
+
+Added in 1.0.1
+
+- CombatStims.InjectorCase: injector case; retains the upstream injector filter and maximum item size 10. Extra Adrenapen storage remains part of a separate compatibility patch.
+- CodexCBRT.SST02_ChestRig: combat rig from the independent Chemical compatibility build. It requires that build; this mod does not distribute third-party equipment assets.
+- ESHF.Qwe_Backpack and ESHF.Qwe_BackpackFront: HavenFall rear/front waist packs. Valid upgrade records and destination-slot protection are preserved during supported swaps.
+
+Materials, skills, payment ledgers and restoration refunds are unchanged. Valid records previously written by the independent compatibility patch remain usable. HavenFall large-backpack EX upgrades remain a separate extension. These four integrations are optional and require their source mods.
+
+Five tiers and costs
+
+Each row is the cost of that individual tier, not a cumulative total. Capacity and weight reduction are target minimums; higher existing values are preserved.
+
+| Tier | Nominal base capacity | Weight reduction | Clean ripped sheets | Leather strips | Thread uses | Tailoring level |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| I | 12 | 90% | 4 | 0 | 2 | 0 |
+| II | 20 | 93% | 6 | 2 | 4 | 1 |
+| III | 30 | 95% | 10 | 4 | 6 | 2 |
+| IV | 40 | 97% | 14 | 6 | 8 | 3 |
+| V | Up to 49 | 99% | 20 | 10 | 10 | 4 |
+
+The needle is retained. A full ordinary Base.Thread spool has 20 uses: the table counts uses, not spools. Material IDs are Base.RippedSheets, Base.LeatherStrips and Base.Thread; needles use the native sewing-needle tag.
+
+A tier is skipped when both capacity and weight reduction already meet it. Only the actual next tier is charged. A higher value in either attribute is never reduced.
+
+Ordinary tier V reaches at most base capacity 49. Some heavy bags retain their actual weight and use the safety cap floor(50 - item weight), so their final capacity can be 46, 47 or 48. Character traits still affect effective capacity. Specified native 50/60-capacity bags receive weight reduction only; their physical capacity is unchanged. The two Raccoon City containers preserve larger sandbox base values. Consult the item list for exact policies.
+
+Installation and use
+
+Choose either Steam subscription or a manual Git download. Both use Mod ID SuQingContainerUpgrade_4221; keep only one installation source for that ID. Before switching, fully exit the game, back up the save and old files, move duplicate local copies out of the mod directory, and disable old test versions.
+
+Steam subscription
+
+1. Open the Workshop page: https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025 and select Subscribe.
+2. Wait for Steam to finish downloading, then launch Build 42.21.
+3. Enable SuQing's Container Upgrades in both the game mod list and the target single-player save's mod management.
+4. Fully exit and restart the game so the new Lua and resources load, then enter the target save.
+
+Manual Git download
+
+1. Select Code → Download ZIP. Extract it and copy the SuQingContainerUpgrade folder to %UserProfile%\Zomboid\mods\.
+2. Check for %UserProfile%\Zomboid\mods\SuQingContainerUpgrade\42\mod.info, keeping sibling folders such as common. The repository root itself is not the mod folder.
+3. Enable the mod in the game list and the target single-player save, then fully exit and restart. Manual installations require manually downloading future updates.
+
+Upgrading an item
+
+Unequip the container, place it in the character's main inventory and remove all contents. Prepare the materials and select the current next tier in the “蘇清” crafting category. Vanilla containers do not require all optional source mods.
+
+Fluid containers such as hydration backpacks and rigs must have all liquid drained before upgrading or restoring. Removing ordinary items is insufficient: even a little remaining water or other fluid blocks crafting. Only ordinary-item storage improves; fluid capacity and components are unchanged.
+
+Old tiers may still appear selectable in the crafting panel. Cached candidates do not establish that the current item can perform that tier. Only its next tier is allowed; old tiers are rejected without payment. A queued native action may still take time. The end of an animation alone does not prove success.
+
+Before swapping a front/back pack, unequip any other pack from the destination slot into the main inventory. An occupied slot is rejected normally; the other pack is not displaced or dropped.
+
+Restoration and refunds
+
+Empty and unequip the container, then use the recipe to restore its first pre-upgrade specification. This is a full restoration, not a step-down recipe, and grants no experience.
+
+A successful restoration refunds 50% of each material's cumulative actual payment in a valid ledger, rounded down separately. Cloth and leather are returned as items; thread is returned in uses and can produce a partial spool. Actually paying all five tiers costs 54 cloth, 22 leather and 30 thread uses, yielding 27 cloth, 11 leather and 15 thread uses on restoration.
+
+Only successfully consumed materials are recorded. Skipped tiers, free crafting and operations with no actual consumption create no refund entitlement. Older payments without a ledger are not reconstructed. Valid ledgers from 0.2.2 remain supported: for example, if only tier V was paid after an unrecorded old tier IV, only half of that tier-V payment is refunded. Successful restoration clears the ledger, preventing repeated collection. Crafting cancellation does not use this 50% refund rule.
+
+Disabling the mod does not automatically restore saved physical attributes. Restore items as needed before removing it, and keep the mod that supplies the container.
+
+Preserved functions and restrictions
+
+Upgrades change managed capacity, weight reduction and this mod's records on the original item instance. Original weight, name, appearance, condition, favorite state, clothing slots, attachment points and other ModData are retained.
+
+- Reload tags, MFS automatic-loading checks and loading logic are unchanged. More storage does not increase rounds loaded per animation.
+- Rig item-size limits, ammunition-belt filters and the shoulder holster's maximum of 2 pistol magazines remain active.
+- Only audited native swaps and size conversions preserve records. Other crafting recipes consuming an upgraded bag need not transfer them to the new product; restore it first.
+- The six 踏行千山 containers and vanilla crude leather/tarp bags retain their own native upgrade chains instead of paid upgrades. 踏行千山五 is restore-only for valid old records.
+- The 10 Legendary Backpack colors and Estate 39's Miku bag already meet ordinary targets and are excluded from paid upgrading. Non-wearable crates are outside the scope.
+
+Validation scope
+
+The maintainer confirmed normal use of v1.0.0 in their own Build 42.21 single-player environment, covering representative items. v1.0.1 incorporates four ordinary integrations from an existing independent patch. Offline checks and gameplay acceptance for the additions are tracked separately. The support count of 172 does not mean every item has been tested individually, or that all reload, save/reload or mod-combination scenarios have passed.
+
+This release is single-player only. Multiplayer and dedicated servers are unvalidated; the current preconditions do not allow upgrading or restoration in multiplayer. See testing guidance: https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/TESTING.en.md.
+
+Maintaining the supported list
+
+SuQingContainerUpgrade/compatibility/registry.json is the single registry source. From the repository root, use Python 3:
+
+cd SuQingContainerUpgrade
+python tools/build_compatibility.py
+python tools/build_compatibility.py --check
+
+The generator updates the runtime allowlist, six recipes and readable lists. --check only verifies that generated outputs match. Scope changes must also audit original capacity, restrictions, native upgrade chains and swap/size-conversion behavior. Python is not required while playing.
+
+Source and assets
+
+The repository currently has no open-source license attached. Icons and cover artwork were made with AI assistance. The original game and supported mods belong to their authors. See asset notes: https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/ASSETS.en.md.
+
+See CHANGELOG: https://github.com/suching8848/suqing-container-upgrade/blob/main/CHANGELOG.md for release history and the Workshop guide: https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/WORKSHOP.en.md for publishing and updates. tools/prepare_workshop.py prepares the upload folder recognized by the game.
+
+Additional detailed behavior and recovery notes
+
+The audited source inventory contains 191 wearable-container IDs: 86 vanilla and 105 mod IDs. Of these, 172 are supported (84 vanilla + 88 mod), 1 is restore-only and 18 are excluded. Identically named facing/size/color variants count as separate IDs, not 172 distinct appearances. All 4 SuPrimitiveEquipment containers are included without replacing that mod's equipment mechanics.
+
+The mod adds no custom floating tier names or success/failure text; technical results go to the log. Recipe materials, skill gates and action times follow the existing recipes. Higher existing weight reduction, including 99 or 100, is not reduced. The safety cap uses actual fixed item weight, not the current amount of fluid.
+
+The specified three Backpack System items and SafeWay bag have native nominal capacities of 50/60. Only their weight reduction is written. This avoids overwriting an original 60 with the game's capacity getter limit of 50. Script capacity, physical/getter capacity and trait-adjusted effective capacity need not be identical; the item list distinguishes them.
+
+Raccoon City backpack and rig capacity display
+The existing tooltip line shows that character's usable capacity; there is no added upgrade-tier tooltip. The native white capacity line remains a physical reference. The sandbox base and paid upgrade floor are compared first; character traits are then applied once. Physical capacity and the original source functions are not rewritten. Restoration returns to the current sandbox mechanism.
+For example, sandbox base 98 and weight reduction 99% on the backpack gives effective capacity 128 with Organized and already meets ordinary tier V. A rig with sandbox base 30 gives 52 at ordinary tier IV's base 40, or 64 at tier V's base 49. These examples do not change source-mod defaults. Different sandbox settings can give different results. Fluid storage and reload speed are separate from item capacity.
+
+Original storage and loading mechanics
+The original item instance and fluid component stay in place. Upgrade/restore does not wrap weapon reloading or ammunition-insertion functions. MFS automatic loading keeps its original limit of up to 5 rounds per animation and its own worn/carried checks. Rig MaxItemSize and bullet/shotgun-belt filters remain active. A shoulder holster still accepts at most 2 pistol magazines, with no added weapon attachment points. Fluid type, mixture and fluid-capacity mechanics are unchanged.
+
+Native swaps and size conversions
+Only the exact audited front/back swaps, same-ID worn replacement actions and 8 native size conversions are bridged, and only with a legal, consistent upgrade record. Native code still copies appearance, renamed text, condition, favorite state, contents and original ModData. The destination must be the newly created instance from the relevant action, with safe room in the main inventory and destination slot. An occupied destination is rejected normally; the other bag is never automatically displaced, unequipped or dropped. The 0.2.1 change avoids treating normal slot occupancy as a destination_occupied exception.
+Other items, actions with no valid record, ordinary CopyClothing and unrelated recipes keep their original handling chain. Size changes retain native materials and costs. No global item-copy hook spreads upgrades. Consuming an upgraded bag in a new crafting recipe does not guarantee inheritance: for example, crafting another backpack from a vanilla survivor backpack is new crafting, not an audited size conversion. Restore it first.
+
+Restoration and failure recovery
+Restoration has no experience reward and is not a per-tier downgrade. Physical-capacity policies restore the original first-upgrade value; capacity-preserving policies never write capacity; the Raccoon City policy restores current sandbox behavior. The source clothing mod must remain installed.
+Old schema1 records remain readable. Schema2 is written only after a successful later upgrade; there is no world scan or bulk rewrite. New records keep applied values, original values, policy version and safety-cap information. Damaged records reject payment. A legal record that no longer matches the current policy can still be restored.
+Property setters are checked before crafting. A later failure independently attempts to recover the target and original material instances/thread uses. Swap/conversion failure also attempts to recover contents, the original worn slot and both hands. A new container still holding contents is not deleted. Recovery avoids retaining two separately redeemable refund entitlements.
+Already emitted native events, experience and crafting history cannot all be undone. A permanent failure in an external setter may prevent recovery; the log reports failure. One successful command or action animation does not establish gameplay acceptance.
+
+Debug and validation
+Python is needed only for registry maintenance, not gameplay. Unknown IDs remain unsupported. The mod adds no periodic/world scan, loot-table changes or overwrites of Workshop source files. If the native recipe debug icon panel raises a setPlaceholderText null-reference error, use the debug item-list spawner to prepare items and then use the normal crafting panel. That debug-UI error is not proof of upgrade success or failure.
+Disable Debug free-crafting/infinite-material settings when checking actual payment and refunds. Observe real inventory differences in the normal crafting panel. Restart the game completely before testing updated Lua. Representative v1.0.0 client checks and offline regression/source audits are separate; 172 supported IDs do not mean 172 individually tested items or complete save/reload/loading coverage. Multiplayer and dedicated servers remain unvalidated and their upgrade/restore preconditions are rejected. EX is not included.
+
+Source and artwork
+The source is public but has no separately attached open-source license. The cover, portrait and recipe icons were made with AI assistance using the maintainer-approved character reference. No blanket MIT or other asset license is granted. The original game's and supported mods' rights remain with their authors. See the linked asset notes for the boundaries.

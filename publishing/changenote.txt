@@ -1,5 +1,8 @@
-v1.0.1：普通容器适配名单同步。
-新增针剂盒、生化胸挂、HavenFall前后腰包4项适配，支持172个精确ID（原版84、模组88）。
-保留针剂过滤、物品尺寸限制、腰包换位保护及已有有效强化记录；材料、技能、50%实付返料不变。
-同步白名单、六个配方及完整名单191项；不含HavenFall大背包EX。
-新增适配本次仅离线验证，未启动游戏验收。
+v1.0.1 文案与发布资料更新 / Documentation and listing update
+新增完整英文README及中英双语标题、工坊说明和包内使用说明，补充测试、发布与素材英语文档。
+加入作者当前单人档合集与完整启用列表链接。作者确认该合集在自己的B42.21单人档游玩正常。
+玩法版本仍为1.0.1：172项支持（84原版+88模组）；本轮不改Lua、配方、适配登记、生成表或图片。
+
+Adds a complete English README and bilingual titles, Workshop text and packaged instructions, with English testing, publishing and asset documentation.
+Links the author's current collection and complete enabled list. The author reports normal play with this current collection in their own B42.21 single-player save.
+Gameplay remains v1.0.1: 172 supported IDs (84 vanilla + 88 mod). This round changes no Lua, recipes, registry, generated tables or artwork.

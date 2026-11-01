@@ -1,5 +1,15 @@
 # 更新记录
 
+## 1.0.1 文案与发布资料更新 / Documentation and listing update — 2026-11-01
+
+补充完整英文README，中英双语标题、工坊介绍与包内使用说明，以及测试、发布、素材的等价英语说明。
+加入作者当前单人档合集及完整列表链接；作者确认该合集在自己的B42.21单人档游玩正常。
+保留玩法版本1.0.1；本轮不改Lua、配方、registry、生成表、图片、Mod ID或依赖。
+Added a complete English README, bilingual titles, Workshop and packaged instructions, and equivalent English testing, publishing and asset notes.
+Linked the author's current collection and full mod list. The author reports normal play with this current collection in their own B42.21 single-player save.
+Gameplay stays at v1.0.1. This round changes no Lua, recipes, registry, generated tables, artwork, Mod ID or dependencies.
+
+
 ## 1.0.1 · 2026-11-01
 
 - 将既有独立兼容补丁的四项普通容器适配纳入公开包：针剂盒、生化胸挂、HavenFall 前后腰包。支持范围由 168 增至 172 个 ID（原版 84、模组 88），完整登记 191 项。

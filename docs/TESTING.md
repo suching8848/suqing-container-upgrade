@@ -1,5 +1,7 @@
 # 测试范围与复核方法
 
+中文 | [English](TESTING.en.md)
+
 ## 已知验证边界
 
 - 目标版本为 Project Zomboid Build 42.21 单人。维护者已确认 v1.0.0 在个人单人环境中使用正常。

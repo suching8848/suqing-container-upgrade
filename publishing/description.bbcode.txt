@@ -1,37 +1,42 @@
-[h1]蘇清的容器升级 v1.0.1[/h1]
-[b]本模组会极大影响游戏真实性与平衡性，请谨慎添加。适合喜欢大量收集、囤积物资的囤囤鼠玩家。[/b]
-高容量与高减重会大幅削弱负重管理和物资运输中的取舍。
+[h1]蘇清的容器升级 | SuQing's Container Upgrades v1.0.1[/h1]
+[h2]中文[/h2]
+[b]大幅改变真实性与平衡性，请谨慎添加；适合收集和囤积物资的玩家。仅限B42.21单人，联机与专服未验证。[/b]
+用布、皮革和线强化已有可穿戴容器，保留原物品。使用原生“蘇清”制作分类和快捷入口，无自建菜单或额外等级悬浮区。本版不含EX。
+支持172个精确ID：原版84、模组88；完整分类191项另含1项仅还原及18项排除。8条指定原生尺寸转换保留有效记录。来源模组为可选适配，不附带第三方资源。
+[h3]1.0.1新增[/h3]
+CombatStims.InjectorCase、CodexCBRT.SST02_ChestRig、ESHF.Qwe_Backpack、ESHF.Qwe_BackpackFront。
+保留针剂过滤、最大尺寸10、前后腰包换位保护及已有有效记录。肾上腺素笔额外收纳、HavenFall大背包EX仍属于独立扩展。
+[h3]档位与用法[/h3]
+容量/减重：I 12/90%，II 20/93%，III 30/95%，IV 40/97%，V最高49/99%。高值保留，双项已达标则跳档，同件只允许下一档。重包安全容量可能46–48；原生高容量包只升减重，浣熊市两件保留沙盒与特性算法。
+每档布/皮革/线用量：4/0/2、6/2/4、10/4/6、14/6/8、20/10/10；裁缝0–4级。针保留，满卷普通线20用量，表中不是线轴数。
+卸下、放主物品栏、清空物品与全部液体后操作；储水升数不变。旧档位即使亮起也会拒绝且不扣料；动画结束不代表成功。前后换位先清空目标槽，不挤掉另一包。
+保留外观、自重、槽位、挂点、耐久、其他ModData、换弹与自动装弹逻辑。胸挂尺寸、弹带过滤、肩套最多2个手枪弹匣的限制保留。其他新制作配方不保证继承强化，消耗前先还原。
+[h3]还原与范围[/h3]
+成功还原首次规格，返有效账本累计真实实付材料50%，各类分别向下取整；线按用量返，可得部分线轴。全付I–V为54布/22皮/30线，返27/11/15。免费、跳档、未扣料不记账，旧无账付款不追溯；成功后清账防重复。停用不会自动还原保存属性。
+踏行千山与原版粗制皮/防水布包沿用原生升级；踏行千山五仅还原。传奇背包10色与Estate39的Miku包不收费强化；非穿戴箱子不支持。
+维护者确认v1.0.0个人单人使用正常。新增四项本轮仅离线检查，尚待游戏内验收；172项不是全部逐件、所有组合或保存重进均已验证。
+[h3]作者当前档[/h3]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387]作者当前单人档合集[/url]。作者确认当前合集在自己的B42.21单人档游玩正常；反馈对应204个启用Mod ID的完整配置，含32个未公开本地补丁。合集不会下载这32个补丁，启用顺序与本地来源见[url=https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/current-single-player-modlist.md]完整列表[/url]，只订阅合集不能完整复现环境。
+Mod ID: SuQingContainerUpgrade_4221。订阅或手动安装二选一，停用重复版并完全退出重启。保留物品来源模组。
+[url=https://github.com/suching8848/suqing-container-upgrade]GitHub源码、适配名单、安装与测试说明[/url]
 
-[b]适用 Project Zomboid Build 42.21，仅限单人模式。多人及专用服务器未验证，当前不开放联机强化与还原。[/b]
-
-用碎布条、皮革条和针线，逐步强化已有的可穿戴容器。使用原生制作菜单“蘇清”分类及快捷制作入口，没有自建右键菜单或额外等级悬浮区。
-
-[h2]适配范围[/h2]
-支持172个明确物品ID：原版84个、模组88个。朝向、尺寸和颜色分别统计，[b]支持范围不代表172项全部逐件游戏内实测[/b]。已完成单人代表项验证和离线回归，维护者确认v1.0.0个人单人使用正常。
-适配幻想工坊、二维衣橱、背包系统、苏别璃原始装备、They Knew Continued、浣熊市、SafeWayHamlet、MFS中的指定容器；使用原版容器不需安装全部模组。完整名单见GitHub。
-
-[h2]1.0.1新增适配[/h2]
-针剂盒CombatStims.InjectorCase、生化胸挂CodexCBRT.SST02_ChestRig、HavenFall前后腰包ESHF.Qwe_Backpack与ESHF.Qwe_BackpackFront。
-保留针剂过滤、最大物品尺寸10、前后换位保护及既有有效强化记录。来源模组为可选适配，不附带第三方资源。HavenFall大背包EX仍由独立扩展提供。
-本次新增适配只完成离线验证，尚待游戏内验收。
-
-[h2]五档强化[/h2]
-容量／减重目标：Ⅰ 12／90%，Ⅱ 20／93%，Ⅲ 30／95%，Ⅳ 40／97%，Ⅴ 最高49／99%。已有更高数值会保留；双项已达标的档位自动跳过，同件只允许下一档。
-部分重包保留自重，满级安全基础容量为46—48；角色特性仍影响有效容量。指定原生高容量包只强化减重，浣熊市两件容器沿用沙盒基础值与特性算法。
-裁缝需求依次为0—4级；各档布／皮革／线用量依次为4／0／2、6／2／4、10／4／6、14／6／8、20／10／10。针保留，普通满卷线20用量，表中用量不是线轴个数。
-
-[h2]使用前清空[/h2]
-卸下目标容器，放入人物主物品栏并清空内部物品。[b]水袋等储液容器强化、还原前都须排空全部液体；储水升数和液体组件不变。[/b]
-旧档位可能仍亮起，但不符合当前下一档时会拒绝且不扣料。前后换位先卸下目标槽的另一件包，不会自动挤掉或丢掉另一包。
-
-[h2]保留原功能与限制[/h2]
-保留原物品外观、自重、耐久、穿戴槽、挂点及其他ModData；不改原换弹标签、自动装弹判定或每次动画装弹数。胸挂尺寸、弹带过滤和肩套最多2个手枪弹匣的限制继续生效。
-指定原生换位及8条尺寸转换保留有效强化记录；其他新制作配方不保证继承强化，作为材料消耗前请先还原。
-
-[h2]还原返料[/h2]
-还原首次强化前规格时，返还有效账本中各类累计[b]真实实付材料的50%，分别向下取整[/b]。普通线按uses（用量）返还，可得到部分线轴。旧付款没有账本的不追溯；跳档、免费或未实际扣料不记账。成功还原清除账本，不重复返料。
-
-踏行千山和原版粗制皮包、粗制防水布包保留原生升级链，不加入收费强化；踏行千山五仅保留有效旧记录还原。传奇背包10色及Estate 39的Miku包已达普通目标，不收费强化。[b]本版不含EX。[/b]
-
-Mod ID：[b]SuQingContainerUpgrade_4221[/b]。请停用重复旧版或测试版，完全退出并重启游戏后加载。停用模组不会自动还原已保存的物理属性，移除前请按需还原。
-[url=https://github.com/suching8848/suqing-container-upgrade]GitHub源码、完整适配名单与使用说明[/url]
+[h2]English[/h2]
+[b]Greatly changes realism and balance; add with care. Intended for collectors and stockpilers. B42.21 single-player only; multiplayer and dedicated servers are unvalidated.[/b]
+Upgrade existing wearable containers with cloth, leather and thread. Keeps the original item and uses the native “蘇清” crafting category/quick entry; no custom menu or extra tier tooltip area. No EX upgrades.
+Supports 172 exact IDs: 84 vanilla + 88 mod items. The 191-entry classification also has 1 restore-only entry and 18 exclusions. Eight audited native size conversions preserve valid records. Source mods are optional integrations; third-party assets are not included.
+[h3]Added in 1.0.1[/h3]
+CombatStims.InjectorCase, CodexCBRT.SST02_ChestRig, ESHF.Qwe_Backpack and ESHF.Qwe_BackpackFront.
+Retains injector filtering, maximum item size 10, front/back waist-pack slot protection and valid existing records. Extra Adrenapen storage and HavenFall large-backpack EX remain separate extensions.
+[h3]Tiers and use[/h3]
+Capacity/weight reduction: I 12/90%, II 20/93%, III 30/95%, IV 40/97%, V up to 49/99%. Higher values stay; tiers already met by both values are skipped. Only the next tier is allowed. Heavy-bag safety limits may yield 46–48. Specified native high-capacity bags receive weight reduction only; the two Raccoon City containers retain sandbox/trait calculations.
+Per-tier cloth/leather/thread uses: 4/0/2, 6/2/4, 10/4/6, 14/6/8, 20/10/10; Tailoring 0–4. Needle retained. A full ordinary thread spool has 20 uses; these are not spool counts.
+Unequip, put in main inventory, empty items and drain all fluids; water capacity stays unchanged. Old lit-up tiers are rejected without payment; animation completion alone is not success. Clear the destination slot before swapping; another pack is not displaced.
+Keeps appearance, weight, slots, attachments, condition, other ModData and reload/automatic-loading logic. Rig size limits, ammunition-belt filters and the shoulder holster's 2-pistol-magazine cap remain. Other crafting recipes need not preserve upgrades; restore bags before consuming them.
+[h3]Restoration and scope[/h3]
+Restoring the first specification refunds 50% of each material's actual cumulative ledger payment, rounded down separately. Thread returns in uses, possibly as a partial spool. Paying I–V costs 54 cloth/22 leather/30 thread uses and refunds 27/11/15. Free/skipped/unconsumed operations are unrecorded; older unrecorded payments are not reconstructed. Success clears the ledger to prevent repeats. Disabling the mod does not restore saved attributes.
+踏行千山 and vanilla crude leather/tarp bags keep their native upgrade chains; 踏行千山五 is restore-only. Ten Legendary Backpack colors and Estate39's Miku bag are excluded from paid upgrades. Non-wearable crates are unsupported.
+The maintainer confirmed normal personal single-player use of v1.0.0. The four additions have offline checks this round and await gameplay acceptance. 172 is not a claim that every item, combination or save/reload scenario was tested.
+[h3]The author's current save[/h3]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387]Current single-player collection[/url]. The author reports normal play with this current collection in their own B42.21 single-player save. This concerns their full 204-Mod-ID configuration, including 32 unpublished local patches that the collection will not download; see the [url=https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/current-single-player-modlist.md]complete list[/url] for enabled order and local sources. Subscribing alone does not reproduce the full environment.
+Mod ID: SuQingContainerUpgrade_4221. Choose subscription or manual installation, disable duplicates and fully restart. Keep the source mods supplying your items.
+[url=https://github.com/suching8848/suqing-container-upgrade]GitHub source, supported list, installation and testing[/url]

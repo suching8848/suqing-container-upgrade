@@ -6,7 +6,9 @@
   <img src="docs/images/cover.png" alt="蘇清的容器升级封面" width="760">
 </p>
 
-# 蘇清的容器升级
+# 蘇清的容器升级 | SuQing's Container Upgrades
+
+[简体中文](README.md) · [English](README.en.md)
 
 <img src="SuQingContainerUpgrade/42/icon.png" alt="蘇清头像图标" width="88" align="right">
 
@@ -15,6 +17,14 @@
 用碎布条、皮革条和针线，逐步强化已有的可穿戴容器。保留原物品与原有功能，使用游戏原生制作分类和快捷制作入口。
 
 已发布 [Steam 创意工坊版本](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)，GitHub 同时提供源码与可手动安装的模组文件。本版不包含 EX 档。
+
+## 作者当前单人档与合集
+
+[作者当前单人档工坊合集](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387) · [完整模组列表与启用顺序](docs/current-single-player-modlist.md)
+
+**作者确认当前合集在自己的 B42.21 单人档游玩正常。** 该反馈对应作者完整配置：204 个启用 Mod ID，其中含 32 个未公开本地补丁。它不代表每个支持项、所有模组组合或多人模式均已验证。
+
+Steam 合集列出可公开订阅的工坊项目，**不包含未公开的本地补丁**，也不能替代完整启用顺序。当前档中的本地补丁、来源差异和实际顺序请查看完整列表；只订阅合集不等于完整复现作者环境。
 
 ## 功能与适配范围
 
