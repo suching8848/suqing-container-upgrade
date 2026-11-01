@@ -1,5 +1,13 @@
 {
   "title": "蘇清的容器升级 [B42.21 单人]",
-  "tags": ["Build 42", "Items", "Clothing/Armor", "Balance", "QoL"],
-  "visibility": "public"
+  "tags": [
+    "Build 42",
+    "Items",
+    "Clothing/Armor",
+    "Balance",
+    "QoL"
+  ],
+  "visibility": "public",
+  "publishedfileid": "3823988025",
+  "version": "1.0.1"
 }

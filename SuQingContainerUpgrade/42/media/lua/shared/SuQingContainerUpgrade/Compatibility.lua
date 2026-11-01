@@ -2,7 +2,7 @@
 -- Unicode names stay in JSON/CSV; native recipe identity is numeric UTF-16.
 SuQingContainerUpgradeCompatibility = {
     schema = 1,
-    registrySha256 = "5b772004634741e42031c08f4f6595b5a62f2d617122029580afd9f71ebf62a7",
+    registrySha256 = "c87f7ba9f4e364de3786d91ef0a934f3c3669d64011c1aac496b424590cda5bf",
     supported = {
         ["Base.2dw_astrobackpack"] = true,
         ["Base.2dw_classicsailorbag"] = true,
@@ -170,6 +170,10 @@ SuQingContainerUpgradeCompatibility = {
         ["Base.SST_Belt_1"] = true,
         ["Base.bag_cat40"] = true,
         ["Base.cat_AutoReload"] = true,
+        ["CodexCBRT.SST02_ChestRig"] = true,
+        ["CombatStims.InjectorCase"] = true,
+        ["ESHF.Qwe_Backpack"] = true,
+        ["ESHF.Qwe_BackpackFront"] = true,
         ["TheyKnew.MysteriousBackPack"] = true,
         ["TheyKnew.MysteriousSatchel"] = true,
     },
@@ -344,6 +348,10 @@ SuQingContainerUpgradeCompatibility = {
         ["Base.SST_Belt_1"] = "mod_container",
         ["Base.bag_cat40"] = "mod_container",
         ["Base.cat_AutoReload"] = "mod_container",
+        ["CodexCBRT.SST02_ChestRig"] = "mod_container",
+        ["CombatStims.InjectorCase"] = "mod_container",
+        ["ESHF.Qwe_Backpack"] = "mod_container",
+        ["ESHF.Qwe_BackpackFront"] = "mod_container",
         ["TheyKnew.MysteriousBackPack"] = "mod_container",
         ["TheyKnew.MysteriousSatchel"] = "existing_v013",
     },
@@ -361,6 +369,8 @@ SuQingContainerUpgradeCompatibility = {
         ["Base.PE_FannyPackBack"] = "Base.PE_FannyPackFront",
         ["Base.PE_FannyPackFront"] = "Base.PE_FannyPackBack",
         ["Base.bag_cat40"] = "Base.bag_cat40",
+        ["ESHF.Qwe_Backpack"] = "ESHF.Qwe_BackpackFront",
+        ["ESHF.Qwe_BackpackFront"] = "ESHF.Qwe_Backpack",
     },
     variantRecipes = {
         { id = "recipe_1", from = "Base.2dw_nighthawkbelts", target = "Base.2dw_nighthawkbeltm",

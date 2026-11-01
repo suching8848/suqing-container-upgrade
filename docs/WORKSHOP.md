@@ -1,6 +1,6 @@
 # Steam 创意工坊发布与更新
 
-已发布条目：[蘇清的容器升级 v1.0.0](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)。工坊 ID：`3823988025`；Mod ID：`SuQingContainerUpgrade_4221`。
+已发布条目：[蘇清的容器升级 v1.0.1](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)。工坊 ID：`3823988025`；Mod ID：`SuQingContainerUpgrade_4221`。
 
 **本模组会极大影响游戏真实性与平衡性，请谨慎添加。适合喜欢大量收集、囤积物资的囤囤鼠玩家。** 容量和减重提升会明显削弱负重管理与搬运取舍的压力。
 

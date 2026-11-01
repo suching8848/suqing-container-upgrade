@@ -3,7 +3,7 @@ SuQingContainerUpgrade = SuQingContainerUpgrade or {}
 local C = SuQingContainerUpgrade
 if C.loaded then return C end
 C.loaded = true
-C.version = "1.0.0"
+C.version = "1.0.1"
 C.modDataKey = "SuQingContainerUpgrade"
 require "SuQingContainerUpgrade/Compatibility"
 -- The build generates both these sets and native recipe inputs from one audited
@@ -106,9 +106,40 @@ function C.IsSinglePlayer()
         and not (type(isServer) == "function" and isServer())
 end
 
+-- Preserve the former local adapter's exact-source guards for the four additions.
+-- Failed guards block new upgrades; existing managed records remain restorable.
+local wearableSources = {
+    ["CombatStims.InjectorCase"] = { maxItemSize = 10 },
+    ["CodexCBRT.SST02_ChestRig"] = {},
+    ["ESHF.Qwe_Backpack"] = { positionPair = "ESHF.Qwe_BackpackFront" },
+    ["ESHF.Qwe_BackpackFront"] = { positionPair = "ESHF.Qwe_Backpack" },
+}
+local function matchesWearableSource(item)
+    local expected = wearableSources[item:getFullType()]
+    if not expected then return true end
+    local script = item.getScriptItem and item:getScriptItem()
+    if not script or not ItemType or not ItemType.CONTAINER
+        or script:getFullName() ~= item:getFullType()
+        or not script:isItemType(ItemType.CONTAINER)
+        or script:getObsolete() or script:isHidden() then return false end
+    if expected.maxItemSize and math.abs(script:getMaxItemSize() - expected.maxItemSize) > 0.001 then
+        return false
+    end
+    if expected.positionPair then
+        local extras = script:getClothingItemExtra()
+        if not extras or extras:size() ~= 1 then return false end
+        local other = tostring(extras:get(0))
+        if other ~= expected.positionPair and other ~= string.match(expected.positionPair, "%.([^%.]+)$") then
+            return false
+        end
+    end
+    return true
+end
+
 function C.IsSupported(item)
     return item ~= nil and instanceof(item, "InventoryContainer")
         and C.supported[item:getFullType()] == true and item:getInventory() ~= nil
+        and matchesWearableSource(item)
 end
 
 function C.IsManaged(item)

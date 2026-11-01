@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "modVersion": "1.0.0",
+  "modVersion": "1.0.1",
   "gameVersion": "42.21.0",
-  "scope": "All 86 vanilla and all 101 audited enabled-mod wearable container source IDs classified; 168 active exact IDs. Build 42.21 single-player release; representative gameplay tests are distinct from offline audit coverage.",
+  "scope": "All 86 vanilla and 105 audited mod-container source entries; 172 active exact IDs. Optional source mods are not bundled or made mandatory.",
   "expectedCounts": {
-    "registryEntries": 187,
-    "active": 168,
+    "registryEntries": 191,
+    "active": 172,
     "restoreOnly": 1,
     "excluded": 18,
     "deferred": 0,
     "vanillaInventoryIncludingFluid": 86,
-    "modInventory": 101,
+    "modInventory": 105,
     "activeVanilla": 84,
-    "activeMod": 84,
-    "addedThisBatch": 84,
+    "activeMod": 88,
+    "addedThisBatch": 4,
     "newVanilla": 83,
     "newVanillaLight": 48,
     "newVanillaHeavy": 17,
@@ -26,7 +26,7 @@
       "existing_v013": 4,
       "heavy_native_cap": 17,
       "hybrid_container": 2,
-      "mod_container": 75,
+      "mod_container": 79,
       "native_capacity": 4,
       "position_pair": 6,
       "restricted_ammo": 4,
@@ -34,10 +34,10 @@
       "restricted_webbing": 5,
       "standard_light": 48
     },
-    "positionMappings": 13,
+    "positionMappings": 15,
     "variantRecipes": 8
   },
-  "sourceAudit": "Source defaults audited against Build 42.21 and compatible-mod script snapshots on 2026-10-21. Portable source identifiers and original content SHA-256 values are retained; raw machine-local audit artifacts are not distributed.",
+  "sourceAudit": "Original 187 entries retain Build 42.21 source audits from 2026-10-21. Four wearable additions were checked against installed source definitions on 2026-11-01. Portable source identifiers and source-file SHA-256 values are retained; raw machine-local audit artifacts are not distributed.",
   "vanillaSelection": {
     "maximumExplicitScriptWeight": 1,
     "slots": [
@@ -59,7 +59,7 @@
       "deliberate disassembly"
     ]
   },
-  "validationStatus": "Build 42.21 single-player representative gameplay confirmed by the author; source, native-API and offline regression coverage is separate. The 168-ID support scope is not a claim that every item or scenario was gameplay-tested. Multiplayer is not validated.",
+  "validationStatus": "Build 42.21 single-player: v1.0.0 representative gameplay previously confirmed; v1.0.1 adds four exact wearable IDs with source audits and offline regression, with new in-game acceptance pending. The 172-ID scope is not a per-item gameplay claim. Multiplayer is not validated.",
   "sourceHashes": [
     {
       "source": "container.txt",
@@ -6604,6 +6604,158 @@
       "sourceBindingSha256": "be1009d870d4668ee43cb9caff26e63c8e102349c92c99d54d0c07e7080475e5"
     },
     {
+      "fullType": "CodexCBRT.SST02_ChestRig",
+      "nameCN": "康陶防务21式战斗携行具",
+      "provider": "CodexCBRTIndependent_4221",
+      "status": "active",
+      "batch": "wearable_v101",
+      "profile": "mod_container",
+      "capacity": 12,
+      "weightReduction": 90,
+      "weight": 1,
+      "slot": "base:webbing",
+      "bodyLocation": "base:Webbing",
+      "source": "local-mods/CodexCBRTIndependent_4221/42/media/scripts/CodexCBRT_Items.txt:53",
+      "sourceSha256": "7a9a2d570407148b1a44ce69f340cc36aad1a52d2fb73e4a6e286224e5382cf6",
+      "nameSource": "local-mods/CodexCBRTIndependent_4221/42/media/lua/shared/Translate/CN/ItemName.json",
+      "restrictions": {
+        "acceptItemFunction": null,
+        "onlyAcceptCategory": null,
+        "maxItemSize": null,
+        "clothingItemExtra": null,
+        "clothingItemExtraOption": null,
+        "clothingExtraSubmenu": null,
+        "fluidComponent": false
+      },
+      "tags": [],
+      "attachmentsProvided": [],
+      "sourceClassification": "audited_v101_wearable",
+      "hasOwnNativeCapacityUpgradeInput": false,
+      "fluidCapacity": null,
+      "capacityMode": "physical",
+      "requireEmptyFluid": false,
+      "targetCapacityV": 49,
+      "reason": "适配独立本地生化胸挂，沿用原生容量12、减重90和默认自重1；保留外观、槽位及其它功能，不打包来源模组。",
+      "sourceBindingSha256": "e070ffaf4fcb23c78ae231329455667dd5832d32d90f273faa1b6e45b94cb219"
+    },
+    {
+      "fullType": "CombatStims.InjectorCase",
+      "nameCN": "注射器盒",
+      "provider": "TarkovCombatStims",
+      "status": "active",
+      "batch": "wearable_v101",
+      "profile": "mod_container",
+      "capacity": 5,
+      "weightReduction": 30,
+      "weight": 0.3,
+      "slot": "base:ammostrap",
+      "bodyLocation": "base:ammostrap",
+      "source": "workshop/108600/3815980431/mods/TarkovCombatStims/42/media/scripts/CombatStims_Items.txt:312",
+      "sourceSha256": "dd125d0ea3867a0fe18d70bc5018a794ff1fa718910b403ec612c8227b4eb5dc",
+      "nameSource": "workshop/108600/3815980431/mods/TarkovCombatStims/42/media/lua/shared/Translate/CN/ItemName.json",
+      "restrictions": {
+        "acceptItemFunction": null,
+        "onlyAcceptCategory": null,
+        "maxItemSize": 10,
+        "clothingItemExtra": null,
+        "clothingItemExtraOption": null,
+        "clothingExtraSubmenu": null,
+        "fluidComponent": false
+      },
+      "tags": [],
+      "attachmentsProvided": [],
+      "sourceClassification": "audited_v101_wearable",
+      "hasOwnNativeCapacityUpgradeInput": false,
+      "fluidCapacity": null,
+      "capacityMode": "physical",
+      "requireEmptyFluid": false,
+      "targetCapacityV": 49,
+      "reason": "只强化普通储物容量与减重，保留原上游针剂过滤、最大物品尺寸10、槽位及速度等机制；额外肾上腺素笔兼容由独立针剂补丁提供。",
+      "sourceBindingSha256": "3540a30f21852672c51bb45c6924137f46965b44fe27d2c3b473cc866b4f6dbf"
+    },
+    {
+      "fullType": "ESHF.Qwe_Backpack",
+      "nameCN": "画画的后腰",
+      "provider": "HavenFall",
+      "status": "active",
+      "batch": "wearable_v101",
+      "profile": "mod_container",
+      "capacity": 20,
+      "weightReduction": 95,
+      "weight": 0.5,
+      "slot": "base:fannypackback",
+      "bodyLocation": "base:fannypackback",
+      "source": "local-mods/HavenFall/common/media/scripts/items/items_ESHF_Backpack.txt:5",
+      "sourceSha256": "cd7ffbc702a7450e845ed159f643cae6feb964cb89a84483ccee0d4f2a4d2b5b",
+      "nameSource": "local-mods/HavenFall/common/media/lua/shared/Translate/CN/ItemName.json",
+      "restrictions": {
+        "acceptItemFunction": null,
+        "onlyAcceptCategory": null,
+        "maxItemSize": null,
+        "clothingItemExtra": "ESHF.Qwe_BackpackFront",
+        "clothingItemExtraOption": "FannyPack_WearFront",
+        "clothingExtraSubmenu": "FannyPack_WearBack",
+        "fluidComponent": false
+      },
+      "tags": [
+        "base:lightwhenattached",
+        "base:pillow",
+        "base:ismemento"
+      ],
+      "attachmentsProvided": [],
+      "sourceClassification": "audited_v101_wearable",
+      "hasOwnNativeCapacityUpgradeInput": false,
+      "fluidCapacity": null,
+      "capacityMode": "physical",
+      "requireEmptyFluid": false,
+      "targetCapacityV": 49,
+      "positionPair": "ESHF.Qwe_BackpackFront",
+      "material": "havenfall_qwe",
+      "reason": "普通物理腰包，保留原标签、槽位与前后换位；精确原生转换保留强化及实付账本，目标槽占用时拒绝。不是HavenFall大背包的EX超级升级。",
+      "sourceBindingSha256": "c90ff6783c43a061888ac3855757c79299fa38ea6bdf794de5b8286dfa9e600b"
+    },
+    {
+      "fullType": "ESHF.Qwe_BackpackFront",
+      "nameCN": "饭饭的前腰",
+      "provider": "HavenFall",
+      "status": "active",
+      "batch": "wearable_v101",
+      "profile": "mod_container",
+      "capacity": 20,
+      "weightReduction": 95,
+      "weight": 0.5,
+      "slot": "base:fannypackfront",
+      "bodyLocation": "base:fannypackfront",
+      "source": "local-mods/HavenFall/common/media/scripts/items/items_ESHF_Backpack.txt:29",
+      "sourceSha256": "cd7ffbc702a7450e845ed159f643cae6feb964cb89a84483ccee0d4f2a4d2b5b",
+      "nameSource": "local-mods/HavenFall/common/media/lua/shared/Translate/CN/ItemName.json",
+      "restrictions": {
+        "acceptItemFunction": null,
+        "onlyAcceptCategory": null,
+        "maxItemSize": null,
+        "clothingItemExtra": "ESHF.Qwe_Backpack",
+        "clothingItemExtraOption": "FannyPack_WearBack",
+        "clothingExtraSubmenu": "FannyPack_WearFront",
+        "fluidComponent": false
+      },
+      "tags": [
+        "base:lightwhenattached",
+        "base:pillow",
+        "base:ismemento"
+      ],
+      "attachmentsProvided": [],
+      "sourceClassification": "audited_v101_wearable",
+      "hasOwnNativeCapacityUpgradeInput": false,
+      "fluidCapacity": null,
+      "capacityMode": "physical",
+      "requireEmptyFluid": false,
+      "targetCapacityV": 49,
+      "positionPair": "ESHF.Qwe_Backpack",
+      "material": "havenfall_qwe",
+      "reason": "普通物理腰包，保留原标签、槽位与前后换位；精确原生转换保留强化及实付账本，目标槽占用时拒绝。不是HavenFall大背包的EX超级升级。",
+      "sourceBindingSha256": "31087b0d8b6ed1774ec52b5dc33554a97859a53d6e56f341671f75aa7369d902"
+    },
+    {
       "fullType": "LB.Bag_LegendaryBackpack",
       "nameCN": "传奇背包 (灰色)",
       "provider": "LBB42",
@@ -7036,8 +7188,8 @@
       "sourceBindingSha256": "bfd4130498eb1a6f0d20d3ae1e9232507e7cea23c4869568eec250d1c8c195be"
     }
   ],
-  "releaseStage": "public_source_v1.0.0",
-  "currentBatch": "final_v020",
+  "releaseStage": "public_source_v1.0.1",
+  "currentBatch": "wearable_v101",
   "heavyPolicy": {
     "profile": "heavy_native_cap",
     "version": 1,
@@ -7146,6 +7298,30 @@
         "active": 1
       },
       "total": 1
+    },
+    "TarkovCombatStims": {
+      "name": "Tarkov Combat Stims",
+      "sourceName": "TarkovCombatStims",
+      "counts": {
+        "active": 1
+      },
+      "total": 1
+    },
+    "CodexCBRTIndependent_4221": {
+      "name": "Chemical 独立兼容版（本地）",
+      "sourceName": "CodexCBRTIndependent_4221",
+      "counts": {
+        "active": 1
+      },
+      "total": 1
+    },
+    "HavenFall": {
+      "name": "HavenFall 前后腰包",
+      "sourceName": "HavenFall",
+      "counts": {
+        "active": 2
+      },
+      "total": 2
     }
   },
   "sourceBindingKeys": [
@@ -7341,6 +7517,10 @@
     "Base.SST_Belt_1",
     "Base.bag_cat40",
     "Base.cat_AutoReload",
+    "CodexCBRT.SST02_ChestRig",
+    "CombatStims.InjectorCase",
+    "ESHF.Qwe_Backpack",
+    "ESHF.Qwe_BackpackFront",
     "LB.Bag_LegendaryBackpack",
     "LB.Bag_LegendaryBackpack_Black",
     "LB.Bag_LegendaryBackpack_Blue",

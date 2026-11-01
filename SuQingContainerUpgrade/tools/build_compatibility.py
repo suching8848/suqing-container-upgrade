@@ -35,7 +35,10 @@ VANILLA_NATIVE_UPGRADE = {'Base.Bag_CrudeLeatherBag', 'Base.Bag_CrudeTarpBag'}
 EXPECTED_PROVIDER_TOTALS = {'vanilla': 86, 'FantasyWorkshopVS42_4.0': 38,
     '4123567854998': 17, 'BackpackSystemB42': 25, 'SuPrimitiveEquipment': 4,
     'TheyKnewContinued': 2, 'RaccoonCityB42': 2, 'SafeWayHamlet': 1,
-    'Estate 39': 1, 'LBB42': 10, 'ModernFirearmsSystem': 1}
+    'Estate 39': 1, 'LBB42': 10, 'ModernFirearmsSystem': 1,
+    'TarkovCombatStims': 1, 'CodexCBRTIndependent_4221': 1, 'HavenFall': 2}
+WEARABLE_TYPES = {'CombatStims.InjectorCase', 'CodexCBRT.SST02_ChestRig',
+    'ESHF.Qwe_Backpack', 'ESHF.Qwe_BackpackFront'}
 SOURCE_KEYS = ['fullType', 'nameCN', 'provider', 'capacity', 'weightReduction',
     'weight', 'slot', 'bodyLocation', 'source', 'sourceSha256', 'restrictions',
     'tags', 'attachmentsProvided', 'fluidCapacity', 'nameSource']
@@ -91,7 +94,7 @@ def validate(registry):
     check(ids == registry.get('auditedFullTypes'), 'Whitelist differs from audited source IDs')
     check(registry.get('sourceBindingKeys') == SOURCE_KEYS, 'Source binding fields changed')
     expected = registry['expectedCounts']
-    check(len(rows) == expected['registryEntries'] == 187, 'Reviewed total scope differs')
+    check(len(rows) == expected['registryEntries'] == 191, 'Reviewed total scope differs')
     check(Counter(row['provider'] for row in rows) == Counter(EXPECTED_PROVIDER_TOTALS),
           'Provider source inventory differs')
     for row in rows:
@@ -136,7 +139,8 @@ def validate(registry):
                   or name == 'Base.RuBag', 'Unexpected restricted-mod source: ' + name)
         size = restrictions['maxItemSize']
         check(size is None or (profile == 'restricted_webbing' and size == 1.3)
-              or (name == 'Base.ResidentEvilSuspenders' and size == 3),
+              or (name == 'Base.ResidentEvilSuspenders' and size == 3)
+              or (name == 'CombatStims.InjectorCase' and profile == 'mod_container' and size == 10),
               'Unaudited item-size limit: ' + name)
         if profile == 'native_capacity':
             check(name in NATIVE and row['capacity'] >= 50
@@ -187,7 +191,8 @@ def validate(registry):
             check(name in ORIGINAL, 'Legacy profile expanded: ' + name)
         elif profile == 'mod_container':
             check(row['provider'] != 'vanilla' and row['capacity'] < 50
-                  and row['sourceClassification'] == 'audited_v020_enabled',
+                  and row['sourceClassification'] == ('audited_v101_wearable'
+                      if name in WEARABLE_TYPES else 'audited_v020_enabled'),
                   'Mod physical source profile differs: ' + name)
         if profile not in ('native_capacity', 'dynamic_capacity'):
             check(row['capacityMode'] == 'physical', 'Physical capacity mode differs: ' + name)
@@ -201,15 +206,18 @@ def validate(registry):
     for status in STATUSES:
         check(sum(row['status'] == status for row in rows) == expected[status],
               'Reviewed status count differs: ' + status)
-    check(len(active) == 168 and expected['active'] == 168, 'Active whitelist differs')
+    check(WEARABLE_TYPES <= set(active), 'Reviewed wearable additions are missing')
+    check(all(row['profile'] == 'mod_container' for row in rows if row['fullType'] in WEARABLE_TYPES),
+          'Wearable record profiles must remain compatible with the local adapter')
+    check(len(active) == 172 and expected['active'] == 172, 'Active whitelist differs')
     check(sum(row['provider'] == 'vanilla' and row['status'] == 'active' for row in rows)
           == expected['activeVanilla'] == 84, 'Vanilla active count differs')
     check(sum(row['provider'] != 'vanilla' and row['status'] == 'active' for row in rows)
-          == expected['activeMod'] == 84, 'Mod active count differs')
+          == expected['activeMod'] == 88, 'Mod active count differs')
     check(sum(row['provider'] == 'vanilla' for row in rows)
           == expected['vanillaInventoryIncludingFluid'] == 86, 'Vanilla source inventory differs')
     check(sum(row['provider'] != 'vanilla' for row in rows)
-          == expected['modInventory'] == 101, 'Mod source inventory differs')
+          == expected['modInventory'] == 105, 'Mod source inventory differs')
     check(Counter(row['profile'] for row in rows if row['status'] == 'active')
           == Counter(expected['profiles']), 'Reviewed profile counts differ')
     check(sum(row['status'] == 'active' and row['batch'] == registry['currentBatch'] for row in rows)
@@ -234,7 +242,7 @@ def validate(registry):
 
     positioned = {row['fullType']: row for row in rows
                   if row['status'] == 'active' and row.get('positionPair')}
-    check(len(positioned) == expected['positionMappings'] == 13, 'Position mappings count differs')
+    check(len(positioned) == expected['positionMappings'] == 15, 'Position mappings count differs')
     for name, row in positioned.items():
         pair = positioned.get(row['positionPair'])
         check(pair is not None and pair['positionPair'] == name
@@ -280,6 +288,8 @@ def restriction_text(row):
         parts.append(r['acceptItemFunction'])
     if r['maxItemSize'] is not None:
         parts.append('最大物品尺寸' + str(r['maxItemSize']))
+    if row['fullType'] == 'CombatStims.InjectorCase':
+        parts.append('保留上游针剂过滤；肾上腺素笔兼容由独立针剂补丁提供')
     if row['fullType'] == 'Base.HolsterShoulder':
         parts.append('最多2个手枪弹匣')
     if r['fluidComponent']:
@@ -360,9 +370,9 @@ def render():
             display_v(row) if row['status'] == 'active' else '', row['capacityMode'],
             restriction_text(row), row.get('positionPair', ''), row['reason'], row['source']])
     supported = ['蘇清的容器升级 ' + registry['modVersion'] + ' 最终适配物品名单', '',
-        'B42.21单人版。当前明确支持168个完整ID：原版84、已审计模组84。',
-        '客户端代表项在单人档测试；168项为支持范围，不代表逐件游戏内实测。多人/联机未验证。',
-        '下面只列支持强化的物品；187项完整分类（含仅还原1、排除18）见适配名单.csv。',
+        'B42.21单人版。当前明确支持172个完整ID：原版84、已审计模组88。',
+        '此前客户端代表项在单人档测试；新增4项完成离线回归，游戏内验收仍待完成。172项不代表逐件游戏内实测。多人/联机未验证。',
+        '下面只列支持强化的物品；191项完整分类（含仅还原1、排除18）见适配名单.csv。',
         '规格均为源脚本默认值，实际实例/沙盒可能不同；V不降低已有容量或减重。',
         '原物品尺寸、种类、2弹匣硬限制、槽位、挂点、装填规则及液体组件保持。',
         '液体与普通库存须在强化/还原前排空；高原生容量项只强化减重，浣熊市保留沙盒业务容量。',
@@ -379,14 +389,14 @@ def render():
                 + ' | ' + restriction_text(row))
         supported.append('')
     stats = ['蘇清的容器升级 ' + registry['modVersion'] + ' 适配统计', '',
-        'B42.21单人版；168项为明确支持的ID，客户端代表项单人测试与离线回归分开记录。',
+        'B42.21单人版；172项为明确支持的ID，此前代表项单人测试与新增4项离线回归分开记录。',
         '多人/联机未验证；本包不修改工坊原件或自动改写存档与启用名单。',
         '唯一人工维护清单：compatibility/registry.json；由build_compatibility.py确定性生成运行时和报告。',
-        '全量来源：187个完整ID = 原版86 + 当前启用模组101。',
-        '支持强化：168 = 原版84 + 模组84；仅旧记录还原：1（踏行千山五）；排除：18；暂缓：0。',
+        '全量来源：191个完整ID = 原版86 + 已审计模组105。',
+        '支持强化：172 = 原版84 + 模组88；仅旧记录还原：1（踏行千山五）；排除：18；暂缓：0。',
         '排除18 = 原版原生升级包2 + 踏行千山其它等级5 + 初音背包1 + 传奇背包10。',
         '初音/传奇原规格已达或超过目标，不收费、不新增记录；踏行千山继续走原模组一至六级扩容链。',
-        '本批在此前84个支持ID基础新增84个；中文同名、材质和尺码仍按完整ID分别统计。', '',
+        '1.0.1在此前168个支持ID基础新增4个：注射器盒、生化胸挂、HavenFall前后腰包；中文同名、材质和尺码仍按完整ID分别统计。', '',
         '支持数/来源清点数：']
     for provider, meta in registry['providers'].items():
         stats.append(meta['name'] + '：支持' + str(meta['counts'].get('active', 0))
@@ -397,13 +407,13 @@ def render():
         '浣熊市两件不写物理容量：沿用原沙盒业务容量与特性算法，用有效记录叠加强化下限。',
         '肩挂枪套原生最多2个手枪弹匣保持；胸挂最大尺寸1.3和浣熊市背带3.0、弹带过滤/装填标签保持。',
         '所有混合液体容器只强化普通储物；操作前清空物品和液体，绝不改流体容量/内容/混合物。',
-        '13条精确穿戴/换位映射：原版6 + oldcat同ID5 + 苏别璃前后腰包2；仅有效自身记录启用保护。',
+        '15条精确穿戴/换位映射：原版6 + oldcat同ID5 + 苏别璃前后腰包2 + HavenFall前后腰包2；仅有效自身记录启用保护。',
         '二维衣橱8条精确改码配方保留内容引用、外观与强化记录；主库存且卸下后改码，超载/异常回滚。',
         '自动装弹机构保留有效定义2/91与原5发装填周期，不安装旧自动喂弹或新的tick逻辑。',
         '原生新制作将背包当材料消耗时请先还原已有强化（例如近轨航行背包材料）；不会把所有合成泛化为属性继承。',
         '仍使用原生制作入口；不增加右键/悬浮/Halo/Say提示，不周期扫描。', '',
-        '完整187项见适配名单.csv；仅支持168项详见最终适配物品名单.txt。',
-        '代表项已进行单人客户端测试；离线/API验证不代表所有168项已逐件完成显示、实际换弹或保存重进验收。', '']
+        '完整191项见适配名单.csv；仅支持172项详见最终适配物品名单.txt。',
+        '此前代表项已进行单人客户端测试；新增4项的离线/API验证不代表真实显示、实际换弹或保存重进验收。', '']
     outputs = {LUA: lua.encode('ascii'), RECIPES: script.encode('utf-8'),
         ROOT / '适配名单.csv': stream.getvalue().encode('utf-8-sig'),
         ROOT / '适配统计.txt': '\n'.join(stats).encode('utf-8'),
