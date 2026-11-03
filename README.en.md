@@ -16,7 +16,7 @@ The [Steam Workshop release](https://steamcommunity.com/sharedfiles/filedetails/
 
 ## The author’s single-player setup and collection
 
-[Workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387) · [Current 205-ID list and enabled order](docs/current-single-player-modlist.md) · [All mod and patch repositories](docs/project-index.md)
+[Workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387) · [Single-player enabled snapshot: 205 IDs on 2026-11-02 01:10 UTC+08:00](docs/current-single-player-modlist.md) · [Ten source repositories and 42 Mod IDs](docs/project-index.md)
 
 The current snapshot contains **205 Mod IDs, 161 Workshop items and 33 separately installed local mods or patches not included in collection downloads**. The author previously reported normal play with their full B42.21 single-player setup; this is not individual acceptance of every project or new version. Multiplayer and dedicated servers remain untested.
 
@@ -106,6 +106,14 @@ Upgrades change managed capacity, weight reduction and this mod's records on the
 - Only audited native swaps and size conversions preserve records. Other crafting recipes consuming an upgraded bag need not transfer them to the new product; restore it first.
 - The six 踏行千山 containers and vanilla crude leather/tarp bags retain their own native upgrade chains instead of paid upgrades. 踏行千山五 is restore-only for valid old records.
 - The 10 Legendary Backpack colors and Estate 39's Miku bag already meet ordinary targets and are excluded from paid upgrading. Non-wearable crates are outside the scope.
+
+### Loaded containers on the ground cannot be picked up or worn
+
+An unequipped container weighs its own weight **plus all its contents**. The usual main-inventory pickup capacity is **50**, separate from the character's comfortable carrying limit shown in the inventory panel. Picking up a container checks the character's current carried weight plus the container's full unequipped weight against that capacity.
+
+Choosing **Wear** on a ground item first transfers it into the main inventory, then equips it. The pickup check therefore happens before the equipped weight reduction applies. Higher storage capacity and stronger weight reduction do not exempt an unequipped container from this check.
+
+To recover the container, temporarily move some contents from it to the ground or another external container, or put other carried items into external storage. Once the pickup fits, pick up and wear the container, then return the contents. Simply moving contents from the ground bag into the character's main inventory usually leaves the combined weight unchanged and does not solve the pickup limit.
 
 ## Validation scope
 

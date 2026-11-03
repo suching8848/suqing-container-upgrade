@@ -79,6 +79,16 @@ MFS自动装弹设备保留其原生每次动画最多装入5发及佩戴/随身
 肩挂枪套即使容量提高，也仍然最多2个手枪弹匣；不增加武器挂点。
 液体混合包只加强普通物品收纳，储水升数、成分和流体机制保持原值。
 
+满载容器落地后无法拾取或穿戴（2026-11-03说明补充）
+未装备的容器重量＝自身重量＋全部内容物重量，不享受穿戴减重。
+普通人物主物品栏的拾取容量上限为50，与人物面板常规负重上限不同。
+容量强化、高减重或有条理特性不豁免此检查；包本身不足50，加上人物其他负重仍可能超限。
+从地面直接点“穿戴”也要先转进人物主物品栏，再穿上，因而同样可能被拦。
+083黑鹰野战胸挂及其他可穿戴容器均可能遇到，并不单独证明强化数据损坏。
+处理：部分内容先暂存外部箱子或地面，或暂卸身上其他物品；先拾取、穿回，再装回内容。
+仅把地上包里的东西搬到人物主物品栏，通常一减一加、合计不降，仍可能捡不起。
+满载卸下前先检查未装备重量；本模组保留原版拾取和穿戴限制，不自动丢物或绕过上限。
+
 原生换位和尺寸转换
 对清单内精确前后腰包、同ID穿戴替换，以及8条已核对的原生尺寸转换配方，
 仅在源物品有合法且一致的蘇清记录时，保留强化规格和记录。
@@ -303,3 +313,6 @@ Disable Debug free-crafting/infinite-material settings when checking actual paym
 
 Source and artwork
 The source is public but has no separately attached open-source license. The cover, portrait and recipe icons were made with AI assistance using the maintainer-approved character reference. No blanket MIT or other asset license is granted. The original game's and supported mods' rights remain with their authors. See the linked asset notes for the boundaries.
+
+Loaded container pickup limit (documentation added 2026-11-03)
+An unequipped container counts its own weight plus all contents without worn weight reduction. The ordinary main inventory has a pickup capacity of 50, separate from the character's comfortable carry limit. Capacity upgrades, weight reduction and Organized do not bypass that check. Wearing a ground item first transfers it into the main inventory, so Wear can fail at the same step. Temporarily move some contents to an external container or the ground, or unload other carried items; pick up and wear the bag, then reload it. Merely moving contents into the character's main inventory usually leaves the combined pickup weight unchanged. Original pickup and wear rules are retained.

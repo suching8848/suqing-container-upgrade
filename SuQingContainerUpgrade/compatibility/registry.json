@@ -7205,7 +7205,7 @@
     "recordRequired": true,
     "allowSameTypeWear": true,
     "requireEmptyDestinationSlot": true,
-    "mappings": 13
+    "mappings": 15
   },
   "providers": {
     "vanilla": {

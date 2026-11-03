@@ -11,6 +11,8 @@ CombatStims.InjectorCase、CodexCBRT.SST02_ChestRig、ESHF.Qwe_Backpack、ESHF.Q
 每档布/皮革/线用量：4/0/2、6/2/4、10/4/6、14/6/8、20/10/10；裁缝0–4级。针保留，满卷普通线20用量，表中不是线轴数。
 卸下、放主物品栏、清空物品与全部液体后操作；储水升数不变。旧档位即使亮起也会拒绝且不扣料；动画结束不代表成功。前后换位先清空目标槽，不挤掉另一包。
 保留外观、自重、槽位、挂点、耐久、其他ModData、换弹与自动装弹逻辑。胸挂尺寸、弹带过滤、肩套最多2个手枪弹匣的限制保留。其他新制作配方不保证继承强化，消耗前先还原。
+[h3]满载容器落地后的拾取限制[/h3]
+未穿戴容器按自重加内容物总重计算。普通人物主物品栏拾取上限50，与人物常规负重上限不同；高容量和高减重不豁免。地面直接穿戴也须先拾取，可能同样失败。先把部分内容暂存外部箱子/地面，或卸下其他负重，穿回后再装回；仅把内容搬进人物主物品栏通常不能降低合计重量。
 [h3]还原与范围[/h3]
 成功还原首次规格，返有效账本累计真实实付材料50%，各类分别向下取整；线按用量返，可得部分线轴。全付I–V为54布/22皮/30线，返27/11/15。免费、跳档、未扣料不记账，旧无账付款不追溯；成功后清账防重复。停用不会自动还原保存属性。
 踏行千山与原版粗制皮/防水布包沿用原生升级；踏行千山五仅还原。传奇背包10色与Estate39的Miku包不收费强化；非穿戴箱子不支持。
@@ -32,6 +34,8 @@ Capacity/weight reduction: I 12/90%, II 20/93%, III 30/95%, IV 40/97%, V up to 4
 Per-tier cloth/leather/thread uses: 4/0/2, 6/2/4, 10/4/6, 14/6/8, 20/10/10; Tailoring 0–4. Needle retained. A full ordinary thread spool has 20 uses; these are not spool counts.
 Unequip, put in main inventory, empty items and drain all fluids; water capacity stays unchanged. Old lit-up tiers are rejected without payment; animation completion alone is not success. Clear the destination slot before swapping; another pack is not displaced.
 Keeps appearance, weight, slots, attachments, condition, other ModData and reload/automatic-loading logic. Rig size limits, ammunition-belt filters and the shoulder holster's 2-pistol-magazine cap remain. Other crafting recipes need not preserve upgrades; restore bags before consuming them.
+[h3]Loaded containers on the ground[/h3]
+Unequipped bags count their own weight plus all contents. The ordinary main-inventory pickup capacity is 50, separate from comfortable carry weight; upgrades and high weight reduction do not bypass it. Wear first picks up the item and can fail at the same step. Temporarily store some contents outside the character or unload other carried items, wear the bag, then reload it. Moving contents only into the main inventory usually leaves the combined weight unchanged.
 [h3]Restoration and scope[/h3]
 Restoring the first specification refunds 50% of each material's actual cumulative ledger payment, rounded down separately. Thread returns in uses, possibly as a partial spool. Paying I–V costs 54 cloth/22 leather/30 thread uses and refunds 27/11/15. Free/skipped/unconsumed operations are unrecorded; older unrecorded payments are not reconstructed. Success clears the ledger to prevent repeats. Disabling the mod does not restore saved attributes.
 踏行千山 and vanilla crude leather/tarp bags keep their native upgrade chains; 踏行千山五 is restore-only. Ten Legendary Backpack colors and Estate39's Miku bag are excluded from paid upgrades. Non-wearable crates are unsupported.
