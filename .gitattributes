@@ -1,3 +1,6 @@
 * text=auto eol=lf
+# The generated Lua records this registry's raw-byte SHA-256. Preserve the
+# established CRLF bytes on every checkout so Windows and Linux agree.
+SuQingContainerUpgrade/compatibility/registry.json text eol=crlf
 *.csv text eol=crlf
 *.png binary
