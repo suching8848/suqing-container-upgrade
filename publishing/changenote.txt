@@ -1,8 +1,12 @@
-v1.0.1 文案与发布资料更新 / Documentation and listing update
-新增完整英文README及中英双语标题、工坊说明和包内使用说明，补充测试、发布与素材英语文档。
-加入作者当前单人档合集与完整启用列表链接。作者确认该合集在自己的B42.21单人档游玩正常。
-玩法版本仍为1.0.1：172项支持（84原版+88模组）；本轮不改Lua、配方、适配登记、生成表或图片。
+v1.0.3 未发布候选：返鲜餐盒内置支持 / Unpublished candidate: built-in freshness lunchbox support
+新增精确物品SuQingFreshnessLunchbox.FreshnessLunchbox，普通五档与还原直接写入既有原生配方，无需独立餐盒兼容子模组。
+支持173项（84原版+89模组），完整登记192项；原172项、穿戴换位、材料、技能、账本及实付50%返料不变。
+餐盒无穿戴槽，保留食品过滤、尺寸限制、返鲜状态及实例初始容量；缺少餐盒来源模组不影响其他容器。
+旧WearableCompat的普通1.0.0注册器继续按门禁跳过新版；独立HavenFall EX职责保留，不据此整项停用。
+普通1.0.3已部署作者本地，配套餐盒当前rc.5，尚未公开；本次仅同步发布资料并冻结新候选，不改玩法或个人安装。完整新增适配/保存重进仍待专项验收。
 
-Adds a complete English README and bilingual titles, Workshop text and packaged instructions, with English testing, publishing and asset documentation.
-Links the author's current collection and complete enabled list. The author reports normal play with this current collection in their own B42.21 single-player save.
-Gameplay remains v1.0.1: 172 supported IDs (84 vanilla + 88 mod). This round changes no Lua, recipes, registry, generated tables or artwork.
+Adds exact SuQingFreshnessLunchbox.FreshnessLunchbox support directly to the five native ordinary upgrade recipes and restoration, without a separate lunchbox adapter.
+Supports 173 IDs (84 vanilla + 89 mod), with 192 classified entries. Existing 172 IDs, wearable swaps, costs, skills, payment ledgers and 50% paid-material refunds are unchanged.
+Keeps the box's absent wearable slot, food filter, item-size limit, freshness state and instance baseline. Missing optional lunchbox sources do not affect other containers.
+The old WearableCompat ordinary adapter retains its 1.0.0-only gate; its separate HavenFall EX responsibilities remain, so the entire patch is not automatically redundant.
+Ordinary 1.0.3 is installed locally with lunchbox rc.5 and remains unpublished. This preparation updates publication copy and freezes a new candidate without changing gameplay or personal installation. Complete acceptance of additions and save/reload remains pending.

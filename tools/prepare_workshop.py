@@ -1,4 +1,4 @@
-"""Create a first-upload folder for the game's Workshop screen. Never contacts Steam."""
+"""Prepare a new staging folder for the existing Workshop item. Never contacts Steam."""
 from pathlib import Path
 import argparse
 import hashlib
@@ -11,6 +11,7 @@ SOURCE = ROOT / 'SuQingContainerUpgrade'
 PUBLISHING = ROOT / 'publishing'
 MOD_ID = 'SuQingContainerUpgrade_4221'
 NAME = 'SuQingContainerUpgrade'
+WORKSHOP_ID = '3823988025'
 DISALLOWED = {'.exe', '.dll', '.bat', '.app', '.dylib', '.sh', '.so', '.zip'}
 
 def require(condition, message):
@@ -39,6 +40,18 @@ def preview(path):
     require(len(raw) <= 1_024_000, 'Preview must be no larger than 1,024,000 bytes')
     return {'width': width, 'height': height, 'bytes': len(raw), 'sha256': sha(path)}
 
+def listing():
+    metadata = json.loads((PUBLISHING / 'workshop.json').read_text(encoding='utf-8-sig'))
+    require(metadata.get('publishedfileid') == WORKSHOP_ID, 'Preserve the existing Workshop ID ' + WORKSHOP_ID)
+    require(metadata['visibility'] in {'public', 'friendsOnly', 'private', 'unlisted'}, 'Invalid visibility')
+    description = (PUBLISHING / 'description.bbcode.txt').read_text(encoding='utf-8-sig').strip()
+    title = metadata['title'].strip()
+    require(title and description, 'Title and description must be nonempty')
+    require(title == (PUBLISHING / 'title.txt').read_text(encoding='utf-8-sig').strip(), 'Title metadata differs from title.txt')
+    require(len(title.encode('utf-8')) < 128, 'Title must be shorter than 128 UTF-8 bytes')
+    require(len(description.encode('utf-8')) < 8000, 'Description must be shorter than 8000 UTF-8 bytes')
+    return metadata, title, description
+
 def validate(destination):
     contents = destination / 'Contents'
     require(contents.is_dir(), 'Missing Contents folder')
@@ -56,9 +69,22 @@ def validate(destination):
         require(not path.is_symlink(), 'Linked content is not supported')
         require(path.suffix.lower() not in DISALLOWED, 'Disallowed Workshop file type: ' + str(path))
     require(files(packaged) == files(SOURCE), 'Staged mod differs from repository source')
+    metadata, title, description = listing()
+    require(metadata.get('version') == fields['modversion'], 'Listing version differs from packaged mod')
     settings = (destination / 'workshop.txt').read_text(encoding='utf-8-sig')
-    require('version=1\n' in settings and '\ntitle=' in settings and '\ndescription=' in settings, 'Incomplete workshop.txt')
+    settings_fields = {}
+    for line in settings.splitlines():
+        if '=' in line:
+            name, value = line.split('=', 1)
+            settings_fields.setdefault(name, []).append(value)
+    expected = {'version': ['1'], 'id': [WORKSHOP_ID], 'title': [title],
+                'description': description.splitlines(), 'tags': [';'.join(metadata['tags'])],
+                'visibility': [metadata['visibility']]}
+    require(settings_fields == expected, 'workshop.txt differs from the current listing or assigned ID')
+    require(sha(destination / 'preview.png') == sha(PUBLISHING / 'preview.png'), 'Preview differs from selected artwork')
+    require(sha(destination / 'changenote.txt') == sha(PUBLISHING / 'changenote.txt'), 'Changenote differs from current copy')
     return {'result': 'PASS', 'folder': str(destination), 'mod_id': MOD_ID, 'version': fields['modversion'],
+            'workshop_id': WORKSHOP_ID, 'description_utf8_bytes': len(description.encode('utf-8')),
             'mod_files': len(files(packaged)), 'preview': preview(destination / 'preview.png'),
             'uploaded': False, 'note': 'File and structure validation only; the game performs its native validation before upload.'}
 
@@ -74,16 +100,15 @@ def main():
     require(destination.parent.name == 'Workshop' and destination.name == NAME,
             'Output must end in Workshop/SuQingContainerUpgrade')
     require(not destination.exists(), 'Folder already exists. Preserve its workshop.txt and assigned ID; use --check or update deliberately.')
-    require(info(SOURCE / '42/mod.info').get('id') == MOD_ID, 'Unexpected source mod ID')
-    metadata = json.loads((PUBLISHING / 'workshop.json').read_text(encoding='utf-8'))
-    require(metadata['visibility'] in {'public', 'friendsOnly', 'private', 'unlisted'}, 'Invalid visibility')
-    description = (PUBLISHING / 'description.bbcode.txt').read_text(encoding='utf-8').strip()
-    require(metadata['title'].strip() and description, 'Title and description must be nonempty')
+    source_fields = info(SOURCE / '42/mod.info')
+    require(source_fields.get('id') == MOD_ID, 'Unexpected source mod ID')
+    metadata, title, description = listing()
+    require(metadata.get('version') == source_fields.get('modversion'), 'Listing version differs from source mod')
     preview(PUBLISHING / 'preview.png')
-    lines = ['version=1', 'title=' + metadata['title']]
+    lines = ['version=1', 'id=' + WORKSHOP_ID, 'title=' + title]
     lines += ['description=' + line for line in description.splitlines()]
     lines += ['tags=' + ';'.join(metadata['tags']), 'visibility=' + metadata['visibility'], '']
-    # No ID is invented. The game writes its Steam-assigned ID after the first upload.
+    # This project already has an assigned ID. Never prepare a new-item upload.
     destination.mkdir(parents=True, exist_ok=False)
     shutil.copytree(SOURCE, destination / 'Contents/mods' / NAME)
     shutil.copy2(PUBLISHING / 'preview.png', destination / 'preview.png')

@@ -3,7 +3,7 @@ SuQingContainerUpgrade = SuQingContainerUpgrade or {}
 local C = SuQingContainerUpgrade
 if C.loaded then return C end
 C.loaded = true
-C.version = "1.0.1"
+C.version = "1.0.3"
 C.modDataKey = "SuQingContainerUpgrade"
 require "SuQingContainerUpgrade/Compatibility"
 -- The build generates both these sets and native recipe inputs from one audited

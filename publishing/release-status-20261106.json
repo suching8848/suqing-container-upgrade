@@ -1,0 +1,31 @@
+{
+  "recorded_at_bjt": "2026-11-06T22:21:45.093811+08:00",
+  "publishedfileid": "3823988025",
+  "source_version": "1.0.3",
+  "online_version": "1.0.1",
+  "status": "update_failed_pending_node_switch",
+  "native_failed_attempts": [
+    {
+      "receipt": "upload-20261106_220711_747280.json",
+      "sha256": "5bc5289c94785e29bc82db0de81f09f0638df9ac57506b07dd63e2fcb4fafdd3",
+      "callback_result": 2,
+      "status": "mutation_failed"
+    },
+    {
+      "receipt": "upload-20261106_220758_383805.json",
+      "sha256": "2f2b7d8cd24e5c5bb2dbc6876b9037954d5ccbc06f0bfa4c7d0e864dd75e25d1",
+      "callback_result": 2,
+      "status": "mutation_failed"
+    },
+    {
+      "receipt": "upload-20261106_221339_510086.json",
+      "sha256": "16818e392b6346d17bff013eab1e09205ed8a3bbdbc14b019d0ff009e09adbd7",
+      "callback_result": 2,
+      "status": "mutation_failed"
+    }
+  ],
+  "summary_zh": "1.0.3源码与本地候选准备完成；三次原生上传明确失败，诊断显示Steam旧manifest下载HTTP502。线上仍为1.0.1，等待用户切换节点后先只读核对再重试；保留原工坊ID，不创建替代项目。",
+  "summary_en": "Source and local candidate 1.0.3 are prepared. Three native submits explicitly failed; diagnostics showed HTTP502 while retrieving the old Steam manifest. The online item remains 1.0.1. Wait for the user to switch nodes, reread remote state, then retry the same item ID.",
+  "personal_environment_changed": false,
+  "gameplay_acceptance": "Complete additions/save-reload and EX-combination acceptance remains pending. No gameplay acceptance is inferred from Git or upload operations."
+}

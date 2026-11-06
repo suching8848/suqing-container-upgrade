@@ -2,7 +2,7 @@
 -- Unicode names stay in JSON/CSV; native recipe identity is numeric UTF-16.
 SuQingContainerUpgradeCompatibility = {
     schema = 1,
-    registrySha256 = "c87f7ba9f4e364de3786d91ef0a934f3c3669d64011c1aac496b424590cda5bf",
+    registrySha256 = "91c7f919d1955024d334efe936aa6e7d85dfe364b62ec28d0b98a197d109d8e0",
     supported = {
         ["Base.2dw_astrobackpack"] = true,
         ["Base.2dw_classicsailorbag"] = true,
@@ -174,6 +174,7 @@ SuQingContainerUpgradeCompatibility = {
         ["CombatStims.InjectorCase"] = true,
         ["ESHF.Qwe_Backpack"] = true,
         ["ESHF.Qwe_BackpackFront"] = true,
+        ["SuQingFreshnessLunchbox.FreshnessLunchbox"] = true,
         ["TheyKnew.MysteriousBackPack"] = true,
         ["TheyKnew.MysteriousSatchel"] = true,
     },
@@ -352,6 +353,7 @@ SuQingContainerUpgradeCompatibility = {
         ["CombatStims.InjectorCase"] = "mod_container",
         ["ESHF.Qwe_Backpack"] = "mod_container",
         ["ESHF.Qwe_BackpackFront"] = "mod_container",
+        ["SuQingFreshnessLunchbox.FreshnessLunchbox"] = "mod_container",
         ["TheyKnew.MysteriousBackPack"] = "mod_container",
         ["TheyKnew.MysteriousSatchel"] = "existing_v013",
     },

@@ -1,31 +1,41 @@
-蘇清的容器升级 1.0.1 — Build 42.21 单人
+蘇清的容器升级 1.0.3 — Build 42.21 单人
 
 语言 / Languages: 中文在前，完整英文说明在后。Chinese first; complete English instructions follow.
-作者当前单人档合集：https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387
-作者确认当前合集在自己的B42.21单人档游玩正常；该反馈对应完整204个启用Mod ID，含32个未公开本地补丁。
-工坊合集不会下载这32个补丁，不能单独完整复现作者配置。完整列表、来源与启用顺序：
+作者历史配置参考合集：https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387
+历史说明：作者此前曾确认自己的B42.21单人档游玩正常；该反馈对应当时204个启用Mod ID、含32个未公开本地补丁的配置，不代表1.0.3候选的当前配置或游戏内实测。
+当时的32个本地补丁不随工坊合集下载，单独订阅不能复现那份历史配置。后续带日期的列表、来源与启用顺序见：
 https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/current-single-player-modlist.md
 
 
 1.0.0整理为独立发布包，核心机制沿用已测试的0.2.2，并新增专用图标与封面。
 维护者已确认v1.0.0在个人Build 42.21单人环境中使用正常。
-v1.0.0客户端验证覆盖单人代表项；本次四项新增仅离线检查，172项不代表全部逐件游戏内实测。
-已发布Steam创意工坊版本3823988025；GitHub同时提供源码与手动安装包。
+v1.0.0客户端验证覆盖单人代表项；1.0.1四项及1.0.3返鲜餐盒仅离线检查，173项不代表全部逐件游戏内实测。
+既有版本已发布Steam创意工坊版本3823988025；本次1.0.3仍为未发布候选，GitHub同时提供源码与手动安装包。
 
 安装
 完全退出游戏并备份后，将本目录整体放入 %UserProfile%\Zomboid\mods\。
 应保留42与common目录；42/mod.info中的Mod ID为 SuQingContainerUpgrade_4221。
 在模组列表和目标单人存档中启用，停用重复旧版/测试版，再重启游戏。
 
+1.0.3 返鲜餐盒内置支持（未发布候选）
+
+当前配套餐盒为 0.1.0-rc.5，普通容器升级为 1.0.3，两者已部署作者本地单人环境，尚未公开发布。本次不改变精确支持ID或升级规则；餐盒rc.5轮廓、普通五档/还原及完整EX组合仍按各自验收范围记录。
+
+新增 `SuQingFreshnessLunchbox.FreshnessLunchbox` 的精确普通升级适配，五档与还原直接写入原生配方，无需独立返鲜盒兼容子模组。餐盒仍由独立 `SuQingFreshnessLunchbox` 主模组提供；未安装餐盒来源时，原有容器仍可正常使用。
+
+保留食品过滤、最大物品尺寸1、无穿戴槽及左右单手外观；升级前清空、移出双手并放主物品栏。沿用原材料、技能、付款账本与实付50%返料；首次记录餐盒实例的实际容量，还原回该实例的原值，返鲜开关、进度与其他ModData保留。默认餐盒容量4，沙盒首次初始化值及已有升级不被普通升级改写为固定4。
+
+1.0.3已于2026-11-06按授权部署作者本地单人环境，公开上传仍未执行；本次仅修订说明并冻结候选，不再改个人安装或启用名单。1.0.1已内置的四项穿戴适配保持；现用 `Codex_SuQingWearableCompat_4221` 的普通注册器只接受1.0.0，在1.0.3按原门禁跳过。该补丁另有HavenFall大背包EX桥接，独立检查EX `1.0.0-rc.2` 及源/包装链，不能仅因普通功能已内置便整项停用；本次不改该桥接；完整游戏组合仍待针对性验收。
+
 1.0.1新增适配
 注射器盒CombatStims.InjectorCase、生化胸挂CodexCBRT.SST02_ChestRig、HavenFall前后腰包ESHF.Qwe_Backpack与ESHF.Qwe_BackpackFront。
 保留针剂过滤、最大物品尺寸10、腰包换位及既有有效强化记录；材料、技能、返料规则沿用。新增适配尚待游戏内验收。HavenFall大背包EX仍属于独立扩展。
 
 范围与名单
-当前启用模组按实际加载顺序清点，原版86个、模组105个可穿戴容器ID。
-支持172个（原版84、模组88）；1个仅供旧强化记录还原；18个明确排除。
-“最终适配物品名单.txt”逐件列出全部支持项，“适配名单.csv”列出全部191项与理由。
-名称相同但ID不同的朝向、尺寸、颜色分别统计，不代表172种独立外观。
+当前启用模组按实际加载顺序清点，原版86个、模组106个来源容器ID（含无穿戴槽的返鲜餐盒）。
+支持173个（原版84、模组89）；1个仅供旧强化记录还原；18个明确排除。
+“最终适配物品名单.txt”逐件列出全部支持项，“适配名单.csv”列出全部192项与理由。
+名称相同但ID不同的朝向、尺寸、颜色分别统计，不代表173种独立外观。
 苏别璃原始装备的4件容器全部纳入；不改该模组原始装备机制。
 
 液体容器注意事项
@@ -139,7 +149,7 @@ compatibility/registry.json 是唯一适配名单。运行Python3：
 本版面向Build 42.21单人模式。客户端代表项包括容量显示与还原返料等具体项目，
 维护者已确认v1.0.0在个人单人环境中使用正常。
 离线回归和源审计单独记录，不与游戏内验证混算。
-172项是适配支持范围，不表示172项均已逐件实测，也不据此扩大保存重进、装弹或其他场景的验收范围。
+173项是适配支持范围，不表示173项均已逐件实测，也不据此扩大保存重进、装弹或其他场景的验收范围。
 多人和专用服务器未验证，当前前置检查不开放联机强化与还原。
 验证扣料和返料时请关闭Debug免费制作/无限材料，用正常制作面板检查真实材料差额。
 完全退出并重启游戏后才加载新版Lua。本版不含EX。
@@ -161,31 +171,41 @@ compatibility/registry.json 是唯一适配名单。运行Python3：
 > Larger capacities and strong weight reduction substantially ease inventory management and transport decisions. Choose it to suit your play style.
 
 
-v1.0.1 · Project Zomboid Build 42.21 · Single-player
+v1.0.3 · Project Zomboid Build 42.21 · Single-player
 
-Upgrade existing wearable containers with clean ripped sheets, leather strips and thread. The original item and its functions remain in place. Recipes use the native crafting category and quick-crafting entry points.
+Upgrade existing wearable containers and the specified single-handed freshness lunchbox with clean ripped sheets, leather strips and thread. The original item and its functions remain in place. Recipes use the native crafting category and quick-crafting entry points.
 
-The Steam Workshop release: https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025 is available; GitHub provides the source and files for manual installation. This release does not include EX upgrades.
+An earlier Steam Workshop release: https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025 is available; GitHub provides the source and files for manual installation. The 1.0.3 candidate is unpublished and does not include EX upgrades.
 
-The author's current single-player save and collection
+Historical single-player setup and collection reference
 
-Current Workshop collection: https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387 · Complete mod list and enabled order: https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/current-single-player-modlist.md
+Collection reference for the historical setup: https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387 · Complete mod list and enabled order: https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/current-single-player-modlist.md
 
-The author reports normal play with this current collection in their own B42.21 single-player save. This report concerns the author's full configuration: 204 enabled Mod IDs, including 32 unpublished local patches. It is not a claim that every supported item, every mod combination or multiplayer has been tested.
+Historical note: the author previously reported normal play in their B42.21 single-player save with the configuration used at that time: 204 enabled Mod IDs, including 32 unpublished local patches. This does not establish the current configuration or in-game acceptance of the 1.0.3 candidate, every supported item, every combination or multiplayer.
 
 The Steam collection lists publicly subscribable Workshop items. It does not include unpublished local patches, and it does not replace the complete enabled order. Consult the full list for local patches, source differences and the actual order. Subscribing to the collection alone does not reproduce the entire environment.
 
 Features and supported scope
 
-- Explicit support for 172 exact item IDs: 84 vanilla and 88 audited mod items. Facing, size and color variants count separately.
+- Explicit support for 173 exact item IDs: 84 vanilla and 89 audited mod items. Facing, size and color variants count separately.
 - Five upgrade tiers, restoration to the original pre-upgrade specification, and a refund after successful restoration.
 - Supported front/back swaps, same-ID clothing replacements and 8 native size-conversion recipes preserve valid upgrade records.
 - The two Raccoon City containers retain their sandbox and character-trait calculations; their existing capacity tooltip line is corrected.
 - Dedicated portrait, upgrade/restore icons and cover. No custom context menu, extra tier tooltip area or success/failure floating text.
 
-See the 172 supported IDs: https://github.com/suching8848/suqing-container-upgrade/blob/main/SuQingContainerUpgrade/最终适配物品名单.txt and the complete classification of 191 entries and restrictions: https://github.com/suching8848/suqing-container-upgrade/blob/main/SuQingContainerUpgrade/适配名单.csv. The latter also contains 1 restore-only entry and 18 exclusions. Unknown IDs are unsupported.
+See the 173 supported IDs: https://github.com/suching8848/suqing-container-upgrade/blob/main/SuQingContainerUpgrade/最终适配物品名单.txt and the complete classification of 192 entries and restrictions: https://github.com/suching8848/suqing-container-upgrade/blob/main/SuQingContainerUpgrade/适配名单.csv. The latter also contains 1 restore-only entry and 18 exclusions. Unknown IDs are unsupported.
 
 Specified containers from Fantasy Workshop, 2DimensionWardrobe, Backpack System, SuPrimitiveEquipment, They Knew Continued, Raccoon City, SafeWayHamlet and MFS are supported. You do not need all these mods to upgrade vanilla containers. Each source mod still supplies its own items.
+
+Built-in freshness lunchbox support in 1.0.3 (unpublished candidate)
+
+The current companion is freshness lunchbox 0.1.0-rc.5, with ordinary Container Upgrades 1.0.3. Both are installed in the author's local single-player setup and remain unpublished. This update changes neither the exact supported ID nor upgrade rules. The rc.5 outline, five-tier/restoration behavior and full EX combination retain separate acceptance limits.
+
+Adds the exact `SuQingFreshnessLunchbox.FreshnessLunchbox` ID to the native five upgrade recipes and restoration recipe. No separate lunchbox adapter is needed. The independent `SuQingFreshnessLunchbox` mod still supplies the item; existing containers remain usable when that optional provider is absent.
+
+Food filtering, maximum item size 1, the absence of wearable slots and left/right single-hand appearances are retained. Empty the box, remove it from both hands and put it in the main inventory before upgrading. Materials, skills, actual-payment ledgers and 50% paid-material refunds stay unchanged. The first upgrade records the instance's actual baseline; restoration returns to that baseline while retaining freshness switches, progress and other ModData. The default lunchbox capacity is 4, but an initialized sandbox baseline or existing upgrade is never forcibly reset to 4.
+
+Version 1.0.3 was installed in the author's local single-player setup on 2026-11-06 and remains unpublished. This preparation updates documentation and freezes a candidate without changing personal installation or enable lists. The four wearable integrations built into 1.0.1 remain. The existing `Codex_SuQingWearableCompat_4221` ordinary adapter accepts only 1.0.0 and keeps its original refusal on 1.0.3. Its separate HavenFall large-backpack EX bridge independently checks EX `1.0.0-rc.2`, source definitions and wrapper ownership. Do not disable the entire patch merely because ordinary registrations are built in. This preparation does not change that bridge; complete gameplay-combination acceptance remains pending.
 
 Added in 1.0.1
 
@@ -258,11 +278,11 @@ Upgrades change managed capacity, weight reduction and this mod's records on the
 - Rig item-size limits, ammunition-belt filters and the shoulder holster's maximum of 2 pistol magazines remain active.
 - Only audited native swaps and size conversions preserve records. Other crafting recipes consuming an upgraded bag need not transfer them to the new product; restore it first.
 - The six 踏行千山 containers and vanilla crude leather/tarp bags retain their own native upgrade chains instead of paid upgrades. 踏行千山五 is restore-only for valid old records.
-- The 10 Legendary Backpack colors and Estate 39's Miku bag already meet ordinary targets and are excluded from paid upgrading. Non-wearable crates are outside the scope.
+- The 10 Legendary Backpack colors and Estate 39's Miku bag already meet ordinary targets and are excluded from paid upgrading. Unlisted non-wearable crates are outside the scope; the exact registered freshness lunchbox is a separate exception.
 
 Validation scope
 
-The maintainer confirmed normal use of v1.0.0 in their own Build 42.21 single-player environment, covering representative items. v1.0.1 incorporates four ordinary integrations from an existing independent patch. Offline checks and gameplay acceptance for the additions are tracked separately. The support count of 172 does not mean every item has been tested individually, or that all reload, save/reload or mod-combination scenarios have passed.
+The maintainer confirmed normal use of v1.0.0 in their own Build 42.21 single-player environment, covering representative items. v1.0.1 incorporated four ordinary integrations from an existing independent patch. Offline checks and gameplay acceptance for the additions are tracked separately. The support count of 173 does not mean every item has been tested individually, or that all reload, save/reload or mod-combination scenarios have passed.
 
 This release is single-player only. Multiplayer and dedicated servers are unvalidated; the current preconditions do not allow upgrading or restoration in multiplayer. See testing guidance: https://github.com/suching8848/suqing-container-upgrade/blob/main/docs/TESTING.en.md.
 
@@ -284,7 +304,7 @@ See CHANGELOG: https://github.com/suching8848/suqing-container-upgrade/blob/main
 
 Additional detailed behavior and recovery notes
 
-The audited source inventory contains 191 wearable-container IDs: 86 vanilla and 105 mod IDs. Of these, 172 are supported (84 vanilla + 88 mod), 1 is restore-only and 18 are excluded. Identically named facing/size/color variants count as separate IDs, not 172 distinct appearances. All 4 SuPrimitiveEquipment containers are included without replacing that mod's equipment mechanics.
+The audited source inventory contains 192 audited container IDs: 86 vanilla and 106 mod IDs, including the single-handed lunchbox with no wearable slot. Of these, 173 are supported (84 vanilla + 89 mod), 1 is restore-only and 18 are excluded. Identically named facing/size/color variants count as separate IDs, not 173 distinct appearances. All 4 SuPrimitiveEquipment containers are included without replacing that mod's equipment mechanics.
 
 The mod adds no custom floating tier names or success/failure text; technical results go to the log. Recipe materials, skill gates and action times follow the existing recipes. Higher existing weight reduction, including 99 or 100, is not reduced. The safety cap uses actual fixed item weight, not the current amount of fluid.
 
@@ -309,7 +329,7 @@ Already emitted native events, experience and crafting history cannot all be und
 
 Debug and validation
 Python is needed only for registry maintenance, not gameplay. Unknown IDs remain unsupported. The mod adds no periodic/world scan, loot-table changes or overwrites of Workshop source files. If the native recipe debug icon panel raises a setPlaceholderText null-reference error, use the debug item-list spawner to prepare items and then use the normal crafting panel. That debug-UI error is not proof of upgrade success or failure.
-Disable Debug free-crafting/infinite-material settings when checking actual payment and refunds. Observe real inventory differences in the normal crafting panel. Restart the game completely before testing updated Lua. Representative v1.0.0 client checks and offline regression/source audits are separate; 172 supported IDs do not mean 172 individually tested items or complete save/reload/loading coverage. Multiplayer and dedicated servers remain unvalidated and their upgrade/restore preconditions are rejected. EX is not included.
+Disable Debug free-crafting/infinite-material settings when checking actual payment and refunds. Observe real inventory differences in the normal crafting panel. Restart the game completely before testing updated Lua. Representative v1.0.0 client checks and offline regression/source audits are separate; 173 supported IDs do not mean 173 individually tested items or complete save/reload/loading coverage. Multiplayer and dedicated servers remain unvalidated and their upgrade/restore preconditions are rejected. EX is not included.
 
 Source and artwork
 The source is public but has no separately attached open-source license. The cover, portrait and recipe icons were made with AI assistance using the maintainer-approved character reference. No blanket MIT or other asset license is granted. The original game's and supported mods' rights remain with their authors. See the linked asset notes for the boundaries.

@@ -5,9 +5,17 @@
 ## Known validation limits
 
 - The target is Project Zomboid Build 42.21 single-player. The maintainer previously confirmed that v1.0.0 worked in their own single-player setup.
-- In-game checks covered representative containers, successive upgrade tiers, restoration refunds and capacity displays. v1.0.1 supports 172 exact IDs; this does not mean every item, reload behavior, position combination or save-and-reload scenario has been tested in the game.
+- In-game checks covered representative containers, successive upgrade tiers, restoration refunds and capacity displays. v1.0.3 supports 173 exact IDs; this does not mean every item, reload behavior, position combination or save-and-reload scenario has been tested in the game.
 - Development also used the installed game JAR's script parser and Kahlua runtime for offline regression checks covering the whitelist, material transactions, old records, position changes, size conversions, dynamic capacity and refund failure paths. Offline fixtures do not establish successful game startup, persistence in a real save or correct visuals.
 - Multiplayer and dedicated servers have not been validated. The current upgrade and restoration prechecks reject client or server environments; this release does not claim multiplayer support.
+
+## Freshness lunchbox candidate acceptance in 1.0.3
+
+The current companion is freshness lunchbox **0.1.0-rc.5**, with ordinary Container Upgrades **1.0.3**. Both are installed in the author's local single-player setup and remain unpublished. This update changes neither the exact supported ID nor upgrade rules. The rc.5 outline, five-tier/restoration behavior and full EX combination retain separate acceptance limits.
+
+Offline checks cover the generated whitelist and six native recipes, an absent lunchbox provider, retention of all 172 prior IDs, five upgrades/restoration and payment ledgers. No world is created; parser or simulated-object results are not gameplay acceptance. The user checks empty/unhanded boxes through 12/20/30/40/49 and 90/93/95/97/99, actual 50% refunds, exact restoration of capacity 4 or the initialized sandbox baseline, freshness switches/progress and save/reload. Without the optional provider, existing vanilla containers must remain usable. Check the old WearableCompat ordinary-version gate separately from its EX bridge; the full EX gameplay combination remains unaccepted.
+
+Generated consistency entry: `python SuQingContainerUpgrade/tools/build_compatibility.py --check`. This round's combined offline regression lives in the independent freshness-lunchbox project's `tools/integration_validate.py`; corresponding results are frozen in the test package. Candidate installation is not required.
 
 ## Acceptance limits for the v1.0.1 additions
 

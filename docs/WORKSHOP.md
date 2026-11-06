@@ -2,7 +2,9 @@
 
 中文 | [English](WORKSHOP.en.md)
 
-维护既有条目：[蘇清的容器升级 v1.0.1](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)。工坊 ID 固定为 `3823988025`；Mod ID 保持 `SuQingContainerUpgrade_4221`。后续更新使用这个条目，不创建新 ID。
+当前源码与个人普通升级均为1.0.3，配套餐盒rc.5；已本地部署、尚未公开。本次只修订资料和冻结候选，不再改个人环境。 / Source and personal ordinary upgrades are 1.0.3 with lunchbox rc.5: installed locally, unpublished. This preparation updates copy and freezes a candidate without changing the personal setup.
+
+维护既有条目：[蘇清的容器升级](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)。工坊 ID 固定为 `3823988025`；Mod ID 保持 `SuQingContainerUpgrade_4221`。后续更新使用这个条目，不创建新 ID。
 
 **本模组会极大影响游戏真实性与平衡性，请谨慎添加。适合喜欢大量收集、囤积物资的囤囤鼠玩家。** 容量和减重提升会明显削弱负重管理与搬运取舍的压力。
 
@@ -15,12 +17,12 @@
 在仓库根运行 Python 3，无需额外依赖：
 
 ```sh
-python tools/prepare_workshop.py --check
+python tools/prepare_workshop.py --output release/1.0.3_20261106_ReleaseRepair/Workshop/SuQingContainerUpgrade --check
 ```
 
-上传目录为 `%UserProfile%\Zomboid\Workshop\SuQingContainerUpgrade`。更新前保留其中已有的 `workshop.txt` 及其 `id=3823988025`，将本次模组文件同步到同一目录下的 `Contents/mods/SuQingContainerUpgrade`，并同步介绍和更新说明。
+本次新候选单独保存在仓库 `release/1.0.3_20261106_ReleaseRepair/Workshop/SuQingContainerUpgrade`，包含既有 `id=3823988025`。`release`是本地生成目录，不纳入Git。C盘旧Workshop入口仍为历史版本，没有覆盖；应以冻结清单标出的新候选为准，不直接上传旧树。
 
-上述检查不连接 Steam，也不上传、不改本地已启用模组、存档或启用名单。`prepare_workshop.py` 不带 `--check` 的模式仅用于创建尚不存在的上传目录，会拒绝覆盖既有目录；不应把它用于重建当前已分配 ID 的条目。若另建暂存目录，也须保留上述已有工坊 ID。
+上述检查不连接 Steam，也不上传、不改本地已启用模组、存档或启用名单。`prepare_workshop.py` 不带 `--check` 时只创建尚不存在的目录，拒绝覆盖，且从元数据校验并写入既有工坊ID。可用 `--output release/<日期时间>/Workshop/SuQingContainerUpgrade` 准备新暂存目录，再用相同路径加 `--check` 复核。脚本同时检查中英合并介绍小于8000个UTF-8字节、标题、预览图及逐文件一致性。
 
 ```text
 SuQingContainerUpgrade/
@@ -44,6 +46,8 @@ SuQingContainerUpgrade/
 
 ## 游戏内操作
 
+本轮尚未将新候选接入游戏扫描的Workshop目录；当前C盘同名入口仍是旧包。后续发布须先核对上传器实际使用的是上述冻结新树，再执行下列步骤，不能直接从旧入口上传。
+
 1. 保持 Steam 登录并正常启动游戏，进入主菜单 **创意工坊**。
 2. 点 **创建/更新插件/项目**，选择 **SuQingContainerUpgrade**，点 **下一页**。
 3. 核对已预填的标题、介绍、封面、标签，以及 **公开** 可见性，再点 **下一页**。
@@ -51,7 +55,7 @@ SuQingContainerUpgrade/
 5. 到“准备发布”页后，可点 **编辑更新说明**，粘贴上传目录的 `changenote.txt`；再点 **上传到 Steam 创意工坊!**。
 6. 等待成功提示，打开既有条目页面核对版本、介绍、封面和更新时间。文件校验通过不等于线上更新成功，上传成功也不等于游戏内验收完成。
 
-这一流程按 Build 42.21 本机 `WorkshopSubmitScreen.lua` 和 `SteamWorkshopItem` 校验核对。v1.0.1 支持 172 个精确物品 ID；新增四项的离线验证与游戏内验收分开记录。HavenFall 大背包 EX 超级升级未纳入此包。
+这一流程按 Build 42.21 本机 `WorkshopSubmitScreen.lua` 和 `SteamWorkshopItem` 校验核对。v1.0.3 支持 173 个精确物品 ID；此前四项与本次返鲜餐盒的离线验证、游戏内验收分开记录。HavenFall 大背包 EX 超级升级未纳入此包。
 
 ## 后续更新
 

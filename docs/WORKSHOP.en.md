@@ -2,7 +2,9 @@
 
 [中文](WORKSHOP.md) | English
 
-Maintain the existing item: [SuQing Container Upgrade v1.0.1](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025). Its Workshop ID is fixed at `3823988025`; its Mod ID remains `SuQingContainerUpgrade_4221`. Update this item rather than creating a new ID.
+当前源码与个人普通升级均为1.0.3，配套餐盒rc.5；已本地部署、尚未公开。本次只修订资料和冻结候选，不再改个人环境。 / Source and personal ordinary upgrades are 1.0.3 with lunchbox rc.5: installed locally, unpublished. This preparation updates copy and freezes a candidate without changing the personal setup.
+
+Maintain the existing item: [SuQing Container Upgrade](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025). Its Workshop ID is fixed at `3823988025`; its Mod ID remains `SuQingContainerUpgrade_4221`. Update this item rather than creating a new ID.
 
 **This mod greatly affects realism and game balance. Add it carefully. It is intended for players who enjoy collecting and stockpiling large quantities of items.** The capacity and weight-reduction increases substantially reduce the tradeoffs involved in carrying and transporting supplies.
 
@@ -15,12 +17,12 @@ The Workshop portion of the current single-player setup is in [SuQing's personal
 Run validation from the repository root with Python 3; no extra dependencies are required:
 
 ```sh
-python tools/prepare_workshop.py --check
+python tools/prepare_workshop.py --output release/1.0.3_20261106_ReleaseRepair/Workshop/SuQingContainerUpgrade --check
 ```
 
-The upload directory is `%UserProfile%\Zomboid\Workshop\SuQingContainerUpgrade`. Preserve its existing `workshop.txt` and `id=3823988025`. Copy the release's mod files into the same directory's `Contents/mods/SuQingContainerUpgrade`, and update the description and change notes.
+This candidate is staged separately at `release/1.0.3_20261106_ReleaseRepair/Workshop/SuQingContainerUpgrade`, retaining `id=3823988025`. Generated `release` files are excluded from Git. The old C-drive Workshop directory remains untouched and outdated; use the new candidate identified by its frozen manifest.
 
-This check does not connect to Steam, upload files or modify enabled local mods, saves or enabled-mod lists. Without `--check`, `prepare_workshop.py` only creates a directory that does not already exist and refuses to overwrite an existing one. Do not use that mode to recreate this already-published item. If a separate staging directory is needed, retain the existing Workshop ID above.
+This check does not connect to Steam, upload files or modify local installations, saves or enable lists. Without `--check`, `prepare_workshop.py` creates only a nonexistent staging directory and writes the existing Workshop ID after checking the metadata. Use `--output release/<timestamp>/Workshop/SuQingContainerUpgrade` for a fresh directory, then check that same output path. It validates the combined bilingual description below 8000 UTF-8 bytes, the title, preview and source-file equality.
 
 ```text
 SuQingContainerUpgrade/
@@ -44,6 +46,8 @@ Verify that `workshop.txt` still contains `id=3823988025`. The Mod ID `SuQingCon
 
 ## Update the existing item in the game
 
+The new candidate has not been copied into the game's scanned Workshop directory; the existing C-drive entry still contains the old package. Before using these steps, verify that the uploader actually points to the frozen new tree above. Do not upload directly from the old entry.
+
 1. Keep Steam signed in. Start the game normally and open **Workshop** from the main menu.
 2. Open **Create/update item**, select **SuQingContainerUpgrade**, then continue.
 3. Review the prefilled title, description, cover, tags and **Public** visibility, then continue.
@@ -51,7 +55,7 @@ Verify that `workshop.txt` still contains `id=3823988025`. The Mod ID `SuQingCon
 5. On the ready-to-publish page, edit the change notes using the upload directory's `changenote.txt`, then upload to Steam Workshop.
 6. Wait for a success message, then open the existing item and verify its version, description, cover and update time. File validation does not establish a successful online update, and an upload does not establish in-game acceptance.
 
-These steps were checked against the local Build 42.21 `WorkshopSubmitScreen.lua` and `SteamWorkshopItem` validation. v1.0.1 supports 172 exact item IDs. Offline checks and in-game acceptance for the four additions are recorded separately. EX super upgrades for HavenFall's large backpacks are outside this package.
+These steps were checked against the local Build 42.21 `WorkshopSubmitScreen.lua` and `SteamWorkshopItem` validation. v1.0.3 supports 173 exact item IDs. Offline checks and in-game acceptance for the four earlier items and this lunchbox are recorded separately. EX super upgrades for HavenFall's large backpacks are outside this package.
 
 ## Later updates
 

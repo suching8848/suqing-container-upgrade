@@ -1,5 +1,15 @@
 # 更新记录
 
+## 1.0.3 未发布候选 / Unpublished candidate — 2026-11-06
+
+- 内置返鲜餐盒精确ID的普通五档及还原；173项支持、192项登记，无独立餐盒适配器。
+- 保留此前172项及穿戴映射、原成本/技能/账本/实付50%返料、餐盒过滤/尺寸/返鲜状态和实例基线。来源模组仍可选。
+- 旧WearableCompat普通门禁与独立HavenFall EX职责分别保留；旧补丁保持。个人普通1.0.3已于11月6日部署，配套餐盒当前rc.5。
+- 本地已部署、公开未发布；本次修订过时状态与双语介绍，重建保留既有工坊ID的候选，不改玩法或个人环境。完整新增适配/保存重进仍待专项验收。
+
+Adds built-in ordinary five-tier/restoration support for the exact freshness lunchbox ID, yielding 173 supported and 192 classified entries. Preserves prior scope, transaction/restoration rules, item restrictions and freshness state. Optional providers remain optional. The old WearableCompat ordinary gate and independent EX responsibilities remain separate. The ordinary 1.0.3 candidate is installed locally with lunchbox rc.5 but remains unpublished. This preparation corrects stale status, shortens bilingual copy and freezes the existing Workshop ID without changing gameplay or personal setup. Complete acceptance of additions and save/reload remains pending.
+
+
 ## 1.0.1 文案与发布资料更新 / Documentation and listing update — 2026-11-01
 
 补充完整英文README，中英双语标题、工坊介绍与包内使用说明，以及测试、发布、素材的等价英语说明。

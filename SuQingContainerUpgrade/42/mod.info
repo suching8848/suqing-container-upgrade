@@ -1,11 +1,11 @@
-name=蘇清的容器升级 | SuQing's Container Upgrades v1.0.1 [B42.21 SP]
-namezh=蘇清的容器升级 | SuQing's Container Upgrades v1.0.1 [B42.21 单人 / SP]
+name=蘇清的容器升级 | SuQing's Container Upgrades v1.0.3 [B42.21 SP]
+namezh=蘇清的容器升级 | SuQing's Container Upgrades v1.0.3 [B42.21 单人 / SP]
 id=SuQingContainerUpgrade_4221
 author=Local gameplay addition
-modversion=1.0.1
+modversion=1.0.3
 icon=icon.png
 poster=poster.png
 versionMin=42.21
 versionMax=42.21
 loadModAfter=FantasyWorkshopVS42_4.0,4123567854998,TheyKnewContinued,BackpackSystemB42,SuPrimitiveEquipment,RaccoonCityB42,Neat_Crafting,CleanUI,Codex_InventoryTransferPerformance_4221,TarkovCombatStims,CodexCBRTIndependent_4221,HavenFall
-description=B42.21单人；172个精确ID（84原版+88模组），五档容量12/20/30/40/最高49，减重90/93/95/97/99%。保留原自重、外观、槽位、换弹与收纳限制；只用原生配方。卸下清空，储液容器须排空液体，储水升数不变；同件只允许下一档。指定换位和8条尺寸转换保留有效记录，目标槽占用时拒绝。成功还原返有效账本实际支付材料50%，分别向下取整，线按用量返；旧无账付款不追溯。本版不含EX，多人未验证。作者当前单人档合集：https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387 | B42.21 single-player; 172 exact IDs (84 vanilla + 88 mod). Five capacities 12/20/30/40/up to 49, weight reduction 90/93/95/97/99%. Keeps original weight, appearance, slots, reload and storage restrictions; native recipes only. Unequip and empty, including all fluids; water capacity is unchanged. Next tier only. Audited swaps and 8 size conversions retain valid records; occupied destination slots are rejected. Successful restoration refunds 50% of recorded actual payments, rounded down per material; thread returns in uses. Unrecorded old payments are not reconstructed. No EX; multiplayer unvalidated. Current single-player collection: https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387
+description=1.0.3未发布候选；内置返鲜餐盒精确ID普通五档和还原，保持返鲜进度及食品限制，无需独立餐盒兼容子模组。B42.21单人；173个精确ID（84原版+89模组），五档容量12/20/30/40/最高49，减重90/93/95/97/99%。保留原自重、外观、槽位、换弹与收纳限制；只用原生配方。卸下清空，储液容器须排空液体，储水升数不变；同件只允许下一档。指定换位和8条尺寸转换保留有效记录，目标槽占用时拒绝。成功还原返有效账本实际支付材料50%，分别向下取整，线按用量返；旧无账付款不追溯。本版不含EX，多人未验证。作者当前单人档合集：https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387 | Unpublished 1.0.3 candidate; built-in ordinary five-tier/restoration support for the exact freshness lunchbox ID, preserving freshness state and food restrictions without a separate lunchbox adapter. B42.21 single-player; 173 exact IDs (84 vanilla + 89 mod). Five capacities 12/20/30/40/up to 49, weight reduction 90/93/95/97/99%. Keeps original weight, appearance, slots, reload and storage restrictions; native recipes only. Unequip and empty, including all fluids; water capacity is unchanged. Next tier only. Audited swaps and 8 size conversions retain valid records; occupied destination slots are rejected. Successful restoration refunds 50% of recorded actual payments, rounded down per material; thread returns in uses. Unrecorded old payments are not reconstructed. No EX; multiplayer unvalidated. Current single-player collection: https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387

@@ -1,5 +1,12 @@
 蘇清的容器升级
 
+1.0.3 未发布候选 / Unpublished candidate — 2026-11-06
+内置返鲜餐盒的普通五档与还原；支持173项、登记192项。原规则、物品限制及返鲜状态保持，来源模组可选。
+Built-in ordinary five-tier/restoration support for the exact freshness lunchbox ID; 173 supported/192 classified. Existing rules, restrictions and freshness state remain; source provider optional.
+普通1.0.3已部署作者本地，配套餐盒当前rc.5，尚未公开；本次仅修订双语说明和候选包，完整新增适配/保存重进仍待专项验收。
+Ordinary 1.0.3 is installed locally with lunchbox rc.5 and remains unpublished. This preparation only updates bilingual documentation and the candidate package; complete acceptance of additions and save/reload remains pending.
+
+
 1.0.1 文案与发布资料更新 / Documentation and listing update — 2026-11-01
 
 补充完整英文README，中英双语标题、工坊介绍与包内使用说明，以及测试、发布、素材的等价英语说明。

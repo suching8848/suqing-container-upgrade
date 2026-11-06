@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "modVersion": "1.0.1",
+  "modVersion": "1.0.3",
   "gameVersion": "42.21.0",
-  "scope": "All 86 vanilla and 105 audited mod-container source entries; 172 active exact IDs. Optional source mods are not bundled or made mandatory.",
+  "scope": "All 86 vanilla and 106 audited mod-container source entries; 173 active exact IDs. Optional source mods are not bundled or made mandatory.",
   "expectedCounts": {
-    "registryEntries": 191,
-    "active": 172,
+    "registryEntries": 192,
+    "active": 173,
     "restoreOnly": 1,
     "excluded": 18,
     "deferred": 0,
     "vanillaInventoryIncludingFluid": 86,
-    "modInventory": 105,
+    "modInventory": 106,
     "activeVanilla": 84,
-    "activeMod": 88,
-    "addedThisBatch": 4,
+    "activeMod": 89,
+    "addedThisBatch": 1,
     "newVanilla": 83,
     "newVanillaLight": 48,
     "newVanillaHeavy": 17,
@@ -26,7 +26,7 @@
       "existing_v013": 4,
       "heavy_native_cap": 17,
       "hybrid_container": 2,
-      "mod_container": 79,
+      "mod_container": 80,
       "native_capacity": 4,
       "position_pair": 6,
       "restricted_ammo": 4,
@@ -37,7 +37,7 @@
     "positionMappings": 15,
     "variantRecipes": 8
   },
-  "sourceAudit": "Original 187 entries retain Build 42.21 source audits from 2026-10-21. Four wearable additions were checked against installed source definitions on 2026-11-01. Portable source identifiers and source-file SHA-256 values are retained; raw machine-local audit artifacts are not distributed.",
+  "sourceAudit": "Original 187 entries retain Build 42.21 source audits from 2026-10-21. Four wearable additions were checked against installed source definitions on 2026-11-01. Portable source identifiers and source-file SHA-256 values are retained; raw machine-local audit artifacts are not distributed. The optional single-hand freshness lunchbox was checked against its independent 0.1.0-rc.3 candidate source definition on 2026-11-06; source defaults, food filter, size restriction and absence of wearable slots are bound below.",
   "vanillaSelection": {
     "maximumExplicitScriptWeight": 1,
     "slots": [
@@ -59,7 +59,7 @@
       "deliberate disassembly"
     ]
   },
-  "validationStatus": "Build 42.21 single-player: v1.0.0 representative gameplay previously confirmed; v1.0.1 adds four exact wearable IDs with source audits and offline regression, with new in-game acceptance pending. The 172-ID scope is not a per-item gameplay claim. Multiplayer is not validated.",
+  "validationStatus": "Build 42.21 single-player unpublished v1.0.3 candidate. v1.0.0 representative gameplay was previously confirmed; four v1.0.1 wearable integrations and the v1.0.3 freshness lunchbox require separate user gameplay acceptance. Offline checks do not claim 173 individually tested items. Multiplayer is not validated.",
   "sourceHashes": [
     {
       "source": "container.txt",
@@ -7116,6 +7116,41 @@
       "sourceBindingSha256": "259a441a828c5f8104682d323ab72a62509ddfe610cad5b9bd7fe0a608d894d7"
     },
     {
+      "fullType": "SuQingFreshnessLunchbox.FreshnessLunchbox",
+      "nameCN": "蘇清的返鲜餐盒",
+      "provider": "SuQingFreshnessLunchbox",
+      "status": "active",
+      "batch": "lunchbox_v102",
+      "profile": "mod_container",
+      "capacity": 4,
+      "weightReduction": 50,
+      "weight": 1,
+      "slot": null,
+      "bodyLocation": null,
+      "source": "CodexRepos/suqing-freshness-lunchbox/mods/SuQingFreshnessLunchbox/42/media/scripts/items_FreshnessLunchbox.txt",
+      "sourceSha256": "92de4c803629f73d50e9c3acfd981b19e9ba27da44b7bb189e4793d843cbff04",
+      "nameSource": "CodexRepos/suqing-freshness-lunchbox/mods/SuQingFreshnessLunchbox/42/media/lua/shared/Translate/CN/ItemName.json",
+      "restrictions": {
+        "acceptItemFunction": "SuQingFreshnessLunchbox.AcceptFood",
+        "onlyAcceptCategory": null,
+        "maxItemSize": 1,
+        "clothingItemExtra": null,
+        "clothingItemExtraOption": null,
+        "clothingExtraSubmenu": null,
+        "fluidComponent": false
+      },
+      "tags": [],
+      "attachmentsProvided": [],
+      "sourceClassification": "audited_v102_lunchbox",
+      "hasOwnNativeCapacityUpgradeInput": false,
+      "fluidCapacity": null,
+      "capacityMode": "physical",
+      "requireEmptyFluid": false,
+      "targetCapacityV": 49,
+      "reason": "真实InventoryContainer，无穿戴槽，可左右单手提握；仅按既有普通五档强化容量与减重，保留食品过滤、MaxItemSize=1、原物品、返鲜开关/进度及其他ModData。首次升级记录实例实际基线，成功还原沿用真实付款账本50%返料；无餐盒来源模组时其他容器照常可用。",
+      "sourceBindingSha256": "ae61f88537585649b924f86ca30c7debf2784abc478eebf9d3b10afd1d5863bc"
+    },
+    {
       "fullType": "TheyKnew.MysteriousBackPack",
       "nameCN": "神秘背包",
       "provider": "TheyKnewContinued",
@@ -7188,8 +7223,8 @@
       "sourceBindingSha256": "bfd4130498eb1a6f0d20d3ae1e9232507e7cea23c4869568eec250d1c8c195be"
     }
   ],
-  "releaseStage": "public_source_v1.0.1",
-  "currentBatch": "wearable_v101",
+  "releaseStage": "unpublished_candidate_v1.0.3",
+  "currentBatch": "lunchbox_v102",
   "heavyPolicy": {
     "profile": "heavy_native_cap",
     "version": 1,
@@ -7322,6 +7357,14 @@
         "active": 2
       },
       "total": 2
+    },
+    "SuQingFreshnessLunchbox": {
+      "name": "蘇清的返鲜餐盒 / SuQing's Freshness Lunchbox",
+      "sourceName": "SuQingFreshnessLunchbox",
+      "counts": {
+        "active": 1
+      },
+      "total": 1
     }
   },
   "sourceBindingKeys": [
@@ -7531,6 +7574,7 @@
     "LB.Bag_LegendaryBackpack_Purple",
     "LB.Bag_LegendaryBackpack_Red",
     "LB.Bag_LegendaryBackpack_White",
+    "SuQingFreshnessLunchbox.FreshnessLunchbox",
     "TheyKnew.MysteriousBackPack",
     "TheyKnew.MysteriousSatchel"
   ],
