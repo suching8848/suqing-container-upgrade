@@ -10,10 +10,11 @@
   "visibility": "public",
   "publishedfileid": "3823988025",
   "version": "1.0.3",
-  "releaseStatus": "update_failed_pending_node_switch",
+  "releaseStatus": "uploaded_verified_public",
   "companionLunchboxVersion": "0.1.0-rc.5",
-  "onlineVersion": "1.0.1",
+  "onlineVersion": "1.0.3",
   "sourceVersion": "1.0.3",
-  "lastUploadStatus": "mutation_failed",
-  "retryStatus": "waiting_for_user_node_switch"
+  "lastUploadStatus": "uploaded",
+  "retryStatus": "completed",
+  "verificationStatus": "verified_public"
 }

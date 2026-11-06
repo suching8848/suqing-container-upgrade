@@ -14,7 +14,7 @@ Upgrade existing wearable containers and the specified single-handed freshness l
 
 An earlier [Steam Workshop release](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025) is available; GitHub provides the source and files for manual installation. The 1.0.3 candidate is unpublished and does not include EX upgrades.
 
-Publication status (2026-11-06): three native attempts to upload 1.0.3 explicitly failed; the online item remains 1.0.1. Retry the same Workshop ID after the user switches nodes. Prepared source/local files and Git synchronization do not establish a successful Workshop update. See [publication status](publishing/release-status-20261106.json).
+Publication status (2026-11-06): 1.0.3 was submitted to the existing Workshop ID and verified public, with native callback result 1 and all verification checks passing. Three earlier failed receipts remain historical evidence. Complete gameplay acceptance remains separate. See [publication status](publishing/release-status-20261106.json).
 
 ## The author’s historical single-player setup and collection
 

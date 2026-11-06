@@ -1,9 +1,9 @@
 {
-  "recorded_at_bjt": "2026-11-06T22:21:45.093811+08:00",
+  "recorded_at_bjt": "2026-11-06T22:37:17.889855+08:00",
   "publishedfileid": "3823988025",
   "source_version": "1.0.3",
-  "online_version": "1.0.1",
-  "status": "update_failed_pending_node_switch",
+  "online_version": "1.0.3",
+  "status": "uploaded_verified_public",
   "native_failed_attempts": [
     {
       "receipt": "upload-20261106_220711_747280.json",
@@ -24,8 +24,22 @@
       "status": "mutation_failed"
     }
   ],
-  "summary_zh": "1.0.3源码与本地候选准备完成；三次原生上传明确失败，诊断显示Steam旧manifest下载HTTP502。线上仍为1.0.1，等待用户切换节点后先只读核对再重试；保留原工坊ID，不创建替代项目。",
-  "summary_en": "Source and local candidate 1.0.3 are prepared. Three native submits explicitly failed; diagnostics showed HTTP502 while retrieving the old Steam manifest. The online item remains 1.0.1. Wait for the user to switch nodes, reread remote state, then retry the same item ID.",
+  "summary_zh": "1.0.3已在既有工坊ID3823988025提交成功并公开核验，原生callback result=1且verify全部检查通过。此前三次失败回执保留为历史；本次未改payload、个人运行目录或冻结候选。完整游戏验收仍按原边界记录。",
+  "summary_en": "Version 1.0.3 was submitted successfully to existing Workshop item 3823988025 and verified public: native callback result 1 and all verification checks passed. The three earlier failed receipts remain historical evidence. Payload, personal installation and frozen candidates are unchanged; gameplay acceptance limits remain separate.",
   "personal_environment_changed": false,
-  "gameplay_acceptance": "Complete additions/save-reload and EX-combination acceptance remains pending. No gameplay acceptance is inferred from Git or upload operations."
+  "gameplay_acceptance": "Complete additions/save-reload and EX-combination acceptance remains pending. No gameplay acceptance is inferred from Git or upload operations.",
+  "previous_status": "update_failed_pending_node_switch",
+  "previous_online_version": "1.0.1",
+  "successful_native_receipts": [
+    {
+      "stage": "upload",
+      "receipt": "upload-20261106_223443_739773.json",
+      "sha256": "e39344e862621d6fdf00be673bc4d1c4f6d373027e4d966ee4fd9915b9170f5b"
+    },
+    {
+      "stage": "verify",
+      "receipt": "verify-20261106_223524_935060.json",
+      "sha256": "66793e0fd42f4389de333f474997e702169a4b1f0399abc248040a3a149559c3"
+    }
+  ]
 }

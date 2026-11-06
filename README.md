@@ -18,7 +18,7 @@
 
 既有版本已发布 [Steam 创意工坊版本](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)，GitHub 同时提供源码与可手动安装的模组文件。1.0.3仍为未发布候选，本版不包含 EX 档。
 
-发布状态（2026-11-06）：1.0.3三次原生上传明确失败，线上仍为1.0.1；等待用户切换节点后重试同一工坊ID。源码与本地候选已准备，Git同步不等于工坊更新成功。详见 [本次发布状态](publishing/release-status-20261106.json)。
+发布状态（2026-11-06）：1.0.3已提交至既有工坊ID并公开核验，原生callback result=1且全部verify检查通过；此前三次失败回执保留为历史。完整游戏内验收仍按原边界记录。详见 [本次发布状态](publishing/release-status-20261106.json)。
 
 ## 作者历史单人档与合集
 
