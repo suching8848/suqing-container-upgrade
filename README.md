@@ -8,6 +8,11 @@
 
 # 蘇清的容器升级模组 | SuQing's Container Upgrades Mod
 
+## 42.22.2 离线适配候选
+
+保留 `1.0.3` 接口版本、普通五档记录、返鲜餐盒内置注册和原有返料规则。候选支持 B42.21–42.22 单人。42.22.2 游戏内读档待验。
+
+
 [简体中文](README.md) · [English](README.en.md)
 
 <img src="SuQingContainerUpgrade/42/icon.png" alt="蘇清头像图标" width="88" align="right">

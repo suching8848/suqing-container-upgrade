@@ -1,5 +1,10 @@
 # 蘇清的容器升级模组 | SuQing's Container Upgrades Mod
 
+## 42.22.2 offline compatibility candidate
+
+The candidate keeps interface version `1.0.3`, the five ordinary upgrade tiers, the built-in freshness lunchbox registration, and the existing refund rules. It targets B42.21–42.22 single-player. In-game reload on 42.22.2 is pending.
+
+
 [简体中文](README.md) · [English](README.en.md)
 
 > **This mod greatly changes realism and balance. Add it with care. It is intended for players who enjoy collecting and stockpiling supplies.**
