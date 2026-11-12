@@ -1,6 +1,6 @@
 [h1]蘇清的容器升级 | SuQing's Container Upgrades v1.0.3[/h1]
 [h2]中文[/h2]
-[b]明显改变负重平衡，适合收集、囤积玩家。仅B42.21单人，多人与专服未验证。[/b]
+[b]明显改变负重平衡，适合收集、囤积玩家。适用 B42.21–42.22 单人。B42.22.2 已通过原生离线读回，游戏内待验收。多人和专服未验证。[/b]
 用布、皮革和线逐档强化已有可穿戴容器及指定单手返鲜餐盒，保留原物品，使用原生“蘇清”制作分类和快捷入口。无自建菜单或EX档。
 支持173个精确ID（原版84、模组89）；192项分类另含1项仅还原、18项排除。8条原生尺寸转换保留有效记录。来源模组按需另装，不附带第三方资源。
 [h3]1.0.3返鲜餐盒支持[/h3]
@@ -20,7 +20,7 @@ Mod ID：SuQingContainerUpgrade_4221。订阅/手动安装二选一，停用重�
 [url=https://github.com/suching8848/suqing-container-upgrade]完整名单、依赖、测试与历史配置说明 / Source and full documentation[/url]
 
 [h2]English[/h2]
-[b]Strongly changes carrying balance; for collectors and stockpilers. B42.21 single-player only; multiplayer and dedicated servers unvalidated.[/b]
+[b]Strongly changes carrying balance; for collectors and stockpilers. B42.21–42.22 single-player. Native offline readback passed on B42.22.2; gameplay testing is pending. Multiplayer and dedicated servers are unvalidated.[/b]
 Upgrade existing wearables and the specified one-handed freshness lunchbox with cloth, leather and thread. Keeps the original item; native crafting category/quick entry, no custom menu or EX tiers.
 173 exact IDs: 84 vanilla + 89 mod. The 192-entry classification also includes 1 restore-only ID and 18 exclusions. Eight native size conversions retain valid records. Item providers are optional; no third-party assets are bundled.
 [h3]1.0.3 freshness lunchbox support[/h3]
