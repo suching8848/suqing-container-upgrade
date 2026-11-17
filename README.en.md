@@ -1,5 +1,7 @@
 # 蘇清的容器升级模组 | SuQing's Container Upgrades Mod
 
+1.1.0-rc.1 adds audited non-Legendary containers to the ordinary route with attachment and legacy upgrade protection.
+
 ## 42.22.2 offline compatibility candidate
 
 The candidate keeps interface version `1.0.3`, the five ordinary upgrade tiers, the built-in freshness lunchbox registration, and the existing refund rules. It targets B42.21–42.22 single-player. In-game reload on 42.22.2 is pending.

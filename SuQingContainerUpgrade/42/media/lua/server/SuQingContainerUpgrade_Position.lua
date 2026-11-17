@@ -240,6 +240,11 @@ local function refresh(transaction, item)
     if type(C.RefreshInventory) == "function" then pcall(C.RefreshInventory, transaction.character, item) end
 end
 
+function P.WrapsComplete(complete)
+    return P.installedComplete ~= nil and ISClothingExtraAction ~= nil
+        and ISClothingExtraAction.complete == P.installedComplete and P.originalComplete == complete
+end
+
 function P.Install()
     if P.installed or not C.IsSinglePlayer() or not ISClothingExtraAction then return end
     local originalCreate = ISClothingExtraAction.createItemNew
@@ -311,8 +316,10 @@ function P.Install()
         P.characters[transaction.character] = nil
         return true
     end
+    P.originalComplete = originalComplete
+    P.installedComplete = ISClothingExtraAction.complete
     P.installed = true
-    log("native-action preservation ready; exact vanilla pairs only")
+    log("native-action preservation ready; exact registered pairs")
 end
 
 Events.OnGameStart.Add(P.Install)

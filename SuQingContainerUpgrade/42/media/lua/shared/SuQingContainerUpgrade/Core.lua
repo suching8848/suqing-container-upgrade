@@ -3,7 +3,7 @@ SuQingContainerUpgrade = SuQingContainerUpgrade or {}
 local C = SuQingContainerUpgrade
 if C.loaded then return C end
 C.loaded = true
-C.version = "1.0.3"
+C.version = "1.1.0-rc.1"
 C.modDataKey = "SuQingContainerUpgrade"
 require "SuQingContainerUpgrade/Compatibility"
 -- The build generates both these sets and native recipe inputs from one audited
@@ -114,8 +114,9 @@ local wearableSources = {
     ["ESHF.Qwe_Backpack"] = { positionPair = "ESHF.Qwe_BackpackFront" },
     ["ESHF.Qwe_BackpackFront"] = { positionPair = "ESHF.Qwe_Backpack" },
 }
-local function matchesWearableSource(item)
-    local expected = wearableSources[item:getFullType()]
+local function matchesSource(item)
+    local fullType = item:getFullType()
+    local expected = wearableSources[fullType] or C.compatibility.portableSources[fullType]
     if not expected then return true end
     local script = item.getScriptItem and item:getScriptItem()
     if not script or not ItemType or not ItemType.CONTAINER
@@ -139,7 +140,7 @@ end
 function C.IsSupported(item)
     return item ~= nil and instanceof(item, "InventoryContainer")
         and C.supported[item:getFullType()] == true and item:getInventory() ~= nil
-        and matchesWearableSource(item)
+        and matchesSource(item)
 end
 
 function C.IsManaged(item)
@@ -230,10 +231,14 @@ end
 local function checkTarget(item, character, allowInconsistent, allowRetired)
     if not C.IsSinglePlayer() then return false, "multiplayer" end
     if not C.IsSupported(item) and not (allowRetired and C.IsManaged(item)) then return false, "unsupported" end
+    if not allowRetired and item:getModData().ExSuQingBackpackSuperUpgrade ~= nil then
+        return false, "restore_ex_first"
+    end
     if not character or not character.getInventory then return false, "no_character" end
     if item:getContainer() ~= character:getInventory() then return false, "not_carried" end
     if character:isEquipped(item) or character:getPrimaryHandItem() == item
-        or character:getSecondaryHandItem() == item then return false, "equipped" end
+        or character:getSecondaryHandItem() == item
+        or (character.isAttachedItem and character:isAttachedItem(item)) then return false, "equipped" end
     if item:getInventory():getItems():size() ~= 0 then return false, "not_empty" end
     -- Hybrid bags have separate physical fluid storage. Never change that
     -- component or its contents; require it empty before any paid/restore action.

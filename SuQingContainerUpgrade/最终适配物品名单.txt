@@ -1,8 +1,8 @@
-蘇清的容器升级 1.0.3 最终适配物品名单
+蘇清的容器升级 1.1.0-rc.1 最终适配物品名单
 
-B42.21单人候选版。当前明确支持173个完整ID：原版84、已审计模组89。
-此前客户端代表项在单人档测试；1.0.1四项及1.0.3返鲜餐盒的离线检查与游戏内验收分开记录。173项不代表逐件游戏内实测。多人/联机未验证。
-下面只列支持强化的物品；192项完整分类（含仅还原1、排除18）见适配名单.csv。
+B42.22单人候选版。普通线路共255个完整ID，包括原版84和模组171。
+追加82项已审计随身容器。传奇系列由EX处理，完整游戏内验收待完成。
+完整分类共274项（含仅还原1、排除18），见适配名单.csv。
 规格均为源脚本默认值，实际实例/沙盒可能不同；V不降低已有容量或减重。
 原物品尺寸、种类、2弹匣硬限制、槽位、挂点、装填规则及液体组件保持。
 液体与普通库存须在强化/还原前排空；高原生容量项只强化减重，浣熊市保留沙盒业务容量。
@@ -162,9 +162,9 @@ MFS轻型背包 | Base.BagS_cat_2 | 源25/88% | 自重0.1 | V实际基础容量�
 MFS GT5野战背包 | Base.BagS_cat_20 | 源45/96% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
 MFS战术徒步背包 | Base.BagS_cat_21 | 源45/96% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
 MFS ALS背包系统 | Base.BagS_cat_22 | 源45/96% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
-MFS重型徒步背包 | Base.BagS_cat_23 | 源50/98% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
-MFS GT0重型战术背包 | Base.BagS_cat_24 | 源50/98% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
-MFS D7战术背包 | Base.BagS_cat_25 | 源50/98% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
+MFS重型徒步背包 | Base.BagS_cat_23 | 源50/98% | 自重0.1 | V实际基础容量：保留原生容量 | 原槽位、标签和挂点保持
+MFS GT0重型战术背包 | Base.BagS_cat_24 | 源50/98% | 自重0.1 | V实际基础容量：保留原生容量 | 原槽位、标签和挂点保持
+MFS D7战术背包 | Base.BagS_cat_25 | 源50/98% | 自重0.1 | V实际基础容量：保留原生容量 | 原槽位、标签和挂点保持
 MFS旅行背包 | Base.BagS_cat_3 | 源25/88% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
 MFS帆布背包 | Base.BagS_cat_4 | 源25/88% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
 MFS DG运动背包 | Base.BagS_cat_5 | 源25/88% | 自重0.1 | V实际基础容量：49 | 原槽位、标签和挂点保持
@@ -188,7 +188,7 @@ They Knew Continued（2个ID）
 生化背带 | Base.ResidentEvilSuspenders | 源10/98% | 自重1 | V实际基础容量：原沙盒容量与强化下限叠加 | 最大物品尺寸3；原沙盒业务容量；保留原标签/挂点
 
 SafeWayHamlet（1个ID）
-CamoHydrationPackpack | Base.CamoHydrationPackpack | 源60/98% | 自重1 | V实际基础容量：49 | 液体5L；操作前排空；不改液体
+CamoHydrationPackpack | Base.CamoHydrationPackpack | 源60/98% | 自重1 | V实际基础容量：保留原生容量 | 液体5L；操作前排空；不改液体
 
 现代枪械系统（MFS）（1个ID）
 自动装弹机构(加速装填) | Base.cat_AutoReload | 源2/91% | 自重0.1 | V实际基础容量：49 | 原5发装填周期不变
@@ -199,9 +199,111 @@ Tarkov Combat Stims（1个ID）
 Chemical 独立兼容版（本地）（1个ID）
 康陶防务21式战斗携行具 | CodexCBRT.SST02_ChestRig | 源12/90% | 自重1 | V实际基础容量：49 | 原槽位、标签和挂点保持
 
-HavenFall 前后腰包（2个ID）
+HavenFall 前后腰包（22个ID）
+大头艾斯包 | ESHF.EsBackpack | 源63/95% | 自重1.0 | V实际基础容量：保留原生容量 | 液体3.0L；操作前排空；不改液体
+大头艾斯包 T1 | ESHF.EsBackpack_T1 | 源75/97% | 自重0.9 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+大头艾斯包 T2 | ESHF.EsBackpack_T2 | 源90/99% | 自重0.8 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+大头艾斯包 T3 | ESHF.EsBackpack_T3 | 源108/100% | 自重0.7 | V实际基础容量：保留原生容量 | 液体4.0L；操作前排空；不改液体
+咕嘎包 | ESHF.GugaBackpack | 源63/95% | 自重1.0 | V实际基础容量：保留原生容量 | 液体3.0L；操作前排空；不改液体
+咕嘎包 T1 | ESHF.GugaBackpack_T1 | 源75/97% | 自重0.9 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+咕嘎包 T2 | ESHF.GugaBackpack_T2 | 源90/99% | 自重0.8 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+咕嘎包 T3 | ESHF.GugaBackpack_T3 | 源108/100% | 自重0.7 | V实际基础容量：保留原生容量 | 液体4.0L；操作前排空；不改液体
 画画的后腰 | ESHF.Qwe_Backpack | 源20/95% | 自重0.5 | V实际基础容量：49 | 精确穿戴/换位保护
 饭饭的前腰 | ESHF.Qwe_BackpackFront | 源20/95% | 自重0.5 | V实际基础容量：49 | 精确穿戴/换位保护
+黑脸羊羊包 | ESHF.SeanBackpack | 源63/95% | 自重1.0 | V实际基础容量：保留原生容量 | 液体3.0L；操作前排空；不改液体
+黑脸羊羊包 T1 | ESHF.SeanBackpack_T1 | 源75/97% | 自重0.9 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+黑脸羊羊包 T2 | ESHF.SeanBackpack_T2 | 源90/99% | 自重0.8 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+黑脸羊羊包 T3 | ESHF.SeanBackpack_T3 | 源108/100% | 自重0.7 | V实际基础容量：保留原生容量 | 液体4.0L；操作前排空；不改液体
+布布羊羊包 | ESHF.SeanragBackpack | 源63/95% | 自重1.0 | V实际基础容量：保留原生容量 | 液体3.0L；操作前排空；不改液体
+布布羊羊包 T1 | ESHF.SeanragBackpack_T1 | 源75/97% | 自重0.9 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+布布羊羊包 T2 | ESHF.SeanragBackpack_T2 | 源90/99% | 自重0.8 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+布布羊羊包 T3 | ESHF.SeanragBackpack_T3 | 源108/100% | 自重0.7 | V实际基础容量：保留原生容量 | 液体4.0L；操作前排空；不改液体
+粉毛小栀包 | ESHF.ZhiziBackpack | 源63/95% | 自重1.0 | V实际基础容量：保留原生容量 | 液体3.0L；操作前排空；不改液体
+粉毛小栀包 T1 | ESHF.ZhiziBackpack_T1 | 源75/97% | 自重0.9 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+粉毛小栀包 T2 | ESHF.ZhiziBackpack_T2 | 源90/99% | 自重0.8 | V实际基础容量：保留原生容量 | 液体3.5L；操作前排空；不改液体
+粉毛小栀包 T3 | ESHF.ZhiziBackpack_T3 | 源108/100% | 自重0.7 | V实际基础容量：保留原生容量 | 液体4.0L；操作前排空；不改液体
 
 蘇清的返鲜餐盒 / SuQing's Freshness Lunchbox（1个ID）
 蘇清的返鲜餐盒 | SuQingFreshnessLunchbox.FreshnessLunchbox | 源4/50% | 自重1 | V实际基础容量：49 | SuQingFreshnessLunchbox.AcceptFood；最大物品尺寸1；真实单手食品容器，无穿戴槽；保留返鲜开关/进度及首次容量，不扩展EX/Auto
+
+69 Mini（1个ID）
+茶叶箱 | Base.69miniTeaCrate | 源20/0% | 自重3.1 | V实际基础容量：46 | 原槽位、标签和挂点保持
+
+86 Ford Econoline（9个ID）
+弹药包 | Base.PaydayAmmoBag | 源15/50% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+裹尸袋箱 | Base.PaydayBodyBagCase | 源15/50% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+急救包 | Base.PaydayFirstAidKit | 源4/5% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+赃物袋 | Base.PaydayLootBag | 源28/90% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+赃物袋 | Base.PaydayLootBagGreen | 源28/90% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+赃物袋 | Base.PaydayLootBagOrange | 源28/90% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+赃物袋 | Base.PaydayLootBagYellow | 源28/90% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+医疗包 | Base.PaydayMedicBag | 源15/50% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+商品袋 | Base.PaydayMerchBag | 源28/90% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+
+气球模组钥匙环 / Balloons（16个ID）
+B佬钥匙环 | Balloon.BLkey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+淳子钥匙环 | Balloon.Chunzikey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+海马钥匙环 | Balloon.Dahaikey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+浅草豆钥匙环 | Balloon.Douzikey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+E总钥匙环 | Balloon.Elainesky_ESkey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+饭大人钥匙环 | Balloon.Fankey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+栀子钥匙环 | Balloon.Gardeniakey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+神医钥匙环 | Balloon.LDkey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+LILI钥匙环 | Balloon.Lilikey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+七宝钥匙环 | Balloon.Qibaokey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+神秘僵毁风兔男郎钥匙环 | Balloon.Shisankey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+神秘写实风兔男郎钥匙环 | Balloon.Shisankey1 | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+主任钥匙环 | Balloon.Shisankey2 | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+我的钥匙环 | Balloon.Wdkey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+学佬钥匙环 | Balloon.XLkey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+小迷弟钥匙环 | Balloon.Xiaomdkey | 源5/100% | 自重0.01 | V实际基础容量：49 | AcceptItemFunction.KeyRing
+
+Better Belts B42（7个ID）
+高级急救箱 | Base.AFAK | 源25/80% | 自重1.1 | V实际基础容量：48 | 原槽位、标签和挂点保持
+高级急救箱 (挂钩) | Base.AFAKB | 源25/95% | 自重1.2 | V实际基础容量：48 | 原槽位、标签和挂点保持
+急救箱 (挂钩) | Base.FirstAidKitB | 源12/80% | 自重1.1 | V实际基础容量：48 | 原槽位、标签和挂点保持
+午餐盒 (挂钩) | Base.Lunchbox2B | 源10/80% | 自重1.1 | V实际基础容量：48 | 原槽位、标签和挂点保持
+午餐盒 (挂钩) | Base.LunchboxB | 源10/80% | 自重1.1 | V实际基础容量：48 | 原槽位、标签和挂点保持
+手枪箱 (挂钩) | Base.PistolCase1B | 源15/80% | 自重1.1 | V实际基础容量：48 | 原槽位、标签和挂点保持
+工具箱 (挂钩) | Base.ToolBoxB | 源20/85% | 自重1.6 | V实际基础容量：48 | 原槽位、标签和挂点保持
+
+塔科夫背包 / EFT Backpacks（14个ID）
+「三日LBT-1476A」背包 | EFTBP.Bag_3DayPack | 源25/85% | 自重1.15 | V实际基础容量：48 | 原槽位、标签和挂点保持
+「金雕」背包 | EFTBP.Bag_Berkut | 源20/90% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+「贝塔2」背包 | EFTBP.Bag_Beta2 | 源30/85% | 自重2.0 | V实际基础容量：48 | 原槽位、标签和挂点保持
+「三开驼峰」背包 | EFTBP.Bag_Camelbak | 源30/85% | 自重2.2 | V实际基础容量：47 | 原槽位、标签和挂点保持
+「MBSS」背包 | EFTBP.Bag_MBSS | 源18/95% | 自重1.7 | V实际基础容量：48 | 原槽位、标签和挂点保持
+「奥克利机械」背包 | EFTBP.Bag_Mechanism | 源32/85% | 自重2.0 | V实际基础容量：48 | 原槽位、标签和挂点保持
+「帕拉图斯3V」背包 | EFTBP.Bag_Paratus | 源35/82% | 自重2.1 | V实际基础容量：47 | 原槽位、标签和挂点保持
+「巡逻RK-PT-25」背包 | EFTBP.Bag_Patrolpack | 源25/85% | 自重1.1 | V实际基础容量：48 | 原槽位、标签和挂点保持
+「药盒」背包 | EFTBP.Bag_Pillbox | 源20/90% | 自重2.3 | V实际基础容量：47 | 原槽位、标签和挂点保持
+「战术突袭6sh118」背包 | EFTBP.Bag_Raid | 源46/82% | 自重3.5 | V实际基础容量：46 | 原槽位、标签和挂点保持
+「战术RUSH100」背包 | EFTBP.Bag_Rush100 | 源45/83% | 自重2.6 | V实际基础容量：47 | 原槽位、标签和挂点保持
+小型战术单肩包(背部) | EFTBP.Bag_SlingbagBack | 源6/95% | 自重0.48 | V实际基础容量：49 | 精确穿戴/换位保护
+小型战术单肩包(前部) | EFTBP.Bag_SlingbagFront | 源6/95% | 自重0.48 | V实际基础容量：49 | 精确穿戴/换位保护
+「弹簧刀」背包 | EFTBP.Bag_SwitchBlade | 源30/85% | 自重1.7 | V实际基础容量：48 | 原槽位、标签和挂点保持
+
+肯德基 / KFC（3个ID）
+肯德基宅急送背包 | KFC.KFC_DeliveryBackpack | 源40/90% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+肯德基全家桶 | KFC.KFC_FamilyBucket | 源20/90% | 自重0.1 | V实际基础容量：49 | 最大物品尺寸1.0
+鸡块盒 | KFC.KFC_NuggetBox | 源9/90% | 自重0.2 | V实际基础容量：49 | 最大物品尺寸1.0
+
+N&C's Narcotics（1个ID）
+冰毒实验器材箱 | NnC.MethLabCase | 源20/50% | 自重2.5 | V实际基础容量：47 | 原槽位、标签和挂点保持
+
+猫又岭 / Nekomata Ridge（1个ID）
+猫猫的帆布背包 | Base.MaoMaoBackpack | 源120/100% | 自重1.0 | V实际基础容量：保留原生容量 | 液体3.0L；操作前排空；不改液体
+
+全境封锁装备 / The Division Stuff（9个ID）
+隐蔽背包 | SHD.Bag_TheDivision1 | 源27/80% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+执勤背包 | SHD.Bag_TheDivision2 | 源27/80% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+阿尔法桥背包 | SHD.Bag_TheDivision3 | 源27/80% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+可调节背包 | SHD.Bag_TheDivision4 | 源27/80% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+再生者支援背包 | SHD.Bag_TheDivision5 | 源27/80% | 自重1.5 | V实际基础容量：48 | 原槽位、标签和挂点保持
+全境封锁臂章 | SHD.DivisionArmbandLeft | 源1/65% | 自重0.1 | V实际基础容量：49 | 精确穿戴/换位保护
+全境封锁臂章 | SHD.DivisionArmbandRight | 源1/65% | 自重0.1 | V实际基础容量：49 | 精确穿戴/换位保护
+国土战略局 装备箱 | SHD.SHDBigCrate | 源45/0% | 自重4.0 | V实际基础容量：46 | 原槽位、标签和挂点保持
+国土战略局 公文手提箱 | SHD.SHDSmallCrate | 源45/50% | 自重1.0 | V实际基础容量：49 | 原槽位、标签和挂点保持
+
+Vanilla Gear Expanded（1个ID）
+胸挂 (战术) | VGE.Bag_ChestRig_Tactical | 源5/85% | 自重1.0 | V实际基础容量：49 | 最大物品尺寸1.3
