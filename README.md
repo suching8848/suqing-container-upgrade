@@ -23,7 +23,7 @@
 
 用碎布条、皮革条和针线，逐步强化已有的可穿戴容器及指定单手返鲜餐盒。保留原物品与原有功能，使用游戏原生制作分类和快捷制作入口。
 
-既有版本已发布 [Steam 创意工坊版本](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)，GitHub 同时提供源码与可手动安装的模组文件。1.0.3仍为未发布候选，本版不包含 EX 档。
+既有版本已发布 [Steam 创意工坊版本](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025)，GitHub 同时提供源码与可手动安装的模组文件。当前版本为 1.1.0-rc.1，传奇 EX 由独立背包超级升级模组提供。
 
 发布状态（2026-11-06）：1.0.3已提交至既有工坊ID并公开核验，原生callback result=1且全部verify检查通过；此前三次失败回执保留为历史。完整游戏内验收仍按原边界记录。详见 [本次发布状态](publishing/release-status-20261106.json)。
 

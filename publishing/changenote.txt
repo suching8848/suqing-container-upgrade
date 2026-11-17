@@ -1,2 +1,2 @@
-1.0.3 · 适配 B42.22.2 单人并保留 B42.21。原生离线回归通过，B42.22.2 游戏内验收待完成。
-1.0.3 · B42.22.2 single-player compatibility with continued B42.21 support. Native offline regression passed; B42.22.2 gameplay testing is pending.
+1.1.0-rc.1 将已核对的非传奇随身容器纳入普通五档升级，保护快捷栏挂载状态和旧升级账本。
+1.1.0-rc.1 adds audited non-Legendary containers to the ordinary route with attachment and legacy upgrade protection.

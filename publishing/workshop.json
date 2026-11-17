@@ -9,14 +9,14 @@
   ],
   "visibility": "public",
   "publishedfileid": "3823988025",
-  "version": "1.0.3",
+  "version": "1.1.0-rc.1",
   "releaseStatus": "uploaded_verified_public",
-  "companionLunchboxVersion": "0.1.0-rc.5",
-  "onlineVersion": "1.0.3",
-  "sourceVersion": "1.0.3",
+  "companionLunchboxVersion": "0.2.0-rc.4",
+  "onlineVersion": "1.1.0-rc.1",
+  "sourceVersion": "1.1.0-rc.1",
   "lastUploadStatus": "uploaded",
   "retryStatus": "completed",
   "verificationStatus": "verified_public",
-  "content_tree_sha256": "2f9457be8fa95025c3eb6b770c8e96e2f0acd3fdd90c0a1fa3070788c84168e9",
-  "verified_at": "2026-11-12T16:19:36.181907+08:00"
+  "content_tree_sha256": "4a08c31b954b90f6575a552d06b3395557c2ddd102d4ac330a281d860116e080",
+  "verified_at": "2026-11-18T02:59:37.461860+08:00"
 }

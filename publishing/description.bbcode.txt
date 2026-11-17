@@ -37,3 +37,6 @@ Restoration refunds 50% of actual cumulative ledger payments, rounded down per m
 踏行千山 and vanilla crude leather/tarp bags retain native upgrades; 踏行千山五 is restore-only. Ten Legendary Backpack colors and Estate39's Miku bag are excluded from paid upgrades. Unlisted non-wearable crates are unsupported; the registered lunchbox is an exception.
 v1.0.0 has representative single-player feedback; 173 does not imply every item, combination or save/reload was tested. Complete EX-combination acceptance remains pending.
 Mod ID: SuQingContainerUpgrade_4221. Choose subscription or manual installation, disable duplicates, fully restart and keep item providers.
+
+1.1.0-rc.1 将已核对的非传奇随身容器纳入普通五档升级，保护快捷栏挂载状态和旧升级账本。
+1.1.0-rc.1 adds audited non-Legendary containers to the ordinary route with attachment and legacy upgrade protection.
