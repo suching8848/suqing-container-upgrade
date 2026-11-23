@@ -17,6 +17,8 @@
   "lastUploadStatus": "uploaded",
   "retryStatus": "completed",
   "verificationStatus": "verified_public",
-  "content_tree_sha256": "4a08c31b954b90f6575a552d06b3395557c2ddd102d4ac330a281d860116e080",
-  "verified_at": "2026-11-18T02:59:37.461860+08:00"
+  "content_tree_sha256": "ddfe6f2cbb62fa723a6f10b7e39fb845b96a5fc46608683239cab31ad8941635",
+  "verified_at": "2026-11-24T06:52:48.408207+08:00",
+  "workshop_content_handle": "1408255983333603320",
+  "workshop_updated_at": "2026-11-24T06:52:41+08:00"
 }
