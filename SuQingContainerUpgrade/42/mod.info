@@ -8,4 +8,4 @@ poster=poster.png
 versionMin=42.21
 versionMax=42.22
 loadModAfter=FantasyWorkshopVS42_4.0,4123567854998,TheyKnewContinued,BackpackSystemB42,SuPrimitiveEquipment,RaccoonCityB42,Neat_Crafting,CleanUI,Codex_InventoryTransferPerformance_4221,TarkovCombatStims,CodexCBRTIndependent_4221,HavenFall
-description=普通容器五档升级与还原。追加本轮已核实的非传奇随身容器，保留原槽位、收纳限制、液体容量及原生高容量。已有超级升级的容器先还原。B42.22.2 单人候选。 | Five ordinary container upgrade tiers and restoration for audited non-Legendary containers. Preserves slots, storage rules, fluid storage, and high native capacity. Restore legacy EX before paying for ordinary upgrades. B42.22.2 single-player candidate.
+description=普通随身容器五档升级与还原。猫猫的帆布背包与归来之地大背包走 EX，原有普通升级仍可还原。 | Five ordinary upgrade tiers and restoration for portable containers. MaoMao and HavenFall large backpacks use EX and retain ordinary restoration. B42.22.2 SP.

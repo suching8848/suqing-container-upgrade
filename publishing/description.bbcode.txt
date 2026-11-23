@@ -1,10 +1,12 @@
-[h1]蘇清的容器升级 | SuQing's Container Upgrades v1.0.3[/h1]
+[h1]蘇清的容器升级 | SuQing's Container Upgrades v1.1.0-rc.1[/h1]
 [h2]中文[/h2]
-[b]明显改变负重平衡，适合收集、囤积玩家。适用 B42.21–42.22 单人。B42.22.2 已通过原生离线读回，游戏内待验收。多人和专服未验证。[/b]
+[b]明显改变负重平衡，适合收集、囤积玩家。适用 B42.21–42.22 单人。本轮分流修复已在 B42.22.2 正式单人档验证。多人和专服未验证。[/b]
 用布、皮革和线逐档强化已有可穿戴容器及指定单手返鲜餐盒，保留原物品，使用原生“蘇清”制作分类和快捷入口。无自建菜单或EX档。
-支持173个精确ID（原版84、模组89）；192项分类另含1项仅还原、18项排除。8条原生尺寸转换保留有效记录。来源模组按需另装，不附带第三方资源。
+支持 234 个精确 ID（原版 84、模组 150）。274 项分类另含 22 项仅还原和 18 项排除。8 条原生尺寸转换保留有效记录。来源模组按需另装。
+[h3]2026-11-24 热修[/h3]
+猫猫的帆布背包与归来之地大背包恢复 EX 超级升级。已做的普通升级可从原配方还原并领取实付返料，之后再做 EX。归来之地前后腰包继续使用普通升级。 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3832223700]背包超级升级[/url]
 [h3]1.0.3返鲜餐盒支持[/h3]
-内置SuQingFreshnessLunchbox.FreshnessLunchbox普通五档及还原，无需独立餐盒兼容子项。保留实例基线、食品过滤、尺寸1、无穿戴槽及返鲜状态。当前配套餐盒rc.5；来源缺失不影响其他容器。1.0.3已部署作者本地，尚未发布；完整新增适配及保存重进仍待专项验收。
+内置SuQingFreshnessLunchbox.FreshnessLunchbox普通五档及还原，无需独立餐盒兼容子项。保留实例基线、食品过滤、尺寸1、无穿戴槽及返鲜状态。未安装返鲜餐盒时，其它容器照常使用。
 1.0.1已内置CombatStims.InjectorCase、CodexCBRT.SST02_ChestRig、ESHF.Qwe_Backpack, ESHF.Qwe_BackpackFront，保留针剂过滤、最大尺寸10、腰包前后换位及有效记录。肾上腺素笔额外收纳、HavenFall大背包EX仍为独立扩展；不要整项停用WearableCompat。
 [h3]档位与操作[/h3]
 容量/减重：I 12/90%，II 20/93%，III 30/95%，IV 40/97%，V最高49/99%。原高值保留，双项已达标则跳档，同件只允许下一档。重包安全容量可能46–48；指定原生高容量包只升减重，浣熊市两件保留沙盒/特性算法。
@@ -15,16 +17,17 @@
 未穿戴容器按自重+内容物总重计，普通主物品栏拾取上限50，不等于常规负重；高减重不豁免。地面直接穿戴也须先拾取。可暂存部分内容到外部或卸下其他负重，穿回再装；仅移入人物主物品栏通常不降低合计重量。
 成功还原首次规格，返有效账本累计真实实付材料50%，各类向下取整，线按用量返（可为部分线轴）。全付I–V为54布/22皮/30线，返27/11/15。免费、跳档、未扣料不记账；旧无账付款不追溯，成功清账防重复。停用不会自动还原保存属性。
 踏行千山、原版粗制皮/防水布包保留原生升级；踏行千山五仅还原。传奇背包10色及Estate39的Miku包不收费强化。未列出的非穿戴箱子不支持，登记的返鲜餐盒为例外。
-v1.0.0有代表项单人反馈；173项不代表全部逐件、全部组合或保存重进已验证。完整EX组合仍待验收。
 Mod ID：SuQingContainerUpgrade_4221。订阅/手动安装二选一，停用重复版后完全重启，保留物品来源模组。
 [url=https://github.com/suching8848/suqing-container-upgrade]完整名单、依赖、测试与历史配置说明 / Source and full documentation[/url]
 
 [h2]English[/h2]
-[b]Strongly changes carrying balance; for collectors and stockpilers. B42.21–42.22 single-player. Native offline readback passed on B42.22.2; gameplay testing is pending. Multiplayer and dedicated servers are unvalidated.[/b]
+[b]Strongly changes carrying balance; for collectors and stockpilers. B42.21–42.22 single-player. The recipe routing hotfix was tested in a B42.22.2 single-player save. Multiplayer and dedicated servers remain untested.[/b]
 Upgrade existing wearables and the specified one-handed freshness lunchbox with cloth, leather and thread. Keeps the original item; native crafting category/quick entry, no custom menu or EX tiers.
-173 exact IDs: 84 vanilla + 89 mod. The 192-entry classification also includes 1 restore-only ID and 18 exclusions. Eight native size conversions retain valid records. Item providers are optional; no third-party assets are bundled.
+Supports 234 exact IDs, including 84 vanilla and 150 mod items. The 274-entry classification also includes 22 restore-only IDs and 18 exclusions. Eight native size conversions retain valid records. Item providers are optional.
+[h3]2026-11-24 hotfix[/h3]
+MaoMao's Canvas Backpack and HavenFall's large backpacks return to EX. Restore any existing ordinary upgrade with its original recipe and collect the refund before applying EX. HavenFall waist packs still use ordinary upgrades. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3832223700]Backpack Super Upgrades[/url]
 [h3]1.0.3 freshness lunchbox support[/h3]
-Built-in five tiers/restoration for SuQingFreshnessLunchbox.FreshnessLunchbox, without a separate adapter. Preserves instance baselines, food filter, size 1, no wearable slot and freshness state. Current companion: rc.5. Missing providers do not affect other containers. 1.0.3 is installed locally but unpublished; complete acceptance of additions and save/reload remains pending.
+Built-in five tiers/restoration for SuQingFreshnessLunchbox.FreshnessLunchbox, without a separate adapter. Preserves instance baselines, food filter, size 1, no wearable slot and freshness state. Other containers are available without the optional lunchbox provider.
 1.0.1 included CombatStims.InjectorCase, CodexCBRT.SST02_ChestRig and ESHF.Qwe_Backpack, ESHF.Qwe_BackpackFront: injector filtering, size 10, waist-pack swaps and valid records remain. Extra Adrenapen storage and HavenFall large-backpack EX remain separate; do not disable the whole WearableCompat patch.
 [h3]Tiers and operation[/h3]
 Capacity/reduction: I 12/90%, II 20/93%, III 30/95%, IV 40/97%, V up to 49/99%. Higher originals stay; skip tiers already met by both values. Next tier only. Heavy-bag limits may yield 46–48. Specified native high-capacity bags gain reduction only; both Raccoon City items retain sandbox/trait calculations.
@@ -35,8 +38,4 @@ Keeps appearance, weight, slots, attachments, condition, other ModData and reloa
 Unworn bags count own weight + contents. Ordinary main-inventory pickup capacity is 50, distinct from carry weight; reduction does not bypass it. Wearing from the ground picks up first. Store some contents outside the character or unload other carried items, wear, then refill. Moving contents into main inventory usually leaves total weight unchanged.
 Restoration refunds 50% of actual cumulative ledger payments, rounded down per material. Thread returns as uses, including partial spools. Full I–V costs 54 cloth/22 leather/30 thread and refunds 27/11/15. Free/skipped/unconsumed actions are unrecorded; old unrecorded payments are not reconstructed. Success clears the ledger. Disabling does not restore saved attributes.
 踏行千山 and vanilla crude leather/tarp bags retain native upgrades; 踏行千山五 is restore-only. Ten Legendary Backpack colors and Estate39's Miku bag are excluded from paid upgrades. Unlisted non-wearable crates are unsupported; the registered lunchbox is an exception.
-v1.0.0 has representative single-player feedback; 173 does not imply every item, combination or save/reload was tested. Complete EX-combination acceptance remains pending.
 Mod ID: SuQingContainerUpgrade_4221. Choose subscription or manual installation, disable duplicates, fully restart and keep item providers.
-
-1.1.0-rc.1 将已核对的非传奇随身容器纳入普通五档升级，保护快捷栏挂载状态和旧升级账本。
-1.1.0-rc.1 adds audited non-Legendary containers to the ordinary route with attachment and legacy upgrade protection.

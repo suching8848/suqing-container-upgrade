@@ -1,11 +1,8 @@
 # 蘇清的容器升级模组 | SuQing's Container Upgrades Mod
 
-1.1.0-rc.1 adds audited non-Legendary containers to the ordinary route with attachment and legacy upgrade protection.
+## 1.1.0-rc.1 hotfix · 2026-11-24
 
-## 42.22.2 offline compatibility candidate
-
-The candidate keeps interface version `1.0.3`, the five ordinary upgrade tiers, the built-in freshness lunchbox registration, and the existing refund rules. It targets B42.21–42.22 single-player. In-game reload on 42.22.2 is pending.
-
+MaoMao's Canvas Backpack and HavenFall's large backpacks return to EX. Restore any existing ordinary upgrade with its original recipe and collect the refund before applying EX. HavenFall waist packs still use ordinary upgrades. The maintainer tested this change in a B42.22.2 single-player save.
 
 [简体中文](README.md) · [English](README.en.md)
 
@@ -15,11 +12,11 @@ The candidate keeps interface version `1.0.3`, the five ordinary upgrade tiers, 
 
 <p align="center"><img src="docs/images/cover.png" alt="SuQing's Container Upgrades cover" width="760"></p>
 
-**v1.0.3 · Project Zomboid Build 42.21 · Single-player**
+**v1.1.0-rc.1 · Project Zomboid B42.21–42.22 · Single-player**
 
 Upgrade existing wearable containers and the specified single-handed freshness lunchbox with clean ripped sheets, leather strips and thread. The original item and its functions remain in place. Recipes use the native crafting category and quick-crafting entry points.
 
-An earlier [Steam Workshop release](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025) is available; GitHub provides the source and files for manual installation. The 1.0.3 candidate is unpublished and does not include EX upgrades.
+An earlier [Steam Workshop release](https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025) is available; GitHub provides the source and files for manual installation. [Backpack Super Upgrades](https://steamcommunity.com/sharedfiles/filedetails/?id=3832223700) provides EX recipes for the Legendary series, MaoMao's Canvas Backpack and HavenFall's large backpacks.
 
 Publication status (2026-11-06): 1.0.3 was submitted to the existing Workshop ID and verified public, with native callback result 1 and all verification checks passing. Three earlier failed receipts remain historical evidence. Complete gameplay acceptance remains separate. See [publication status](publishing/release-status-20261106.json).
 
@@ -33,13 +30,13 @@ Source repositories are now linked for the local projects. Subscribing to the St
 
 ## Features and supported scope
 
-- Explicit support for **173 exact item IDs: 84 vanilla and 89 audited mod items**. Facing, size and color variants count separately.
+- Supports **234 exact item IDs**, including 84 vanilla and 150 audited mod items. Facing, size and color variants count separately.
 - Five upgrade tiers, restoration to the original pre-upgrade specification, and a refund after successful restoration.
 - Supported front/back swaps, same-ID clothing replacements and **8 native size-conversion recipes** preserve valid upgrade records.
 - The two Raccoon City containers retain their sandbox and character-trait calculations; their existing capacity tooltip line is corrected.
 - Dedicated portrait, upgrade/restore icons and cover. No custom context menu, extra tier tooltip area or success/failure floating text.
 
-See the [173 supported IDs](SuQingContainerUpgrade/最终适配物品名单.txt) and the [complete classification of 192 entries and restrictions](SuQingContainerUpgrade/适配名单.csv). The latter also contains 1 restore-only entry and 18 exclusions. Unknown IDs are unsupported.
+See the [234 supported IDs](SuQingContainerUpgrade/最终适配物品名单.txt) and the [complete classification of 274 entries and restrictions](SuQingContainerUpgrade/适配名单.csv). The latter also contains 22 restore-only entries and 18 exclusions. Unknown IDs are unsupported.
 
 Specified containers from Fantasy Workshop, 2DimensionWardrobe, Backpack System, SuPrimitiveEquipment, They Knew Continued, Raccoon City, SafeWayHamlet and MFS are supported. **You do not need all these mods to upgrade vanilla containers.** Each source mod still supplies its own items.
 

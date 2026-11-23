@@ -1,7 +1,7 @@
 蘇清的容器升级 1.1.0-rc.1 — Build 42.22.2 单人
 
-新增普通路线覆盖本轮核实的非传奇随身容器，沿用已有物品 ID、五档记录和还原返料规则。高原生容量容器只提供有实际收益的减重档位。已有非传奇 EX 物品先在 EX 还原，传奇系列由 EX 1.0.0-rc.3 支持。B42.22.2 单人离线验证，游玩待验。
-Adds the audited non-Legendary portable containers to the ordinary route while retaining existing item IDs, records, and restoration refunds. High-native-capacity containers receive only weight-reduction tiers that improve the item. Restore previously upgraded non-Legendary EX instances through EX first. Legendary containers use EX 1.0.0-rc.3. Offline checks target B42.22.2 single-player, with gameplay pending.
+猫猫的帆布背包与归来之地大背包恢复 EX 超级升级。已做的普通升级可从原配方还原并领取既有返料，之后再做 EX。归来之地前后腰包继续使用普通升级。
+MaoMao's Canvas Backpack and HavenFall's large backpacks use EX upgrades. Restore any existing ordinary upgrade through its original recipe and collect the existing refund before applying EX. HavenFall waist packs still use ordinary upgrades.
 
 语言 / Languages: 中文在前，完整英文说明在后。Chinese first; complete English instructions follow.
 作者历史配置参考合集：https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387

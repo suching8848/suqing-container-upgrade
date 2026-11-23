@@ -1,2 +1,3 @@
-1.1.0-rc.1 将已核对的非传奇随身容器纳入普通五档升级，保护快捷栏挂载状态和旧升级账本。
-1.1.0-rc.1 adds audited non-Legendary containers to the ordinary route with attachment and legacy upgrade protection.
+1.1.0-rc.1 · 2026-11-24
+猫猫的帆布背包与归来之地大背包恢复 EX 超级升级。已做的普通升级可从原配方还原并领取实付返料，之后再做 EX。归来之地前后腰包继续使用普通升级。
+MaoMao's Canvas Backpack and HavenFall's large backpacks return to EX. Restore any existing ordinary upgrade with its original recipe and collect the refund before applying EX. HavenFall waist packs still use ordinary upgrades.
